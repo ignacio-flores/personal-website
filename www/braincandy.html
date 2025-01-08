@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Brain candy</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ignacio<span style="color:#DF1C44">flores</span>.com</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+<li>
+  <a href="outreach.html">Outreach</a>
+</li>
+<li>
+  <a href="braincandy.html">Brain candy</a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=ILFlGwMAAAAJ&amp;hl=es&amp;oi=ao">
+    <span class="fa fa-graduation-cap"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/_Ignacio_Flores">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ignacio-flores">
+    <span class="fa fa-github-square"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Brain candy</h1>
+
+</div>
+
+
+<p align="justify">
+The purpose of this section is to show a collection of video-essays that
+I consider could be useful and interesting to anybody. They don’t follow
+any particular order. Although I think there are strong links between
+various videos and together they display a stronger message, each one of
+them can be perfectly watched independently.
+</p>
+<p><br></p>
+<h2>
+Economics
+</h2>
+<p><br>
+<a target="_new" href="https://www.youtube.com/watch?v=LTE0z4r1Z30">-
+Gabriel Zucman on wealth inequality </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=V2EMuoM5IX4">-
+Psychology of irrational decision making </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=JKsHhXwqDqM&list=PLRK8ApwtQbdxu_Rz_Z8I1OhK8Cvw0Cp7L">-
+Thomas Piketty on wealth and income inequality </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=VJhsjUPDulwL">-
+How income taxes work </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=1X7fZoDs9KU">-
+Some insight on globalization </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=0zvrGiPkVcs">-
+Esther Duflo on fighting poverty </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=vn3e37VWc0k&t=260s">-
+History of exchange: The silk road </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=jILgxeNBK_8">-
+Hotelling, competition that doesn’t lead to a social optimum</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=cZ7LzE3u7Bw">-
+Richard Wilkinson on inequality and its interesting correlations </a>
+<br>
+<a target="_new" href="https://www.youtube.com/watch?v=XNu5ppFZbHo">-
+Basics: The value of a dollar </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=GYHT4zJsCdo">-
+Joseph Stiglitz, some facts and the ethics of institutions</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=RuM-AtDjuxg&index=38&list=PL6TwNqpxVm6IHSh64ZAKgIX1ux7f3xmQz"Z>-
+Cesar Hidalgo on economic complexity </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=ShxSoECqgIM">-
+Paul Krugman on the economics of happiness and unemployment</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=DGmUtJkTaqc&t=1987s">-
+Robert Solow and Paul Krugman commenting Anthony Atkinson’s book
+(long)</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=mWVATekt4ZA">-
+Why poor places are more diverse</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=uZDsSnpYZrw">-
+The hidden cost of meat</a></p>
+<p><br></p>
+<h2>
+Mathematics
+</h2>
+<p align="left">
+<p><a target="_new" href="https://www.youtube.com/watch?v=Kas0tIxDvrg">-
+Exponential growth and epidemics </a><br />
+<br>
+<a target="_new" href="https://www.youtube.com/watch?v=gxAaO2rsdIs">-
+Simulating epidemics </a>
+<a target="_new" href="https://www.youtube.com/watch?v=-LKVUarhtvE">
+[Bonus: how soap kills the coronavirus] </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=HZGCoVF3YvM">-
+Bayes theorem, intuitively </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=tP-Ipsat90c">-
+Randomness is not what we think</a><br />
+<br>
+<a target="_new" href="https://www.youtube.com/watch?v=ETrYE4MdoLQ&t=857s">-
+4,669 and population’s growth </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=AuA2EAgAegE">-
+Euler’s Number </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=LqKpkdRRLZw">-
+Collatz conjecture </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=4k1jegU4Wb4&t=325s">-
+Euler-Mascheroni constant </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=sxYrzzy3cq8&list=PLJicmE8fK0EgI__8e2HP-EZDJuvIF3RsT">-
+Simpson’s paradox: How statistics can be missleading </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=wVH4MS6v23U">-
+The Magic of triangles </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=wQTnVEXAtBY&index=60&list=PLE3376FF44087B17B">-
+Benoit Mandelbrot on measuring roughness </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=gB9n2gHsHN4&t=537s">-
+More on Fractacls and realist mathematics</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=lCjspXB5F4A">-
+Mathematics of Crime and Terrorism </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=WYijIV5JrKg">-
+The opposite of infinity, pi and derivatives </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=Yexc19j3TjE&t=401s">-
+What’s wrong on how we teach Mathematics </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=0iMtlus-afo">-
+Pascal’s triangle </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=BRRolKTlF6Q">-
+Zero is a special number </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=iHKa8F-RsEM">-
+Cedric Villiani on Nash (long)</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=dTWKKvlZB08">-
+Fibonacci and the golden ratio</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=PeUbRXnbmms">-
+Lucas numbers </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=OmJ-4B-mS-Y">-
+The map of Mathematics </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=sbGjr_awePE&index=64&list=PLE3376FF44087B17B">-
+Intuition behind irrational numbers </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=cZH0YnFpjwU&list=PLE3376FF44087B17B&index=3">-
+History of numerical systems</a></p>
+<p><br></p>
+<h2>
+Physics
+</h2>
+<p align="left">
+<p><a target="_new" href="https://www.youtube.com/watch?v=iphcyNWFD10">-
+Gravitational waves!</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=7KYTJ8tBoZ8&t=61s">-
+A really brief History of Everything </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=ZihywtixUYo">-
+The map of Physics </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=yKbJ9leUNDE">-
+Entropy and time </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=e-P5IFTqB98">-
+Black holes </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=wIzvfki5ozU&list=PLJicmE8fK0Ejk2MO8WlaGGw7j13_fbc0A&index=19">-
+On the very nature of speed and acceleration &lt;/&gt; <br>
+<a target="_new" href="https://www.youtube.com/watch?annotation_id=annotation_2496045349&feature=iv&src_vid=Nu-lW-Ifyec&v=mxpVbU5FH0s">-
+The orbit of satelites and Lagrange points </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=UfJ-i4Y6DGU">-
+How do we know the composition of other planet’s atmospheres? </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=ZW3aV7U-aik">-
+Neutron stars </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=HVO0HgMi6Lc&list=PLnq02DlEOkvaKbqSkAitx-m1bSCcAgau9">-
+The Standard model </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=Fxeb3Pc4PA4&list=PLnq02DlEOkvaKbqSkAitx-m1bSCcAgau9&index=2">-
+What is matter? </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=hSgIDgGpRpk&index=3&list=PLnq02DlEOkvaKbqSkAitx-m1bSCcAgau9">-
+Einstein: Light as a particle </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=WYQ3O8U6SMY&list=PLJicmE8fK0Ejk2MO8WlaGGw7j13_fbc0A">-
+When you look at the night sky</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=_lNF3_30lUE">-
+Putting the size of an atom in perspective </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=9Uh5mTxRQcg">-
+What is the Higgs Boson? </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=ASRpIym_jFM&list=PLnq02DlEOkvaKbqSkAitx-m1bSCcAgau9&index=5">-
+The Higgs Field </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=6guXMfg88Z8&list=PLnq02DlEOkvaKbqSkAitx-m1bSCcAgau9&index=6">-
+Looking for the Higgs Boson</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=a8FTr2qMutA">-
+Heisenberg’s uncertainty principle </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=TQKELOE9eY4">-
+Heisenberg’s uncertainty principle (2) </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=IXxZRZxafEQ">-
+What is light? </a></p>
+<p><br></p>
+<h2>
+Big History
+</h2>
+<p align="left">
+<p><a target="_new" href="https://www.youtube.com/watch?v=2XkV6IpV2Y0">
+- Big time perspective </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=hOfRN0KihOU">-
+How evolution works </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=dGiQaabX3_o&t=5s">-
+Human origins</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=czgOWmtGVGs">-
+Why I live in year 12.017</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=tkxWmh-tFGs&list=PLJicmE8fK0Ejk2MO8WlaGGw7j13_fbc0A&index=23">-
+How to picture Earth’s history </a></p>
+<p><br></p>
+<h2>
+Philosophy
+</h2>
+<p align="left">
+<p><a target="_new" href="https://www.youtube.com/watch?v=QOCaacO8wus">
+- Who am I? </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=-a739VjqdSI&list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR&index=36">-
+Utilitarianism </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=pOl8nn8KChM">-
+L’utilitarisme classique (French) </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=5Riu6WqSIws&t=316s">-
+John Stuart Mill: De la liberté (French) </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=xqfB844lV4k">-
+John Rawls (French) </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=5lLKwizHxI8">-
+Amartya Sen: Repenser l’inégalité (French)</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=rw4aZonBFoU">-
+Anarchisme social: Proudhon, Bakounine et Kropotkine (French)</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=FG42gogWdCM">-
+Anarchisme individualiste: Stirner, Tucker, Spooner (French)</a> <br>
+<a target="_new" href=" https://www.youtube.com/watch?v=0yWuNy-383A">-
+L’ideologie chez Marx (French) </a> <br>
+<a target="_new" href=" https://www.youtube.com/watch?v=u0kIfuqWCKg">-
+Le néoliberalisme (French) </a> <br>
+<a target="_new" href=" https://www.youtube.com/watch?v=Vywj5m8o3tw">-
+Michel Foucault: Surveiller et punir (French) </a> <br>
+<a target="_new" href=" https://www.youtube.com/watch?v=bKQECat59_E">-
+Claude Lévi-Strauss: Race et histoire (French) </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=JQVmkDUkZT4">-
+Individuality </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=X_xR5Kes4Rs&list=PLE3376FF44087B17B&index=32">-
+Did we invent or discover Mathematics? </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=sMb00lz-IfE&index=10&list=PL6TwNqpxVm6IHSh64ZAKgIX1ux7f3xmQz">-
+What is information? </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=yg16u_bzjPE">-
+Ethics: the trolley problem </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=-X8Xfl0JdTQ&index=8&list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR">-
+Basics: Popper’s theory of scientific knowledge</a></p>
+<p><br></p>
+<h2>
+The planet and its ecosystems
+</h2>
+<p align="left">
+<p><a target="_new" href="https://www.youtube.com/watch?v=EzakQuKqBeQ&index=47&list=PLJicmE8fK0Eh7yolyPIVhJdPzLuTYC9In">-
+Alexander von Humboldt </a>
+<br><a target="_new" href="https://www.youtube.com/watch?v=wvapNVTvuuw">-
+Who do flowers seduce? </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=kwfNGatxUJI">-
+How plate tectonics actually work </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=VEMtc1w4z6c">-
+Should we save pandas?</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=T6Us1sPXBfA">-
+Why do deserts exist?</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=mUxt--mMjwA&index=33&list=PL6TwNqpxVm6IHSh64ZAKgIX1ux7f3xmQz">-
+Richard Dawkins on evolutionary stable trategies </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=vk-12s7tB_Y">-
+The secret life of plants </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=mWVATekt4ZA">-
+Poor places are more diverse</a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=bxQdLhOQf5c">-
+The animal kingdom, or the realm of the unfaithful </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=pxmHHoTPSKI">-
+Why sand is all the same </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=vWAA-SrrFUQ">-
+Biggest living organism </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=pp7BZjJkc_8">-
+Draining the deep seas</a></p>
+<p><br></p>
+<h2>
+History of people and civilizations
+</h2>
+<p align="left">
+<a target="_new" href="https://www.youtube.com/watch?v=Y6EhRwn4zkc">-
+Cleopatra </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=PBn7iWzrKoI&index=7&list=PLJicmE8fK0Eh7yolyPIVhJdPzLuTYC9In">-
+French revolution </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=Eq-Wk3YqeH4">-
+Ghengis Khan </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=ZZZ6QB5TSfk&index=38&list=PLJicmE8fK0Eh7yolyPIVhJdPzLuTYC9In">-
+History of marriage </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=8aq_gRfmjgY">-
+Napoleon Bonaparte </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=jv4bWkoG4k8&index=9&list=PLJicmE8fK0Egm1AhWPoWY3qs2VgIfElOK">-
+The Encyclopedia </a> <br>
+<a target="_new" href="https://www.youtube.com/watch?v=GD3dgiDreGc">-
+Christopher Colombus </a>
+</p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

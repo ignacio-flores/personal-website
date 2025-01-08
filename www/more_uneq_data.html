@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Mauricio de Rosa, Ignacio Flores and Marc Morgan" />
+
+
+<title>Data download “More Unequal or Not as Rich: Revisting the Latin American exception”</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.27/datatables.js"></script>
+<link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.12.1/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ignacio<span style="color:#DF1C44">flores</span>.com</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+<li>
+  <a href="outreach.html">Outreach</a>
+</li>
+<li>
+  <a href="braincandy.html">Brain candy</a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=ILFlGwMAAAAJ&amp;hl=es&amp;oi=ao">
+    <span class="fa fa-graduation-cap"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/_Ignacio_Flores">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ignacio-flores">
+    <span class="fa fa-github-square"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Data download “More Unequal or Not as Rich:
+Revisting the Latin American exception”</h1>
+<h4 class="author">Mauricio de Rosa, Ignacio Flores and Marc Morgan</h4>
+
+</div>
+
+
+<p>Welcome to the data download page for <a
+href="https://osf.io/preprints/socarxiv/akq89/">More Unequal or Not as
+Rich? Revisiting the Latin American Exception</a>. The paper examines
+the income distribution in Latin America and challenges the commonly
+held belief that the region is an exception to global trends of rising
+inequality. To address this question, we built the most comprehensive
+database to date, which accounts for 80% of the region’s population and
+combines harmonized surveys, social security data, income tax
+declarations, and national accounts. As a result, we are making
+available four documents for download. Our estimates cover the period
+2000-2020. To download everything at once click <a
+href="data/more_unequal_or_not_as_rich_fulldata.zip">here</a></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Code Dictionary:</strong> This document associates
+acronyms and codes to full descriptions in English, which will help you
+understand the variables used in the other data files. Only the Spanish
+version is available for now.</p></li>
+<li><p><strong>Detailed income composition:</strong> This data set
+provides detailed estimates on income levels and composition at the
+percentile level, for every country, every year, and every step of our
+adjustment process (from the raw survey to the full imputation of
+macroeconomic aggregates). This data set will allow you to conduct your
+own analyses and explore the findings of the paper in more
+detail.</p></li>
+<li><p><strong>Grouped inequality estimates:</strong> This data set
+provides grouped estimates such as the Gini coefficients, the top 1%
+share, the bottom 50%, and more. This data set is useful if you are
+interested in the overall trends of income inequality in the
+region.</p></li>
+<li><p><strong>Effective Tax Rates:</strong> This data set displays
+effective tax rates and their composition at the percentile level.
+Effective tax rates are estimated with respect to unimputed pre-tax
+income. This data set will allow you to examine the impact of taxes and
+transfers on income distribution in the region, as well as their
+progressivity over 2000-2021.</p></li>
+</ol>
+<p>Below you will find a preview of this documents, also allowing you to
+download them one by one.</p>
+<div id="preview-of-synthetic-microfiles" class="section level1 tabset">
+<h1 class="tabset">Preview of synthetic microfiles</h1>
+<div id="code-dictionary" class="section level2">
+<h2>Code dictionary</h2>
+<div id="htmlwidget-592a7496eab61880c11b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-592a7496eab61880c11b">{"x":{"filter":"none","vertical":false,"data":[[null,"pch","ind","esn","act",null,"raw","bfm","res","upr","nat","pod","pon",null,"cap","mix","imp","wag","ben","pen","indg","lef","mbe","wmbe","hea","edu","oex",null,"pit","cit","prl","imo","est","otp","gog","goo","oth","mbr","mbe","etr",null,"p","average","gini","thr","bckt_avg","bckt_sh","topavg","topsh","b","b50_sh","m40_sh","t10_sh","t1_sh","adpop"],["Unidades de observación","per capita del hogar, población total","Individuos adultos (mayores de 20 años)","Individuos y parejas en equal-split, adultos","Individuos activos","Etapas de corrección (orden secuencial)","Encuesta Original","Encuesta Corregida con datos de impuesto a la renta","Ingresos de los hogares escalados a Ctas. Nacionales","Imputación de beneficios no distribuidos de empresas","Ingreso Nacional Pre-tax","Ingreso Disponible macroecónomico","Ingreso Nacional disponible después de impuestos","Composición del ingreso (porcentajes)","Ingresos del capital","Ingresos mixtos (independientes y cuentapropistas)","Alquileres imputados","Ingresos del trabajo, sueldos","Prestaciones sociales","Pensiones","Impuestos a los productos imputados proporcionalmente","Residuo","Prestaciones sociales monetarias","Ingreso bruto de mercado sin prestaciones","Gasto público de salud imputado","Gasto público de educación imputado","Otros gastos del gobierno (imputados proporcionalmente)","Impuestos y beneficios","Impuesto a la renta personal","Impuesto a la renta de las empresas","Impuesto al ingreso salarial","Impuesto sobre los bienes raíces","Impuesto a las herencias y donaciones","Otros impuestos sobre la propiedad","Impuestos generales sobre bienes y servicios","Otros impuestos indirectos","Otros impuestos","Prestaciones monetarias en porcentaje del ingreso total","Prestaciones monetarias en moneda local","Tasa efectiva de tributación global","Variables distributivas","percentil","Ingreso promedio de la distribución total","Coeficiente de Gini","Limite de ingreso inferior del tramo","Ingreso promedio del tramo","Porcentaje del ingreso total del tramo","Ingreso promedio por encima del limite inferior del tramo","Ingreso del intervalo como porcentaje del ingreso total","Razón entre ingreso promedio encima del tramo y su limite inferior","Participación en el ingreso de la mitad más pobre de la población","Participación en el ingreso del 40% del medio","Participación en el ingreso del 10% más rico","Participación en el ingreso del 1% más rico","Población adulta"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Code<\/th>\n      <th>Long name<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="detailed-income-composition" class="section level2">
+<h2>Detailed income composition</h2>
+<p>coming soon</p>
+</div>
+<div id="grouped-inequality-estimates" class="section level2">
+<h2>Grouped inequality estimates</h2>
+<p>coming soon</p>
+</div>
+<div id="effective-tax-rates" class="section level2">
+<h2>Effective tax rates</h2>
+<p>coming soon</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

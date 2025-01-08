@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Research</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ignacio<span style="color:#DF1C44">flores</span>.com</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+<li>
+  <a href="outreach.html">Outreach</a>
+</li>
+<li>
+  <a href="braincandy.html">Brain candy</a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=ILFlGwMAAAAJ&amp;hl=es&amp;oi=ao">
+    <span class="fa fa-graduation-cap"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/_Ignacio_Flores">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ignacio-flores">
+    <span class="fa fa-github-square"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Research</h1>
+
+</div>
+
+
+<p><br> <br></p>
+<div id="work-in-progress" class="section level3">
+<h3>Work in progress</h3>
+<p><strong>Land Inequality and Biological Diversity in the United
+States</strong> <br> Ignacio Flores and Dylan Glover <br> <br></p>
+<p><strong>From Housing Gains to Pension Losses: New Methods to Reveal
+Wealth Inequality Dynamics in Chile</strong> <br> Bastián Castro Nofal,
+Ignacio Flores and Pablo Gutierrez Cubillos <br> <br></p>
+</div>
+<div id="working-papers" class="section level3">
+<h3>Working papers</h3>
+<a
+href="https://ignacioflores.com/pdf/land-inequality-from-the-sky-wp.pdf"><strong>Does
+Land Consolidation Increase Vulnerability to Climate Change? Evidence
+from French Agriculture</strong></a> <br> Ignacio Flores and Dylan
+Glover <br> in Working Paper (Oct 2024) <br>
+<button data-toggle="collapse" data-target="#gmpqje"> + Abstract,
+</button> <a
+href="https://ignacioflores.com/pdf/land-inequality-from-the-sky-wp.pdf">Working
+Paper</a>
+<div id="gmpqje" class="collapse">
+<p>This paper investigates the consequences of land consolidation on
+agriculture’s vulnerability to extreme temperatures. Combining
+quasi-weekly satellite data on land productivity with farm-level
+cadastral data, we show that while highly consolidated land provides the
+majority of the country’s food production, it suffers disproportionately
+from extreme weather events. We find that a key driver of resilience is
+the negative relation between land consolidation and biological
+diversity, which helps buffering the adverse effects of heat-shocks.
+This implies a trade-off between productivity and resilience, which
+becomes critical as heat-shocks grow stronger and more frequent.</p>
+</div>
+<p><br></p>
+<a href="pdf/the-inequality-we-measure.pdf"><strong>The Inequality (or
+the Growth) we Measure: Data Gaps and the Distribution of
+Incomes</strong></a><br> Facundo Alvaredo, Mauricio De Rosa, Ignacio
+Flores and Marc Morgan <br> in <em>Stone Center Working Paper
+Series</em> (2022), R&amp;R at <em>Economía, LACEA Journal</em>
+<br><button data-toggle="collapse" data-target="#growth_we_measure"> +
+Abstract, </button> <a
+href="https://osf.io/preprints/socarxiv/fs5jn/">Working Paper</a>
+<div id="growth_we_measure" class="collapse">
+<p>There is a large gap between income estimates used in inequality
+studies and macroeconomic statistics. This makes it hard to assess how
+economic growth is distributed across the population, and to what extent
+mainstream distributional statistics are an accurate representation of
+income flows. We take stock of these discrepancies by confronting
+estimates of the income distribution from surveys, administrative
+records and aggregates from the system of national accounts, thoroughly
+documenting them over the past two decades for ten Latin American
+countries. We find that surveys only account for around half of the
+macroeconomic income in the region. Measurement gaps account for just
+over half of the overall gap on average, while the rest is due to
+conceptual differences across data sets. Measurement gaps have been
+growing fast for many countries, the bulk being due to non-covered
+capital income. We also compare the top tails in administrative data and
+surveys, finding diverging averages –especially for non-wage incomes–
+and different shapes. We discuss the degree to which inequality levels
+and trends could be affected.</p>
+</div>
+<p><br></p>
+</div>
+<div id="publications-in-academic-journals" class="section level3">
+<h3>Publications in academic journals</h3>
+<a href="http://eprints.lse.ac.uk/122760/"><strong>Firms and inequality
+in Latin America</strong></a><br> Marcela Eslava, Marcela Meléndez,
+Gabriel Ulyssea, Nicolás Urdaneta and Ignacio Flores <br> in <em>Oxford
+Open Economics</em>, forthcoming (2024)
+<br><button data-toggle="collapse" data-target="#firms_ineq"> +
+Abstract,</button>
+<div id="firms_ineq" class="collapse">
+<p>The relationship between firms and inequality has been a focus of
+recent attention globally. This chapter summarizes basic facts about
+this relationship for Latin America. Unlike advanced economies where
+superstar firm growth has prompted concerns over disproportionate income
+growth at the top, the facts we summarize illustrate that the main
+concern for Latin America is the extreme prevalence of tiny businesses
+whose workers and owners tend to populate the bottom income segments.
+The empirical likelihood that these businesses improve their
+productivity and grow to hire more workers and pay better wages is also
+very low. The region displays a deficit of employment generation in
+SMEs, by contrast to both microbusinesses (including self-employment)
+and large corporations. While the former tend to remunerate both workers
+and owners with very low incomes, the latter pay high wages but also
+exhibit low labor shares.</p>
+</div>
+<p><br></p>
+<a href="http://eprints.lse.ac.uk/119426/"><strong>Wealth Inequality in
+Latin America</strong></a><br> Rafael Carranza, Mauricio De Rosa and
+Ignacio Flores <br> in <em>Oxford Open Economics</em>, forthcoming
+(2024) <br><button data-toggle="collapse" data-target="#wealth_ineq"> +
+Abstract,</button> <a
+href="https://github.com/ignacio-flores/lacir-wealth">Replication</a>
+<div id="wealth_ineq" class="collapse">
+<p>How much wealth has accumulated in the region and how is it
+distributed across households? Despite being widely recognized for its
+extreme income inequality, reliable data on wealth is scarce, partial
+and oftentimes contradictory, making it difficult to answer these basic
+questions. In this study, we estimate aggregates based on macroeconomic
+data, and inequality based on recently available surveys. We contrast
+our results with the literature, with a handful of state-of-the-art
+estimates from administrative sources, and with more available but
+extrapolated estimates from Credit Suisse and wid.world. Considering all
+the evidence, we distinguish reliable facts from what can only be
+conjectured or speculated. We find that aggregate wealth increased over
+two decades in four countries, now ranging close to 3.5 the national
+income for market value estimates and 5-6 times at book values. We also
+find that wealth inequality is amongst the highest in the world were it
+can be measured. Given data limitations, one can only speculate about
+aggregates in opaque countries and about inequality trends in any
+country in the region. Although recent research in the developed world
+has focused in combining data sources to better understand wealth, the
+region lags behind and urgently requires more and better public
+information.</p>
+</div>
+<p><br></p>
+<a
+href="https://www.sciencedirect.com/science/article/pii/S0305750X24002079?via%3Dihub"><strong>More
+Unequal or Not as Rich? Revisting the Latin American
+exception</strong></a> <br> Mauricio De Rosa, Ignacio Flores and Marc
+Morgan <br> in <em>World Development</em>, 184 (2024) <br>
+<button data-toggle="collapse" data-target="#moreun"> + Abstract,
+</button> <a href="https://osf.io/preprints/socarxiv/akq89/">Working
+Paper</a>, <a href="https://distribuciones.info">Website (spanish)</a>,
+<a href="pdf/inequality_matters_jun2023.pdf">Summary</a>
+<div id="moreun" class="collapse">
+<p>Latin America is often portrayed as a global exception to the rising
+or consolidating income inequality trends of the early twenty-first
+century. In this paper we revisit this exceptionalism by innovatively
+combining harmonised surveys, social security and tax data, and national
+accounts for ten countries. The reconciliation of micro and macro
+incomes present us with a critical dilemma: either the region is more
+unequal or it is not as rich as officially reported. Distributing the
+data gaps shows a more heterogeneous region in terms of inequality
+trends. Falling inequality is most visible among the bottom 99%, but the
+trend flattens or reverses in the largest economies once the top 1% and
+capital incomes are better accounted for. Taxes and transfers do not
+alter the main picture, except when in-kind social spending is
+considered. These results confirm the strengths and highlight the limits
+of Latin America’s redistributive policies during the period.</p>
+</div>
+<p><br></p>
+<a
+href="https://link.springer.com/article/10.1007/s10888-021-09509-3"><strong>The
+weight of the rich: Improving surveys using tax data</strong>*</a> <br>
+Thomas Blanchet, Ignacio Flores and Marc Morgan <br> in the <em>Journal
+of Economic Inequality</em>, 1-32 (2022)<br>
+<button data-toggle="collapse" data-target="#weight_of"> + Abstract,
+</button> <a
+href="https://wid.world/document/the-weight-of-the-rich-improving-surveys-using-tax-data-wid-world-working-paper-2018-12/">Working
+Paper &amp; Appendix</a>, <a
+href="https://www.marc-morgan.eu/the-weight-of-the-rich">Stata
+package</a> <br>(*) This paper was awarded the <a
+href="http://www.ecineq.org/atkinson-prize/">Atkinson Prize</a> 2023
+<div id="weight_of" class="collapse">
+<p>Household surveys often fail to capture the top tail of income and
+wealth distributions, as evidenced by studies based on tax data. Yet to
+date there is no consensus on how to best reconcile both sources of
+information, given the multiple biases at play. This paper contributes a
+novel method, rooted in standard calibration theory, to directly
+confront the problem of survey non-response between survey micro-data
+and anonymous tax data under reasonable assumptions. Our key innovation
+is to endogenously determine a “merging point” between the datasets,
+above which we start to incorporate information from tax data into the
+survey, under the assumption that the rate of representativeness is
+constant, then decreasing with income. This is followed by a
+“reweighting” and a “replacing” step, which preserves the microdata
+structure of the original survey, assuming no re-ranking of
+observations. We illustrate our approach with simulations, which show
+that our method is robust to the existence of income misreporting, and
+performs better than alternative methods. We also apply it to real data
+from five countries, both developed and less developed, finding changes
+to the levels and trends in income inequality. We discuss several limits
+to our approach and suggest some guidelines for future research.</p>
+</div>
+<p><br></p>
+<a
+href="https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10888-021-09482-x&amp;casa_token=RVV9_mGi7BEAAAAA:U5u7L12-XWZzAEohAjlx4xqS1K0_eKPEF9XEcAP323hqI-zVHy97Cnf7Ur09j9XWulzy1qxQmGl2ei51Lg"><strong>The
+capital share and income inequality: Increasing gaps between micro and
+macro-data</strong></a> <br> Ignacio Flores <br> in the <em>Journal of
+Economic Inequality</em>, 19(4), 685-706 (2021) <br>
+<button data-toggle="collapse" data-target="#inc_under"> + Abstract,
+</button> <a href="https://rdcu.be/cpQzr">Request acess</a>, <a
+href="https://github.com/ignacio-flores/income-under-the-carpet">Code
+&amp; Data</a>
+<div id="inc_under" class="collapse">
+<p>In this paper, I study how the contrasting coverage of labour and
+capital incomes affects inequality estimates. I use national accounts as
+a benchmark to evaluate the scope of household surveys, for a number of
+countries, and tax data for the United States. Due to both measurement
+error and conceptual differences, capital income is always more
+underestimated. In most countries, the gap grows during the last two
+decades. Based on accounting identities, I show that inequality
+estimates are likely affected in level, trend and composition. Surveys
+thus largely exaggerate the impact of changes in the labour income
+distribution, while they undermine the capital share and its dynamics.
+As a reference, in a panel of nineteen countries, households collect
+half of total capital income, as opposed to corporations; but surveys
+only capture close to twenty percent of that half, versus seventy
+percent of total labour income. For any quantile group –e.g. the top 10%
+or bottom 50% share– a unit increase of its labour income share
+translates into an increase of nine tenths of a unit in the overall
+share, for capital income, the effect is only one tenth of a unit. Gaps
+are narrower but still present in tax data.</p>
+</div>
+<p><br></p>
+<a
+href="https://onlinelibrary.wiley.com/doi/abs/10.1111/roiw.12441"><strong>Top
+incomes in Chile: A historical perspective on income inequality,
+1964–2017</strong></a> <br> Ignacio Flores, Claudia Sanhueza, Jorge
+Atria and Ricardo Mayer <br> in <em>Review of Income and Wealth</em>,
+66(4), 850-874 (2020) <br>
+<button data-toggle="collapse" data-target="#top_inc"> + Abstract,
+</button> <a
+href="https://wid.world/document/top-income-in-chile-a-historical-perspective-of-income-inequality-1964-2015-wid-world-working-paper-2018-11/">Working
+Paper</a>, <a
+href="https://wid.world/document/appendix-to-top-income-in-chile-a-historical-perspective-of-income-inequality-1964-2015-wid-world-working-paper-2018-11/">Appendix</a>,
+<a href="https://github.com/ignacio-flores/top-incomes-chile.git">Code
+&amp; Data</a>
+<div id="top_inc" class="collapse">
+<p>We present a novel series of Chilean top-income shares covering half
+a century, mainly based on income-tax declarations and the National
+Accounts. Such a time frame of analysis is still rare in the literature
+of developing countries. We distinguish between a fiscal-income series
+(1964–2017) and an adjusted series (1990–2017). The former covers
+individual income, while the latter also includes corporate
+undistributed profits, which affects both levels and trends. The
+fiscal-income estimates start with low levels and a decreasing trend
+over the 1960s. They then increase rapidly during the dictatorship years
+(1973–89). The series ends with a high, yet slowly decreasing,
+concentration for most of the recent democratic period (1990–2017). By
+contrast, the adjusted series has followed a U-shape since the return of
+democracy, contradicting the established consensus on falling inequality
+over the period. Furthermore, Chile ranks among the most unequal
+countries in both the OECD and Latin American countries over the
+period.</p>
+</div>
+<p><br></p>
+</div>
+<div id="chapters-in-books" class="section level3">
+<h3>Chapters in books</h3>
+<a href="https://www.impuestosjustos.io/capitulos"><strong>Riqueza en
+Chile: Medición y Tributación</strong></a><br> Ignacio Flores and Pablo
+Gutierrez <br> in <em>Impuestos justos para el Chile que viene: desafíos
+y propuestas para un nuevo pacto fiscal</em> <br> ed: Atria and Otero
+(2021) <br> <button data-toggle="collapse" data-target="#impjust1"> +
+Abstract</button>
+<div id="impjust1" class="collapse">
+<p>Chile es uno de los países con los mayores índices de desigualdad
+económica a nivel mundial en términos de ingresos. Aunque exista poca
+información a nivel local, la literatura internacional nos indica que la
+desigualdad patrimonial es probablemente aún mayor. Este capítulo
+realiza algunos de los primeros pasos para medir la concentración de la
+riqueza en Chile de manera sólida, transparente y comparable
+internacionalmente. Al combinar nuestras estimaciones con datos de
+estudios previos, estimamos que un impuesto patrimonial marginal y
+progresivo, que afectaría a menos del 0.5% de la población, tendría un
+potencial recaudatorio de hasta un 1.5% del PIB</p>
+</div>
+<p><br></p>
+<a href="https://www.impuestosjustos.io/capitulos"><strong>Desigualdad y
+Distribución del Crecimiento Económico en Chile</strong></a> <br>
+Ignacio Flores <br> in <em>Impuestos justos para el Chile que viene:
+desafíos y propuestas para un nuevo pacto fiscal</em> <br> ed: Atria and
+Otero (2021) <br>
+<button data-toggle="collapse" data-target="#impjust2"> +
+Abstract</button>
+<div id="impjust2" class="collapse">
+<p>Durante las últimas dos décadas, los datos fiscales han servido para
+mejorar las estadísticas mundiales sobre la distribución de los ingresos
+y de la riqueza. El ejemplo más reciente son las Cuentas Nacionales
+Distributivas impulsadas por el World Inequality Database, que combinan
+diversas fuentes de datos para estudiar la desigualdad. En este
+capítulo, se presentan en detalle los resultados para el caso chileno.
+Estos ponen en duda el consenso ampliamente aceptado, según el cual la
+desigualdad habría disminuido progresivamente durante el último periodo
+democrático. Por el contrario, al incluir los ingresos más altos y
+corregir las rentas de capital, el nivel de concentración de los
+ingresos no solamente aumenta considerablemente, sino que también
+cambian las tendencias de desigualdad. En vez de caer, estas parecen
+aumentar levemente durante ultimas dos décadas, manteniéndose a niveles
+extremos, por lo menos desde el año 2000.</p>
+</div>
+<p><br></p>
+</div>
+<div id="guidelines-and-reports" class="section level3">
+<h3>Guidelines and reports</h3>
+<a
+href="https://www.cepal.org/es/publicaciones/48242-desigualdad-ingreso-la-republica-dominicana-2012-2019-revision-partir-la"><strong>Estadísticas
+distributivas en República Dominicana: una revisión a partir de la
+combinación de fuentes</strong></a> <br> Facundo Alvaredo, Mauricio De
+Rosa, Ignacio Flores and Marc Morgan <br> in <em>Documentos de Proyectos
+CEPAL</em> <br> <button data-toggle="collapse" data-target="#cepal_dom">
++ Abstract</button>
+<div id="cepal_dom" class="collapse">
+<p>Este documento presenta una revisión de las estadísticas
+distributivas en República Dominicana a partir de la combinación de
+distintas fuentes de información: encuestas de hogares, registros
+tributarios y cuentas nacionales. Es el resultado del proceso de
+colaboración en curso entre el Gobierno de la República Dominicana, la
+Comisión Económica para América Latina y el Caribe (CEPAL) y el World
+Inequality Lab (WIL), como parte del proyecto “Inequality: Innovative
+approaches for examining inequality through integration of different
+data sources” del 13er Tramo de la Cuenta para el Desarrollo de las
+Naciones Unidas. Se presentan estimaciones preliminares de la
+desigualdad del ingreso con base en (i) las encuestas de hogares,
+armonizadas por CEPAL; (ii) las encuestas ajustadas usando registros
+tributarios; (iii) las encuestas escaladas al ingreso de los hogares en
+cuentas nacionales; y, finalmente (iv) imputaciones de otros ingresos
+para llegar a la distribución del ingreso nacional. Se presenta asimismo
+una discusión exploratoria de las tendencias encontradas.</p>
+</div>
+<p><br></p>
+<a href="pdf/nota-reforma-tributaria-chl-2022.pdf"><strong>Diagnóstico
+Distributivo de Ingreso y Patrimonio, y Análisis de la Propuesta de
+Reforma Tributaria</strong></a> <br> Wealth section (4): Ignacio Flores,
+Pablo Gutierrez and Damián Vergara <br> in <em>Publicaciones del
+Ministerio de Hacienda de Chile</em> <br>
+<button data-toggle="collapse" data-target="#diagnos_hac"> +
+Abstract</button>
+<div id="diagnos_hac" class="collapse">
+<p>Esta sección indaga en la propuesta de reforma del Impuesto al
+Patrimonio en Chile a finales del año 2022, introducida por el gobierno
+de Gabriel Boric. El equipo académico a cargo de este informe no
+participó en el diseño del proyecto de ley, por lo que el análisis de
+las propuestas se remite a estimaciones usando parámetros provistos por
+el Ministerio de Hacienda. La sección se estructura de la siguiente
+manera. Primero se describe brevemente la reforma. Luego se detalla en
+términos generales la metodología utilizada para realizar las
+estimaciones. Finalmente, se presentan y discuten los resultados.</p>
+</div>
+<p><br></p>
+<a
+href="https://wid.world/document/income-inequality-series-for-latin-america-world-inequality-lab-technical-note-2020-02/"><strong>Inequality
+in Latin America revisited: insights from distributional national
+accounts</strong></a> <br> Mauricio De Rosa, Ignacio Flores and Marc
+Morgan <br> in <em>WID.world Technical notes</em> (2020) <br>
+<button data-toggle="collapse" data-target="#technote2020"> +
+Abstract</button>
+<div id="technote2020" class="collapse">
+<p>This document provides an overview of the sources and methods behind
+the Distributional National Accounts (DINA) series presented in the
+World Inequality Database (WID.world, <a href="https://wid.world"
+class="uri">https://wid.world</a>) for Latin America in the November
+2020 update. Our estimates distribute total pre-tax national income to
+resident individuals, following the DINA guidelines. For that purpose,
+we combine a variety of data sources, namely harmonized household
+surveys, income tax records, social security registers, and national
+accounts. The available information allows us to study ten countries,
+covering around 80% of the region’s population over the last two
+decades.</p>
+</div>
+<p><br></p>
+<a
+href="https://wid.world/document/distributional-national-accounts-guidelines-2020-concepts-and-methods-used-in-the-world-inequality-database/"><strong>Distributional
+National Accounts guidelines</strong></a> <br> with co-authors <br>
+<em>WID.world Working Paper Series</em> (Jun 2021) <br>
+<button data-toggle="collapse" data-target="#dina_guides"> +
+Abstract</button>
+<div id="dina_guides" class="collapse">
+<p>The purpose of these Distributional National Accounts (DINA)
+guidelines is to present the concepts, data sources and methods used in
+the World Inequality Database (WID). The first version was published in
+2016. This second edition constitutes the first major revision. These
+new guidelines have been reorganized for clarity, and extended with a
+lot of new and revised material. In recent years, the WIL has been
+leading efforts in creating “distributional national accounts.” The goal
+is to provide estimates of the distribution of income and wealth that
+are harmonized over time and across countries, that are consistent with
+the macroeconomic aggregates produced by national statistical
+institutes, and that can therefore be viewed as a distributional
+extension of the existing international System of National Accounts
+(SNA).</p>
+</div>
+<p><br></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
