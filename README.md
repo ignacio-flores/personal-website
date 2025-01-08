@@ -3,5 +3,5 @@
 This is the source code for my personal website [https://ignacioflores.com](https://ignacioflores.com) 
 
 <div align="center">
-<img src="images/website-screenshot.png" width="900" />
+<img src="www/images/website-screenshot.png" width="900" />
 </div>
