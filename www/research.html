@@ -13,7 +13,7 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -54,6 +54,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -173,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -182,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -235,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -349,32 +350,34 @@ reduced wealth at the lower end of the distribution.</p>
 </div>
 <div id="publications-in-academic-journals" class="section level3">
 <h3>Publications in academic journals</h3>
-<a href="pdf/the-inequality-we-measure.pdf"><strong>The Inequality (or
+<a href="https://doi.org/10.31389/eco.418"><strong>The Inequality (or
 the Growth) we Measure: Data Gaps and the Distribution of
 Incomes</strong></a><br> Facundo Alvaredo, Mauricio De Rosa, Ignacio
-Flores and Marc Morgan <br> in <em>Economía, LACEA Journal</em>
-(<em>forthcoming</em>)
+Flores and Marc Morgan <br> in <em>Economía, LACEA Journal</em> 24, no.
+1 (2025): 166–186.
 <br><button data-toggle="collapse" data-target="#growth_we_measure"> +
 Abstract, </button> <a
 href="https://osf.io/preprints/socarxiv/fs5jn/">Working Paper</a>
 <div id="growth_we_measure" class="collapse">
-<p>There is a large gap between income estimates used in inequality
-studies and macroeconomic statistics. This makes it hard to assess how
-economic growth is distributed across the population, and to what extent
-mainstream distributional statistics are an accurate representation of
-income flows. We take stock of these discrepancies by confronting
-estimates of the income distribution from surveys, administrative
-records and aggregates from the system of national accounts, thoroughly
-documenting them over the past two decades for ten Latin American
-countries. We find that surveys only account for around half of the
-macroeconomic income in the region. Measurement gaps account for just
-over half of the overall gap on average, while the rest is due to
-conceptual differences across data sets. Measurement gaps have been
-growing fast for many countries, the bulk being due to non-covered
-capital income. We also compare the top tails in administrative data and
-surveys, finding diverging averages –especially for non-wage incomes–
-and different shapes. We discuss the degree to which inequality levels
-and trends could be affected.</p>
+<p>How much correspondence is there between the income measured in
+microeconomic inequality studies and the income measured in
+macroeconomic growth statistics? The presence of significant gaps would
+question both our assessment of the relevance of economic growth across
+the population and our confidence in mainstream distributional
+statistics as accurate representations of income flows in an economy. In
+this paper, we document large gaps between income estimates from
+household surveys, administrative tax records and national accounts for
+ten Latin American countries, a region that experienced a relatively
+unique combination of strong growth and falling income inequality
+according to official statistics since the early twenty-first century.
+We find that surveys only account for around half of the macroeconomic
+income, and thus growth, of these countries over the past twenty years.
+We estimate that less than half of this gap is due to conceptual
+differences, the remainder coming from growing measurement issues, which
+mainly concern capital incomes. Comparing top tails of administrative
+data and surveys, we find diverging average incomes, especially for
+non-wage incomes, and differing shapes. We discuss the implications of
+such discrepancies for our understanding of inequality and growth.</p>
 </div>
 <p><br></p>
 <a
