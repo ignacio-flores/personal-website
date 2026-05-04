@@ -13,7 +13,7 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -54,7 +54,6 @@ if (window.hljs) {
   }
 }
 </script>
-
 
 
 
@@ -84,9 +83,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -144,15 +140,11 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -181,8 +173,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -190,9 +182,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -236,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -298,58 +297,112 @@ $(document).ready(function () {
 <p><br> <br></p>
 <div id="working-papers" class="section level3">
 <h3>Working papers</h3>
-<a
-href="https://ignacioflores.com/pdf/land-inequality-from-the-sky-wp.pdf"><strong>Does
-Land Consolidation Increase Vulnerability to Climate Change? Evidence
-from French Agriculture</strong></a> <br> Ignacio Flores and Dylan
-Glover <br> in Working Paper (Jan 2025) <br>
+<strong>[NEW!]</strong> <br> <a
+href="https://ignacioflores.com/pdf/land-inequality-from-space.pdf"><strong>Does
+Land Ineaquality Increase Modern Argiculture’s Vulnerability to Climate
+Change? Evidence from Space</strong></a> <br> Ignacio Flores and Dylan
+Glover <br> in Working Paper (March 2026) <br>
 <button data-toggle="collapse" data-target="#gmpqje"> + Abstract,
 </button> <a
 href="https://ignacioflores.com/pdf/land-inequality-from-the-sky-wp.pdf">Working
 Paper</a>
 <div id="gmpqje" class="collapse">
-<p>This paper investigates the consequences of land consolidation on
-agriculture’s vulnerability to extreme temperatures. Combining
-quasi-weekly satellite data on land productivity with farm-level
-cadastral data, we show that while highly consolidated land provides the
-majority of the country’s food production, it suffers disproportionately
-from extreme weather events. We find that a key driver of resilience is
-the negative relation between land consolidation and biological
-diversity, which helps buffering the adverse effects of heat-shocks.
-This implies a trade-off between productivity and resilience, which
-becomes critical as heat-shocks grow stronger and more frequent.</p>
-</div>
-<p><br></p>
-<a
-href="https://ignacioflores.com/pdf/from-housing-gains.pdf"><strong>From
-Housing Gains to Pension Losses: New Methods to Reveal Wealth Inequality
-Dynamics in Chile</strong></a> <br> Bastián Castro Nofal, Ignacio Flores
-and Pablo Gutierrez Cubillos <br> submitted to <em>Journal of Public
-Economics</em> (March 2025) <br>
-<button data-toggle="collapse" data-target="#fromhous"> + Abstract,
-</button> <a
-href="https://ignacioflores.com/pdf/from-housing-gains.pdf">Working
-Paper</a>
-<div id="fromhous" class="collapse">
-<p>This paper examines wealth inequality dynamics in Chile from 2007 to
-2021, focusing on two key macroeconomic events: the sharp rise in
-housing prices after the introduction of a real estate value-added tax
-in 2016 and the substantial liquidation of pension assets through early
-withdrawals during the pandemic. We introduce a methodological
-innovation that aims to improve the measurement of wealth inequality by
-integrating administrative pension fund records into household wealth
-surveys using machine learning techniques. Our results reveal extreme
-levels of wealth concentration, with the top 10% holding approximately
-two-thirds of national private wealth. However, inequality slightly
-declined over the period, particularly after 2016, as the outcome of two
-opposing forces: housing appreciation, which benefited middle-class
-households, and pension fund withdrawals, which disproportionately
-reduced wealth at the lower end of the distribution.</p>
+<p>Agricultural land consolidation delivers economic efficiency gains
+through scale economies in costs, but adverse climate shocks primarily
+affect the biological production function, not the cost structure. This
+paper investigates whether the ownership distribution that maximizes
+aggregate output also maximizes vulnerability to extreme heat. Combining
+satellite spectrometry of crop biomass, farm-level cadastral records,
+and meteorological data at quasi-weekly frequencies from 2015 through
+2021, we estimate dynamic causal effects of staggered heat stress
+exposure on gross primary production (GPP) – a measure of the biological
+base of agricultural output, stripped of factor costs and prices –
+during the prime maturation and harvesting season in France. Under
+extreme heat more unequally distributed farmland suffers significantly
+larger GPP losses, with effects translating directly to year-end yield
+declines. We present evidence that a key driver of this vulnerability is
+the proportion of arable land allocated to protective seminatural
+ecosystems, farm hectares that produce no yield but buffer adjacent
+crops against heat stress. We conjecture that under scale economies, the
+opportunity cost of maintaining these buffers rises with operational
+scale, so high-inequality landscapes systematically under-provide this
+ecological protection. This pattern does not reduce to average farm
+size: the land Gini captures the polarization of the scale distribution
+which shapes both the composition of production and, critically, the
+landscape-level vulnerability under climate change. We examine the
+incentives formally, with an application to the European Union’s Common
+Agricultural Policy and conjecture that local land Ginis are informative
+statistics for the effectiveness of subsidies aimed at ecosystem
+maintenance.</p>
 </div>
 <p><br></p>
 </div>
 <div id="publications-in-academic-journals" class="section level3">
 <h3>Publications in academic journals</h3>
+<strong>[NEW!]</strong> <br> <a
+href="https://ignacioflores.com/pdf/from-housing-gains.pdf"><strong>From
+Housing Gains to Pension Losses: Micro-Macro Integration to Reveal
+Wealth Inequality Dynamics in Chile</strong></a> <br> Bastián Castro
+Nofal, Ignacio Flores and Pablo Gutierrez Cubillos <br> in the
+<em>Journal of Public Economics</em> (forthcoming) <br>
+<button data-toggle="collapse" data-target="#fromhous"> + Abstract,
+</button> <a
+href="https://ignacioflores.com/pdf/from-housing-gains.pdf">Working
+Paper</a>
+<div id="fromhous" class="collapse">
+<p>This paper examines the levels and dynamics of wealth inequality in
+Chile between 2007 and 2021, in a context where the private pension
+system is mandatory and government housing policies are centered on
+private ownership. We focus on two major macroeconomic events: the sharp
+increase in housing prices following the introduction of a value-added
+tax on new dwellings in 2016 and the large-scale liquidation of pension
+assets through early withdrawals during the recent pandemic. To do so,
+we construct a micro–macro consistent wealth distribution by extending
+existing methodologies to integrate administrative pension fund balances
+into household wealth surveys using machine learning techniques. Our
+results reveal pronounced wealth concentration: the top 1% hold roughly
+one-third of total private wealth —levels comparable to those observed
+in the United States— driven by their disproportionate ownership of
+financial assets. By contrast, the bottom 50% hold 7–9%, primarily
+through housing and pension assets, shares that exceed those reported in
+most European countries. We also document a modest decline in wealth
+inequality over the period, particularly after 2016. A counterfactual
+analysis suggests that this decline reflects the interaction of two
+opposing forces: housing appreciation, which predominantly benefited the
+bottom 90% of households, and pension withdrawals, which reduced wealth
+across the distribution while relatively increasing inequality. Our
+findings on levels, trends, and counterfactuals are robust across
+alternative methodological specifications.</p>
+</div>
+<p><br></p>
+<strong>[NEW!]</strong> <br> <a
+href="https://www.nature.com/articles/s41597-026-07105-6"><strong>Wealth
+composition, distribution, and transmission: The Graduate Center Wealth
+Project data warehouse.</strong></a><br> with the GC Wealth Project team
+<br> in <em>Nature: Sci Data</em> (2026) <br>
+<button data-toggle="collapse" data-target="#gcwea"> + Abstract,
+</button>
+<div id="gcwea" class="collapse">
+<p>Private wealth, as well as its distribution and intergenerational
+transmission have become much-debated issues. However, existing evidence
+remains fragmented, context-dependent, and sometimes contested. This
+data descriptor introduces the GC Wealth Project data warehouse, a
+dataset covering multiple countries and time periods, designed to
+address these challenges. The dataset consolidates most existing
+evidence on private wealth and undertakes a significant data
+harmonization effort. We supplement each data point with extensive
+metadata on methodology and add new data. The data warehouse features an
+extensive collection of information on the household wealth levels and
+balance sheets, along with distributional statistics from a wide range
+of sources. Moreover, it draws together data on wealth transfer tax
+revenues, and tax features such as rates, exemption thresholds, and tax
+schedules. The broad range of data sources in the warehouse allows users
+to assess the degree of heterogeneity of estimates, and how
+methodological choices affect measurement outcomes. The new data points
+and policy indicators also allow extending quantitative analysis of
+wealth and public policy.</p>
+</div>
+<p><br></p>
 <a href="https://doi.org/10.31389/eco.418"><strong>The Inequality (or
 the Growth) we Measure: Data Gaps and the Distribution of
 Incomes</strong></a><br> Facundo Alvaredo, Mauricio De Rosa, Ignacio

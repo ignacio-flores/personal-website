@@ -1,0 +1,137 @@
+---
+title: "Research"
+---
+
+<br>
+<br>
+
+
+### Working papers
+
+
+**[NEW!]** <br>
+[**Does Land Ineaquality Increase Modern Argiculture's Vulnerability to Climate Change? Evidence from Space**](https://ignacioflores.com/pdf/land-inequality-from-space.pdf)  <br> Ignacio Flores and Dylan Glover <br> in Working Paper (March 2026) <br>
+<button data-toggle="collapse" data-target="#gmpqje">	&plus; Abstract, </button> [Working Paper](https://ignacioflores.com/pdf/land-inequality-from-the-sky-wp.pdf)
+<div id="gmpqje" class="collapse"> 
+Agricultural land consolidation delivers economic efficiency gains through scale economies in costs, but adverse climate shocks primarily affect the biological production function, not the cost structure. This paper investigates whether the ownership distribution that maximizes aggregate output also maximizes vulnerability to extreme heat. Combining satellite spectrometry of crop biomass, farm-level cadastral records, and meteorological data at quasi-weekly frequencies from 2015 through 2021, we estimate dynamic causal effects of staggered heat stress exposure on gross primary production (GPP) -- a measure of the biological base of agricultural output, stripped of factor costs and prices -- during the prime maturation and harvesting season in France. Under extreme heat more unequally distributed farmland suffers significantly larger GPP losses, with effects translating directly to year-end yield declines. We present evidence that a key driver of this vulnerability is the proportion of arable land allocated to protective seminatural ecosystems, farm hectares that produce no yield but buffer adjacent crops against heat stress. We conjecture that under scale economies, the opportunity cost of maintaining these buffers rises with operational scale, so high-inequality landscapes systematically under-provide this ecological protection. This pattern does not reduce to average farm size: the land Gini captures the polarization of the scale distribution which shapes both the composition of production and, critically, the landscape-level vulnerability under climate change. We examine the incentives formally, with an application to the European Union's Common Agricultural Policy and conjecture that local land Ginis are informative statistics for the effectiveness of subsidies aimed at ecosystem maintenance.
+</div><br>
+
+
+### Publications in academic journals
+
+**[NEW!]** <br>
+[**From Housing Gains to Pension Losses: Micro-Macro Integration to Reveal Wealth Inequality Dynamics in Chile**](https://ignacioflores.com/pdf/from-housing-gains.pdf)  <br> Bastián Castro Nofal, Ignacio Flores and Pablo Gutierrez Cubillos <br> in the *Journal of Public Economics* (forthcoming) <br>
+<button data-toggle="collapse" data-target="#fromhous">	&plus; Abstract, </button> [Working Paper](https://ignacioflores.com/pdf/from-housing-gains.pdf)
+<div id="fromhous" class="collapse">
+This paper examines the levels and dynamics of wealth inequality in Chile between 2007 and 2021, in a context where the private pension system is mandatory and government housing policies are centered on private ownership. We focus on two major macroeconomic events: the sharp increase in housing prices following the introduction of a value-added tax on new dwellings in 2016 and the large-scale liquidation of pension assets through early withdrawals during the recent pandemic. To do so, we construct a micro–macro consistent wealth distribution by extending existing methodologies to integrate administrative pension fund balances into household wealth surveys using machine learning techniques. Our results reveal pronounced wealth concentration: the top 1% hold roughly one-third of total private wealth —levels comparable to those observed in the United States— driven by their disproportionate ownership of financial assets. By contrast, the bottom 50% hold 7–9%, primarily through housing and pension assets, shares that exceed those reported in most European countries. We also document a modest
+decline in wealth inequality over the period, particularly after 2016. A counterfactual analysis suggests that this decline reflects the interaction of two opposing forces: housing appreciation, which predominantly benefited the bottom 90% of households, and pension withdrawals, which reduced wealth across the distribution while relatively increasing inequality. Our findings on levels, trends, and counterfactuals are robust across alternative methodological specifications.
+</div><br>
+
+
+**[NEW!]** <br>
+[**Wealth composition, distribution, and transmission: The Graduate Center Wealth Project data warehouse.**](https://www.nature.com/articles/s41597-026-07105-6)<br>
+with the GC Wealth Project team <br> in *Nature: Sci Data* (2026) <br> <button data-toggle="collapse" data-target="#gcwea">	&plus; Abstract, </button> 
+<div id="gcwea" class="collapse">
+Private wealth, as well as its distribution and intergenerational transmission have become much-debated issues. However, existing evidence remains fragmented, context-dependent, and sometimes contested. This data descriptor introduces the GC Wealth Project data warehouse, a dataset covering multiple countries and time periods, designed to address these challenges. The dataset consolidates most existing evidence on private wealth and undertakes a significant data harmonization effort. We supplement each data point with extensive metadata on methodology and add new data. The data warehouse features an extensive collection of information on the household wealth levels and balance sheets, along with distributional statistics from a wide range of sources. Moreover, it draws together data on wealth transfer tax revenues, and tax features such as rates, exemption thresholds, and tax schedules. The broad range of data sources in the warehouse allows users to assess the degree of heterogeneity of estimates, and how methodological choices affect measurement outcomes. The new data points and policy indicators also allow extending quantitative analysis of wealth and public policy.
+</div>
+<br>
+
+[**The Inequality (or the Growth) we Measure: Data Gaps and the Distribution of Incomes**](https://doi.org/10.31389/eco.418)<br> 
+Facundo Alvaredo, Mauricio De Rosa, Ignacio Flores and Marc Morgan <br> in *Economía, LACEA Journal* 24, no. 1 (2025):
+166–186. <br><button data-toggle="collapse" data-target="#growth_we_measure">	&plus; Abstract, </button> [Working Paper](https://osf.io/preprints/socarxiv/fs5jn/)
+<div id="growth_we_measure" class="collapse">
+How much correspondence is there between the income measured in microeconomic inequality studies and the income measured in macroeconomic growth statistics? The presence of significant gaps would question both our assessment of the relevance of economic growth across the population and our confidence in mainstream distributional statistics as accurate representations of income flows in an economy. In this paper, we document large gaps between income estimates from household surveys, administrative tax records and national accounts for ten Latin American countries, a region that experienced a relatively unique combination of strong growth and falling income inequality according to official statistics since the early twenty-first century. We find that surveys only account for around half of the macroeconomic income, and thus growth, of these countries over the past twenty years. We estimate that less than half of this gap is due to conceptual differences, the remainder coming from growing measurement issues, which mainly concern capital incomes. Comparing top tails of administrative data and surveys, we find diverging average incomes, especially for non-wage incomes, and differing shapes. We discuss the implications of such discrepancies for our understanding of inequality and growth.
+</div>
+<br>
+
+[**Wealth inequality in Latin America (2000–2020): data, facts and conjectures**](https://academic.oup.com/ooec/article-pdf/4/Supplement_1/i36/62208611/odae036.pdf)<br> Rafael Carranza, Mauricio De Rosa and Ignacio Flores <br> in *Oxford Open Economics*, Volume 4, Issue Supplement_1, 2025, Pages i36–i54  <br><button data-toggle="collapse" data-target="#wealth_ineq">	&plus; Abstract,</button> [ Replication](https://github.com/ignacio-flores/lacir-wealth)
+<div id="wealth_ineq" class="collapse">
+How has wealth accumulated in Latin America and how is it distributed across households? Despite the region being widely recognized for its extreme income inequality, data on wealth are scarce, partial and often contradictory, making it difficult to answer these basic questions. We estimate wealth aggregates based on macroeconomic data and wealth inequality based on recently available surveys and on administrative data. We contrast our results with those in the literature, with a handful of estimates from administrative sources, and with estimates from Credit Suisse and wid.world. In considering all the evidence, we distinguish reliable facts from what can only be conjectured or speculated. We find that aggregate wealth increased over two decades in four countries, and that wealth inequality is extremely high where it can be measured (with a top 1% share of up to 40%), which is likely to be the case for the whole region. 
+</div> <br>
+
+[**Businesses and inequality in Latin America**](https://academic.oup.com/ooec/article-pdf/4/Supplement_1/i334/62208598/odae031.pdf)<br> Marcela Eslava, Marcela Meléndez, Gabriel Ulyssea, Nicolás Urdaneta and Ignacio Flores <br> in *Oxford Open Economics*, Volume 4, Issue Supplement_1, 2025, Pages i334–i348 <br><button data-toggle="collapse" data-target="#firms_ineq">	&plus; Abstract,</button> 
+<div id="firms_ineq" class="collapse">
+The relationship between businesses and inequality has been a focus of recent attention globally. This chapter summarizes basic facts about this relationship in Latin America (LATAM). Unlike advanced economies where superstar firm growth has prompted concerns over disproportionate income growth at the top, the facts we summarize illustrate that the main concern for LATAM is the extreme prevalence of tiny businesses whose workers and owners tend to populate the bottom income segments. The empirical likelihood that these businesses improve their productivity and grow to hire more workers and pay better wages is also very low. The region displays a deficit of employment generation in small and medium enterprises, by contrast to both micro businesses (including self-employment) and large corporations. While the former tend to remunerate both workers and owners with very low incomes, the latter pay high wages but exhibit low labor shares.
+</div> <br>
+
+[**More Unequal or Not as Rich? Revisting the Latin American exception**](https://www.sciencedirect.com/science/article/pii/S0305750X24002079?via%3Dihub) <br> Mauricio De Rosa, Ignacio Flores and Marc Morgan <br> in *World Development*, 184 (2024) <br> 
+<button data-toggle="collapse" data-target="#moreun">	&plus; Abstract, </button> [Working Paper](https://osf.io/preprints/socarxiv/akq89/), [Website (spanish)](https://distribuciones.info), [Summary](pdf/inequality_matters_jun2023.pdf)
+<div id="moreun" class="collapse">
+Latin America is often portrayed as a global exception to the rising or consolidating income inequality trends of the early twenty-first century. In this paper we revisit this exceptionalism by innovatively combining harmonised surveys, social security and tax data, and national accounts for ten countries. The reconciliation of micro and macro incomes present us with a critical dilemma: either the region is more unequal or it is not as rich as officially reported. Distributing the data gaps shows a more heterogeneous region in terms of inequality trends. Falling inequality is most visible among the bottom 99%, but the trend flattens or reverses in the largest economies once the top 1% and capital incomes are better accounted for. Taxes and transfers do not alter the main picture, except when in-kind social spending is considered. These results confirm the strengths and highlight the limits of Latin America’s redistributive policies during the period.  
+</div><br> 
+
+[**The weight of the rich: Improving surveys using tax data***](https://link.springer.com/article/10.1007/s10888-021-09509-3) <br>
+Thomas Blanchet, Ignacio Flores and Marc Morgan <br> in the *Journal of Economic Inequality*, 1-32 (2022)<br>
+<button data-toggle="collapse" data-target="#weight_of">	&plus; Abstract, </button> [Working Paper & Appendix](https://wid.world/document/the-weight-of-the-rich-improving-surveys-using-tax-data-wid-world-working-paper-2018-12/), [Stata package](https://www.marc-morgan.eu/the-weight-of-the-rich) <br>(*) This paper was awarded the [Atkinson Prize](http://www.ecineq.org/atkinson-prize/) 2023 
+<div id="weight_of" class="collapse">
+Household surveys often fail to capture the top tail of income and wealth distributions, as evidenced by studies based on tax data. Yet to date there is no consensus on how to best reconcile both sources of information, given the multiple biases at play. This paper contributes a novel method, rooted in standard calibration theory, to directly confront the problem of survey non-response between survey micro-data and anonymous tax data under reasonable assumptions. Our key innovation is to endogenously determine a “merging point” between the datasets, above which we start to incorporate information from tax data into the survey, under the assumption that the rate of representativeness is constant, then decreasing with income. This is followed by a “reweighting” and a “replacing” step, which preserves the microdata structure of the original survey, assuming no re-ranking of observations. We illustrate our approach with simulations, which show that our method is robust to the existence of income misreporting, and performs better than alternative methods. We also apply it to real data from five countries, both developed and less developed, finding changes to the levels and trends in income inequality. We discuss several limits to our approach and suggest some guidelines for future research.
+</div><br>  
+
+[**The capital share and income inequality: Increasing gaps between micro and macro-data**](https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10888-021-09482-x&casa_token=RVV9_mGi7BEAAAAA:U5u7L12-XWZzAEohAjlx4xqS1K0_eKPEF9XEcAP323hqI-zVHy97Cnf7Ur09j9XWulzy1qxQmGl2ei51Lg) <br> Ignacio Flores <br>
+in the *Journal of Economic Inequality*, 19(4), 685-706 (2021) <br>
+<button data-toggle="collapse" data-target="#inc_under">	&plus; Abstract, </button> [Request acess](https://rdcu.be/cpQzr), [Code & Data](https://github.com/ignacio-flores/income-under-the-carpet)
+<div id="inc_under" class="collapse">
+In this paper, I study how the contrasting coverage of labour and capital incomes affects inequality estimates. I use national accounts as a benchmark to evaluate the scope of household surveys, for a number of countries, and tax data for the United States. Due to both measurement error and conceptual differences, capital income is always more underestimated. In most countries, the gap grows during the last two decades. Based on accounting identities, I show that inequality estimates are likely affected in level, trend and composition. Surveys thus largely exaggerate the impact of changes in the labour income distribution, while they undermine the capital share and its dynamics. As a reference, in a panel of nineteen countries, households collect half of total capital income, as opposed to corporations; but surveys only capture close to twenty percent of that half, versus seventy percent of total labour income. For any quantile group –e.g. the top 10% or bottom 50% share– a unit increase of its labour income share translates into an increase of nine tenths of a unit in the overall share, for capital income, the effect is only one tenth of a unit. Gaps are narrower but still present in tax data.
+</div><br>  
+
+[**Top incomes in Chile: A historical perspective on income inequality, 1964–2017**](https://onlinelibrary.wiley.com/doi/abs/10.1111/roiw.12441) <br> 
+Ignacio Flores, Claudia Sanhueza, Jorge Atria and Ricardo Mayer <br> 
+in *Review of Income and Wealth*, 66(4), 850-874 (2020) <br> <button data-toggle="collapse" data-target="#top_inc">	&plus; Abstract, </button> [Working Paper](https://wid.world/document/top-income-in-chile-a-historical-perspective-of-income-inequality-1964-2015-wid-world-working-paper-2018-11/), [Appendix](https://wid.world/document/appendix-to-top-income-in-chile-a-historical-perspective-of-income-inequality-1964-2015-wid-world-working-paper-2018-11/), [Code & Data](https://github.com/ignacio-flores/top-incomes-chile.git) 
+<div id="top_inc" class="collapse">
+We present a novel series of Chilean top-income shares covering half a century, mainly based on income-tax declarations and the National Accounts. Such a time frame of analysis is still rare in the literature of developing countries. We distinguish between a fiscal-income series (1964–2017) and an adjusted series (1990–2017). The former covers individual income, while the latter also includes corporate undistributed profits, which affects both levels and trends. The fiscal-income estimates start with low levels and a decreasing trend over the 1960s. They then increase rapidly during the dictatorship years (1973–89). The series ends with a high, yet slowly decreasing, concentration for most of the recent democratic period (1990–2017). By contrast, the adjusted series has followed a U-shape since the return of democracy, contradicting the established consensus on falling inequality over the period. Furthermore, Chile ranks among the most unequal countries in both the OECD and Latin American countries over the period.
+</div><br>  
+
+### Chapters in books 
+
+[**Riqueza en Chile: Medición y Tributación**](https://www.impuestosjustos.io/capitulos)<br>
+Ignacio Flores and Pablo Gutierrez <br> in *Impuestos justos para el Chile que viene: desafíos y propuestas para un nuevo pacto fiscal* <br> ed: Atria and Otero (2021) <br>
+<button data-toggle="collapse" data-target="#impjust1">	&plus; Abstract</button> 
+<div id="impjust1" class="collapse">
+Chile es uno de los países con los mayores índices de desigualdad económica a nivel mundial en términos de ingresos. Aunque exista poca información a nivel local, la literatura internacional nos indica que la desigualdad patrimonial es probablemente aún mayor. Este capítulo realiza algunos de los primeros pasos para medir la concentración de la riqueza en Chile de manera sólida, transparente y comparable internacionalmente. Al combinar nuestras estimaciones con datos de estudios previos, estimamos que un impuesto patrimonial marginal y progresivo, que afectaría a menos del 0.5% de la población, tendría un potencial recaudatorio de hasta un 1.5% del PIB
+</div><br>  
+
+[**Desigualdad y Distribución del Crecimiento Económico en Chile**](https://www.impuestosjustos.io/capitulos) <br> Ignacio Flores <br> in *Impuestos justos para el Chile que viene: desafíos y propuestas para un nuevo pacto fiscal* <br> ed: Atria and Otero (2021) <br>
+<button data-toggle="collapse" data-target="#impjust2">	&plus; Abstract</button>
+<div id="impjust2" class="collapse">
+Durante las últimas dos décadas, los datos fiscales han servido para mejorar las estadísticas mundiales sobre la distribución de los ingresos y de la riqueza. El ejemplo más reciente son las Cuentas Nacionales Distributivas impulsadas por el World Inequality Database, que combinan diversas fuentes de datos para estudiar la desigualdad. En este capítulo, se presentan en detalle los resultados para el caso chileno. Estos ponen en duda el consenso ampliamente aceptado, según el cual la desigualdad habría disminuido progresivamente durante el último periodo democrático. Por el contrario, al incluir los ingresos más altos y corregir las rentas de capital, el nivel de concentración de los ingresos no solamente aumenta considerablemente, sino que también cambian las tendencias de desigualdad. En vez de caer, estas parecen aumentar levemente durante ultimas dos décadas, manteniéndose a niveles extremos, por lo menos desde el año 2000.
+</div><br>  
+
+### Guidelines and reports 
+
+[**Medición de la desigualdad mediante la integración de fuentes de datos**](https://www.cepal.org/es/publicaciones/81192-medicion-la-desigualdad-mediante-la-integracion-fuentes-datos) <br> 
+Facundo Alvaredo, Mauricio De Rosa, Ignacio Flores and Marc Morgan <br> 
+in *Documentos de Proyectos CEPAL* <br>
+<button data-toggle="collapse" data-target="#cepal_gui">	&plus; Abstract</button>
+<div id="cepal_gui" class="collapse">
+En este documento se presentan los principios fundamentales de las cuentas nacionales distributivas y su aplicación práctica en el contexto de la información disponible en los países de América Latina. La metodología propuesta representa un esfuerzo significativo por mejorar las prácticas actuales, proporcionando mediciones de la desigualdad del ingreso que complementan las que se obtienen a través de las encuestas de hogares. Dadas las limitaciones inherentes a la información disponible, esta metodología debe considerarse como una estrategia en evolución cuya aplicación debe llevarse adelante con un enfoque crítico y reflexivo. Este trabajo es el resultado del proceso de colaboración entre la Comisión Económica para América Latina y el Caribe (CEPAL) y World Inequality Lab, con el apoyo del proyecto “Innovative approaches for examining inequality through integration of different data sources in Latin America and the Caribbean” del decimotercer tramo de la Cuenta de las Naciones Unidas para el Desarrollo..
+</div><br>  
+
+[**Estadísticas distributivas en República Dominicana: una revisión a partir de la combinación de fuentes**](https://www.cepal.org/es/publicaciones/48242-desigualdad-ingreso-la-republica-dominicana-2012-2019-revision-partir-la) <br> 
+Facundo Alvaredo, Mauricio De Rosa, Ignacio Flores and Marc Morgan <br> 
+in *Documentos de Proyectos CEPAL* <br>
+<button data-toggle="collapse" data-target="#cepal_dom">	&plus; Abstract</button>
+<div id="cepal_dom" class="collapse">
+Este documento presenta una revisión de las estadísticas distributivas en República Dominicana a partir de la combinación de distintas fuentes de información: encuestas de hogares, registros tributarios y cuentas nacionales. Es el resultado del proceso de colaboración en curso entre el Gobierno de la República Dominicana, la Comisión Económica para América Latina y el Caribe (CEPAL) y el World Inequality Lab (WIL), como parte del proyecto “Inequality: Innovative approaches for examining inequality through integration of different data sources” del 13er Tramo de la Cuenta para el Desarrollo de las Naciones Unidas. Se presentan estimaciones preliminares de la desigualdad del ingreso con base en (i) las encuestas de hogares, armonizadas por CEPAL; (ii) las encuestas ajustadas usando registros tributarios; (iii) las encuestas escaladas al ingreso de los hogares en cuentas nacionales; y, finalmente (iv) imputaciones de otros ingresos para llegar a la distribución del ingreso nacional. Se presenta asimismo una discusión exploratoria de las tendencias encontradas.
+</div><br>  
+
+[**Diagnóstico Distributivo de Ingreso y Patrimonio, y Análisis de la Propuesta de Reforma Tributaria**](pdf/nota-reforma-tributaria-chl-2022.pdf) <br> Wealth section (4): Ignacio Flores, Pablo Gutierrez and Damián Vergara <br>
+in *Publicaciones del Ministerio de Hacienda de Chile* <br>
+<button data-toggle="collapse" data-target="#diagnos_hac">	&plus; Abstract</button>
+<div id="diagnos_hac" class="collapse">
+Esta sección indaga en la propuesta de reforma del Impuesto al Patrimonio en Chile a finales del año 2022, introducida por el gobierno de Gabriel Boric. El equipo académico a cargo de este informe no participó en el diseño del proyecto de ley, por lo que el análisis de las propuestas se remite a estimaciones usando parámetros provistos por el Ministerio de Hacienda. La sección se estructura de la siguiente manera. Primero se describe brevemente la reforma. Luego se detalla en términos generales la metodología utilizada para realizar las estimaciones. Finalmente, se presentan y discuten los resultados.
+</div><br>  
+
+[**Inequality in Latin America revisited: insights from distributional national accounts**](https://wid.world/document/income-inequality-series-for-latin-america-world-inequality-lab-technical-note-2020-02/) <br> 
+Mauricio De Rosa, Ignacio Flores and Marc Morgan <br> 
+in *WID.world Technical notes* (2020) <br>
+<button data-toggle="collapse" data-target="#technote2020">	&plus; Abstract</button>
+<div id="technote2020" class="collapse">
+This document provides an overview of the sources and methods behind the Distributional National Accounts (DINA) series presented in the World Inequality Database (WID.world, https://wid.world) for Latin America in the November 2020 update. Our estimates distribute total pre-tax national income to resident individuals, following the DINA guidelines. For that purpose, we combine a variety of data sources, namely harmonized household surveys, income tax records, social security registers, and national accounts. The available information allows us to study ten countries, covering around 80% of the region’s population over the last two decades.
+</div><br>  
+
+[**Distributional National Accounts guidelines**](https://wid.world/document/distributional-national-accounts-guidelines-2020-concepts-and-methods-used-in-the-world-inequality-database/) <br> with co-authors <br> *WID.world Working Paper Series* (Jun 2021) <br>
+<button data-toggle="collapse" data-target="#dina_guides">	&plus; Abstract</button>
+<div id="dina_guides" class="collapse">
+The purpose of these Distributional National Accounts (DINA) guidelines is to present the concepts, data sources and methods used in the World Inequality Database (WID). The first version was published in 2016. This second edition constitutes the first major revision. These new guidelines have been reorganized for clarity, and extended with a lot of new and revised material. In recent years, the WIL has been leading efforts in creating “distributional national accounts.” The goal is to provide estimates of the distribution of income and wealth that are harmonized over time and across countries, that are consistent with the macroeconomic aggregates produced by national statistical institutes, and that can therefore be viewed as a distributional extension of the existing international System of National Accounts (SNA).
+</div><br>  
+
