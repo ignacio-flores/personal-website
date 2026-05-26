@@ -7,14 +7,14 @@ title: "Projects"
 
 ### Websites and databases
 
-[WID.world](https://wid.world) - Directors: [Facundo Alvaredo](https://sites.google.com/site/alvaredo/), [Thomas Piketty](http://piketty.pse.ens.fr/en/), [Emmanuel Saez](https://eml.berkeley.edu/~saez/) and [Gabriel Zucman](https://gabriel-zucman.eu). <br> 
-(*) I am responsible of the Data on Latin America and the Caribbean, including its progressive improvement and yearly updates. <br> 
+[WID.world](https://wid.world) - Directors: [Lucas Chancel](https://lucaschancel.com/), [Rowaida Moshrif](https://sites.google.com/view/rowaidamoshrif/home), and [Thomas Piketty](http://piketty.pse.ens.fr/en/). <br> 
+(*) I am responsible of overseeing Statistical Methods across regions, and of producing (and updating) inequality statistics from Latin America and the Caribbean. <br> 
 <button data-toggle="collapse" data-target="#widworld">	&plus; Description</button>
 <div id="widworld" class="collapse">
 A project hosted by the [Paris School of Economics](https://www.parisschoolofeconomics.eu), The World Inequality Database is one of the world's most comprehensive data sources on the distribution of income and wealth worldwide. 
 </div><br>  
 
-[The GC Wealth Project](https://wealthproject.gc.cuny.edu) - Director: [Salvatore Morelli](https://sites.google.com/site/salvatoremorelli/) <br> (*) I am responsible for designing and overseeing the backend data architecture <br> 
+[The GC Wealth Project](https://wealthproject.gc.cuny.edu) - Director: [Salvatore Morelli](https://sites.google.com/site/salvatoremorelli/) <br> (*) I am responsible for designing and overseeing the backend data architecture, as well as for web-design and data visualization tools. <br> 
 <button data-toggle="collapse" data-target="#gcwealth">	&plus; Description</button>
 <div id="gcwealth" class="collapse">
 A project of the [Stone Center at the City University of New York](https://stonecenter.gc.cuny.edu), aimed at expanding and consolidating access to the most up-to-date research and information on wealth, wealth inequalities, and wealth transfers and related tax policies, across countries and over time.

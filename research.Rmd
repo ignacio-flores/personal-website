@@ -9,7 +9,7 @@ title: "Research"
 ### Working papers
 
 
-**[NEW!]** <br>
+<span class="new-label">[NEW!]</span> <br>
 [**Does Land Ineaquality Increase Modern Argiculture's Vulnerability to Climate Change? Evidence from Space**](https://ignacioflores.com/pdf/land-inequality-from-space.pdf)  <br> Ignacio Flores and Dylan Glover <br> in Working Paper (March 2026) <br>
 <button data-toggle="collapse" data-target="#gmpqje">	&plus; Abstract, </button> [Working Paper](https://ignacioflores.com/pdf/land-inequality-from-the-sky-wp.pdf)
 <div id="gmpqje" class="collapse"> 
@@ -19,7 +19,7 @@ Agricultural land consolidation delivers economic efficiency gains through scale
 
 ### Publications in academic journals
 
-**[NEW!]** <br>
+<span class="new-label">[NEW!]</span> <br>
 [**From housing gains to pension losses: Micro-macro integration to reveal wealth inequality dynamics in Chile**](https://www.sciencedirect.com/science/article/abs/pii/S0047272726001015)  <br> Bastián Castro Nofal, Ignacio Flores and Pablo Gutierrez Cubillos <br> in the *Journal of Public Economics*, 259, 105665. (2026) <br>
 <button data-toggle="collapse" data-target="#fromhous">	&plus; Abstract, </button> [Working Paper](https://ignacioflores.com/pdf/from-housing-gains.pdf)
 <div id="fromhous" class="collapse">
@@ -28,7 +28,7 @@ decline in wealth inequality over the period, particularly after 2016. A counter
 </div><br>
 
 
-**[NEW!]** <br>
+<span class="new-label">[NEW!]</span> <br>
 [**Wealth composition, distribution, and transmission: The Graduate Center Wealth Project data warehouse.**](https://www.nature.com/articles/s41597-026-07105-6)<br>
 with the GC Wealth Project team <br> in *Nature: Sci Data* (2026) <br> <button data-toggle="collapse" data-target="#gcwea">	&plus; Abstract, </button> 
 <div id="gcwea" class="collapse">
@@ -134,4 +134,3 @@ This document provides an overview of the sources and methods behind the Distrib
 <div id="dina_guides" class="collapse">
 The purpose of these Distributional National Accounts (DINA) guidelines is to present the concepts, data sources and methods used in the World Inequality Database (WID). The first version was published in 2016. This second edition constitutes the first major revision. These new guidelines have been reorganized for clarity, and extended with a lot of new and revised material. In recent years, the WIL has been leading efforts in creating “distributional national accounts.” The goal is to provide estimates of the distribution of income and wealth that are harmonized over time and across countries, that are consistent with the macroeconomic aggregates produced by national statistical institutes, and that can therefore be viewed as a distributional extension of the existing international System of National Accounts (SNA).
 </div><br>  
-

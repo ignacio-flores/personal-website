@@ -1,3 +1,12 @@
+:root {
+    --new-label-color: #DF1C44;
+}
+
+.new-label {
+    color: var(--new-label-color);
+    font-weight: 700;
+}
+
 button {
     border: none;
     padding: 0;
