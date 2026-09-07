@@ -1,0 +1,18 @@
+---
+title: Research
+description: Publications, working papers, chapters, and reports by Ignacio Flores.
+---
+
+::: {.content-block}
+::: {.page-intro}
+# Research
+
+My work studies inequality in income, wealth, and land, with a current focus on how distribution shapes resilience to climate change.
+:::
+
+```{r}
+#| results: asis
+source("R/render_content.R")
+render_research("_data/research.yml")
+```
+:::

@@ -1,0 +1,18 @@
+---
+title: Projects
+description: Research infrastructure and open-source software by Ignacio Flores.
+---
+
+::: {.content-block}
+::: {.page-intro}
+# Projects
+
+Selected public research infrastructure, reproducibility repositories, and software to which I contribute.
+:::
+
+```{r}
+#| results: asis
+source("R/render_content.R")
+render_projects("_data/projects.yml")
+```
+:::

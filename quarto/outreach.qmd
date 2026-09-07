@@ -1,0 +1,22 @@
+---
+title: Public writing and media
+description: Selected public writing, interviews, and appearances by Ignacio Flores.
+---
+
+::: {.content-block}
+::: {.page-intro}
+# Public writing and media
+
+Selected op-eds, interviews, talks, and media appearances on inequality, taxation, and public policy.
+:::
+
+```{r}
+#| results: asis
+source("R/render_content.R")
+render_outreach("_data/outreach.yml")
+```
+
+## Watch
+
+<iframe class="video-frame" src="https://www.youtube.com/embed/Zl-QosneKmo" title="Las cadenas de la inequidad — Congreso Futuro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::

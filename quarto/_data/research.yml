@@ -1,0 +1,200 @@
+- section: Working papers
+  status: New
+  title: "Does Land Inequality Increase Modern Agriculture's Vulnerability to Climate Change? Evidence from Space"
+  url: https://ignacioflores.com/pdf/land-inequality-from-space.pdf
+  authors: Ignacio Flores and Dylan Glover
+  venue: Working paper, March 2026
+  tags: [Climate, Land inequality, France]
+  links:
+    - label: Working paper
+      url: https://ignacioflores.com/pdf/land-inequality-from-space.pdf
+  abstract: >-
+    Agricultural land consolidation delivers economic efficiency gains through scale economies in costs, but adverse climate shocks primarily affect the biological production function, not the cost structure. Combining satellite spectrometry of crop biomass, farm-level cadastral records, and meteorological data at quasi-weekly frequencies from 2015 through 2021, we estimate dynamic causal effects of staggered heat stress exposure on gross primary production during the prime maturation and harvesting season in France. Under extreme heat, more unequally distributed farmland suffers significantly larger productivity losses, which translate directly to year-end yield declines. We show that a key driver of this vulnerability is the proportion of arable land allocated to protective seminatural ecosystems, which buffer adjacent crops against heat stress.
+
+- section: Journal articles
+  status: New
+  title: "From housing gains to pension losses: Micro-macro integration to reveal wealth inequality dynamics in Chile"
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0047272726001015
+  authors: Bastián Castro Nofal, Ignacio Flores and Pablo Gutierrez Cubillos
+  venue: Journal of Public Economics, 259, 105665 (2026)
+  tags: [Wealth, Chile, Measurement]
+  links:
+    - label: Working paper
+      url: https://ignacioflores.com/pdf/from-housing-gains.pdf
+  abstract: >-
+    This paper examines the levels and dynamics of wealth inequality in Chile between 2007 and 2021, in a context where the private pension system is mandatory and government housing policies are centered on private ownership. We construct a micro–macro consistent wealth distribution by integrating administrative pension fund balances into household wealth surveys using machine-learning techniques. The results show pronounced wealth concentration, assess the role of housing appreciation and pension withdrawals, and remain robust across alternative methodological specifications.
+
+- section: Journal articles
+  status: New
+  title: "Wealth composition, distribution, and transmission: The Graduate Center Wealth Project data warehouse"
+  url: https://www.nature.com/articles/s41597-026-07105-6
+  authors: With the GC Wealth Project team
+  venue: Scientific Data (2026)
+  tags: [Wealth, Data]
+  links: []
+  abstract: >-
+    This data descriptor introduces a dataset covering multiple countries and time periods that consolidates evidence on private wealth, its distribution, and intergenerational transmission. The warehouse harmonizes data points and metadata on household wealth, balance sheets, wealth-transfer tax revenues, and tax features, helping users assess the heterogeneity of estimates and the consequences of methodological choices.
+
+- section: Journal articles
+  title: "The Inequality (or the Growth) We Measure: Data Gaps and the Distribution of Incomes"
+  url: https://doi.org/10.31389/eco.418
+  authors: Facundo Alvaredo, Mauricio De Rosa, Ignacio Flores and Marc Morgan
+  venue: Economía, LACEA Journal 24(1), 166–186 (2025)
+  tags: [Income, Measurement, Latin America]
+  links:
+    - label: Working paper
+      url: https://osf.io/preprints/socarxiv/fs5jn/
+  abstract: >-
+    How much correspondence is there between income measured in microeconomic inequality studies and income measured in macroeconomic growth statistics? We document large gaps between household surveys, administrative tax records, and national accounts for ten Latin American countries. Surveys account for around half of macroeconomic income, and the unexplained part of the gap increasingly concerns capital incomes, with important implications for how growth and inequality are assessed.
+
+- section: Journal articles
+  title: "Wealth inequality in Latin America (2000–2020): data, facts and conjectures"
+  url: https://academic.oup.com/ooec/article-pdf/4/Supplement_1/i36/62208611/odae036.pdf
+  authors: Rafael Carranza, Mauricio De Rosa and Ignacio Flores
+  venue: Oxford Open Economics 4(Supplement 1), i36–i54 (2025)
+  tags: [Wealth, Latin America]
+  links:
+    - label: Replication
+      url: https://github.com/ignacio-flores/lacir-wealth
+  abstract: >-
+    We estimate wealth aggregates and wealth inequality for Latin America using macroeconomic data, household surveys, and administrative sources. Comparing available evidence, we find that aggregate wealth increased over two decades in four countries and that wealth inequality is extremely high where it can be measured, with top 1% shares reaching 40%.
+
+- section: Journal articles
+  title: "Businesses and inequality in Latin America"
+  url: https://academic.oup.com/ooec/article-pdf/4/Supplement_1/i334/62208598/odae031.pdf
+  authors: Marcela Eslava, Marcela Meléndez, Gabriel Ulyssea, Nicolás Urdaneta and Ignacio Flores
+  venue: Oxford Open Economics 4(Supplement 1), i334–i348 (2025)
+  tags: [Latin America, Firms]
+  links: []
+  abstract: >-
+    This chapter summarizes facts about businesses and inequality in Latin America. The central concern is the extreme prevalence of tiny businesses, whose workers and owners tend to populate the bottom income segments, alongside a deficit of employment generation in small and medium enterprises.
+
+- section: Journal articles
+  title: "More Unequal or Not as Rich? Revisiting the Latin American Exception"
+  url: https://www.sciencedirect.com/science/article/pii/S0305750X24002079?via%3Dihub
+  authors: Mauricio De Rosa, Ignacio Flores and Marc Morgan
+  venue: World Development, 184 (2024)
+  tags: [Income, Latin America, Measurement]
+  links:
+    - label: Working paper
+      url: https://osf.io/preprints/socarxiv/akq89/
+    - label: Spanish website
+      url: https://distribuciones.info
+    - label: Summary
+      url: https://ignacioflores.com/pdf/inequality_matters_jun2023.pdf
+  abstract: >-
+    Latin America is often portrayed as an exception to global trends of rising or consolidated inequality. Combining harmonized surveys, social-security and tax data, and national accounts for ten countries, we show a more heterogeneous regional picture. Falling inequality is most visible below the top 1%, while better accounting for capital incomes can flatten or reverse trends in the largest economies.
+
+- section: Journal articles
+  title: "The Weight of the Rich: Improving Surveys Using Tax Data"
+  url: https://link.springer.com/article/10.1007/s10888-021-09509-3
+  authors: Thomas Blanchet, Ignacio Flores and Marc Morgan
+  venue: Journal of Economic Inequality, 20(1), 119–150 (2022)
+  tags: [Income, Measurement]
+  links:
+    - label: Working paper & appendix
+      url: https://wid.world/document/the-weight-of-the-rich-improving-surveys-using-tax-data-wid-world-working-paper-2018-12/
+    - label: Stata package
+      url: https://www.marc-morgan.eu/the-weight-of-the-rich
+  abstract: >-
+    Household surveys often fail to capture the top tail of income and wealth distributions. This paper develops a calibration-based method to reconcile survey microdata and anonymous tax data by endogenously determining a merging point, then reweighting and replacing observations while preserving the original microdata structure. Simulations and applications to five countries show its robustness and performance against alternatives.
+
+- section: Journal articles
+  title: "The Capital Share and Income Inequality: Increasing Gaps Between Micro and Macro Data"
+  url: https://link.springer.com/article/10.1007/s10888-021-09482-x
+  authors: Ignacio Flores
+  venue: Journal of Economic Inequality, 19(4), 685–706 (2021)
+  tags: [Income, Measurement]
+  links:
+    - label: Request access
+      url: https://rdcu.be/cpQzr
+    - label: Code & data
+      url: https://github.com/ignacio-flores/income-under-the-carpet
+  abstract: >-
+    I study how contrasting coverage of labour and capital incomes affects inequality estimates. National accounts provide a benchmark for household surveys in a number of countries, while tax data are used for the United States. Capital income is consistently more underestimated, and the gap grows over time, affecting estimates of inequality levels, trends, and composition.
+
+- section: Journal articles
+  title: "Top Incomes in Chile: A Historical Perspective on Income Inequality, 1964–2017"
+  url: https://onlinelibrary.wiley.com/doi/abs/10.1111/roiw.12441
+  authors: Ignacio Flores, Claudia Sanhueza, Jorge Atria and Ricardo Mayer
+  venue: Review of Income and Wealth, 66(4), 850–874 (2020)
+  tags: [Income, Chile, History]
+  links:
+    - label: Working paper
+      url: https://wid.world/document/top-income-in-chile-a-historical-perspective-of-income-inequality-1964-2015-wid-world-working-paper-2018-11/
+    - label: Appendix
+      url: https://wid.world/document/appendix-to-top-income-in-chile-a-historical-perspective-of-income-inequality-1964-2015-wid-world-working-paper-2018-11/
+    - label: Code & data
+      url: https://github.com/ignacio-flores/top-incomes-chile.git
+  abstract: >-
+    We present a novel series of Chilean top-income shares covering half a century, based mainly on income-tax declarations and national accounts. The series distinguishes fiscal income from an adjusted measure that includes corporate undistributed profits, revealing a U-shaped pattern after the return to democracy that challenges the consensus on falling inequality.
+
+- section: Book chapters
+  title: "Riqueza en Chile: Medición y Tributación"
+  url: https://www.impuestosjustos.io/capitulos
+  authors: Ignacio Flores and Pablo Gutierrez
+  venue: "In Impuestos justos para el Chile que viene: desafíos y propuestas para un nuevo pacto fiscal, ed. Atria and Otero (2021)"
+  tags: [Wealth, Chile]
+  links: []
+  abstract: >-
+    Este capítulo presenta algunos de los primeros pasos para medir la concentración de la riqueza en Chile de manera sólida, transparente y comparable internacionalmente. Combinando las estimaciones con datos de estudios previos, estima que un impuesto patrimonial marginal y progresivo sobre menos del 0.5% de la población tendría un potencial recaudatorio de hasta un 1.5% del PIB.
+
+- section: Book chapters
+  title: "Desigualdad y Distribución del Crecimiento Económico en Chile"
+  url: https://www.impuestosjustos.io/capitulos
+  authors: Ignacio Flores
+  venue: "In Impuestos justos para el Chile que viene: desafíos y propuestas para un nuevo pacto fiscal, ed. Atria and Otero (2021)"
+  tags: [Income, Chile]
+  links: []
+  abstract: >-
+    Este capítulo presenta los resultados para Chile de las cuentas nacionales distributivas. Al incluir los ingresos más altos y corregir las rentas de capital, cuestiona el consenso de una reducción progresiva de la desigualdad durante el periodo democrático: el nivel de concentración aumenta y las tendencias cambian.
+
+- section: Guidelines and reports
+  title: "Medición de la desigualdad mediante la integración de fuentes de datos"
+  url: https://www.cepal.org/es/publicaciones/81192-medicion-la-desigualdad-mediante-la-integracion-fuentes-datos
+  authors: Facundo Alvaredo, Mauricio De Rosa, Ignacio Flores and Marc Morgan
+  venue: Documentos de Proyectos CEPAL
+  tags: [Measurement, Latin America]
+  links: []
+  abstract: >-
+    Este documento presenta los principios fundamentales de las cuentas nacionales distributivas y su aplicación práctica en América Latina. Propone una metodología que complementa las encuestas de hogares mediante la integración crítica de distintas fuentes de información.
+
+- section: Guidelines and reports
+  title: "Estadísticas distributivas en República Dominicana: una revisión a partir de la combinación de fuentes"
+  url: https://www.cepal.org/es/publicaciones/48242-desigualdad-ingreso-la-republica-dominicana-2012-2019-revision-partir-la
+  authors: Facundo Alvaredo, Mauricio De Rosa, Ignacio Flores and Marc Morgan
+  venue: Documentos de Proyectos CEPAL
+  tags: [Measurement, Dominican Republic]
+  links: []
+  abstract: >-
+    Este documento revisa las estadísticas distributivas en República Dominicana mediante encuestas de hogares, registros tributarios y cuentas nacionales. Presenta estimaciones preliminares de desigualdad basadas en encuestas armonizadas, ajustes con registros tributarios, escalamiento a ingresos de cuentas nacionales e imputaciones para llegar al ingreso nacional.
+
+- section: Guidelines and reports
+  title: "Diagnóstico Distributivo de Ingreso y Patrimonio, y Análisis de la Propuesta de Reforma Tributaria"
+  url: https://ignacioflores.com/pdf/nota-reforma-tributaria-chl-2022.pdf
+  authors: "Wealth section: Ignacio Flores, Pablo Gutierrez and Damián Vergara"
+  venue: Publicaciones del Ministerio de Hacienda de Chile (2022)
+  tags: [Wealth, Chile, Taxation]
+  links: []
+  abstract: >-
+    Esta sección analiza la propuesta de reforma al impuesto al patrimonio presentada en Chile a finales de 2022. El análisis usa parámetros provistos por el Ministerio de Hacienda, describe la reforma, presenta la metodología de estimación y discute los resultados.
+
+- section: Guidelines and reports
+  title: "Inequality in Latin America Revisited: Insights from Distributional National Accounts"
+  url: https://wid.world/document/income-inequality-series-for-latin-america-world-inequality-lab-technical-note-2020-02/
+  authors: Mauricio De Rosa, Ignacio Flores and Marc Morgan
+  venue: WID.world Technical Notes (2020)
+  tags: [Income, Latin America, Measurement]
+  links: []
+  abstract: >-
+    This technical note describes the sources and methods behind the distributional national accounts series for Latin America released by the World Inequality Database in November 2020. It combines harmonized household surveys, income-tax records, social-security registers, and national accounts for ten countries covering around 80% of the region's population.
+
+- section: Guidelines and reports
+  title: "Distributional National Accounts Guidelines"
+  url: https://wid.world/document/distributional-national-accounts-guidelines-2020-concepts-and-methods-used-in-the-world-inequality-database/
+  authors: With co-authors
+  venue: WID.world Working Paper Series (2021)
+  tags: [Measurement, Data]
+  links: []
+  abstract: >-
+    The second edition of the Distributional National Accounts guidelines presents the concepts, data sources, and methods used in the World Inequality Database. It explains how income and wealth distributions can be harmonized across time and countries while remaining consistent with macroeconomic aggregates.

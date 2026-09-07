@@ -1,0 +1,37 @@
+---
+title: Ignacio Flores
+description: Researcher in public economics working on inequality, wealth, taxation, and climate resilience.
+---
+
+::: {.content-block}
+::: {.hero}
+::: {.hero-copy}
+
+# Ignacio Flores
+
+::: {.lede}
+I am a researcher in public economics based at the Paris School of Economics and Roma Tre University.
+:::
+
+::: {.link-row}
+[Research](research.qmd){.text-link}
+[Projects](projects.qmd){.text-link}
+[CV](https://ignacioflores.com/pdf/CV_Ignacio_Flores.pdf){.text-link}
+[Google Scholar](https://scholar.google.com/citations?user=ILFlGwMAAAAJ&hl=fr&oi=sra){.text-link}
+[GitHub](https://github.com/ignacio-flores){.text-link}
+:::
+:::
+
+::: {.portrait-wrap}
+<img class="portrait" src="https://ignacioflores.com/images/profile_pic_long.png" alt="Portrait of Ignacio Flores">
+:::
+:::
+
+::: {.home-section}
+I work with the [World Inequality Lab](https://inequalitylab.world/en/) and the [GC Wealth Project](https://wealthproject.gc.cuny.edu), and co-direct [Centro Contribuye](https://centrocontribuye.org), a hub for tax-related studies in Latin America.
+
+My work combines administrative data, surveys, and national accounts to understand inequality in income and wealth. My current research examines how inequality shapes resilience to climate change. Earlier work has focused on the historical evolution of wealth and income concentration, taxation, and the relationship between inequality, political institutions, and public policy.
+
+For research correspondence, write to [ignacio.flores@psemail.eu](mailto:ignacio.flores@psemail.eu).
+:::
+:::

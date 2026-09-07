@@ -1,0 +1,18 @@
+---
+title: Resources
+description: A personal collection of videos on economics, science, history, and philosophy.
+---
+
+::: {.content-block}
+::: {.page-intro}
+# Ideas worth sharing
+
+A personal collection of video essays on economics, mathematics, science, history, and philosophy. They are grouped to make browsing easier, but each can be enjoyed independently.
+:::
+
+```{r}
+#| results: asis
+source("R/render_content.R")
+render_resources("_data/resources.yml")
+```
+:::

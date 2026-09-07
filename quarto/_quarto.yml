@@ -1,0 +1,62 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - research.qmd
+    - projects.qmd
+    - outreach.qmd
+    - braincandy.qmd
+
+website:
+  title: Ignacio Flores
+  description: Public economist researching inequality, wealth, taxation, and climate resilience.
+  site-url: https://ignacioflores.com
+  image: https://ignacioflores.com/images/profile_pic_long.png
+  open-graph: true
+  twitter-card: true
+  search: false
+  navbar:
+    background: light
+    foreground: dark
+    pinned: true
+    collapse-below: lg
+    left:
+      - text: About
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Public writing & media
+        href: outreach.qmd
+      - text: Resources
+        href: braincandy.qmd
+    right:
+      - text: CV
+        href: https://ignacioflores.com/pdf/CV_Ignacio_Flores.pdf
+      - icon: mortarboard
+        aria-label: Google Scholar
+        href: https://scholar.google.com/citations?user=ILFlGwMAAAAJ&hl=fr&oi=sra
+      - icon: github
+        aria-label: GitHub
+        href: https://github.com/ignacio-flores
+  page-footer:
+    left: "© 2026 Ignacio Flores"
+    right: "Paris School of Economics · Roma Tre University"
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    title-block: false
+    toc: false
+    anchor-sections: false
+    link-external-newwindow: true
+    smooth-scroll: true
+
+execute:
+  echo: false
+  warning: false
+  message: false

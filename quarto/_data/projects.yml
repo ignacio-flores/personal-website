@@ -1,0 +1,136 @@
+- section: Data infrastructure and public tools
+  title: WID.world
+  url: https://wid.world
+  role: World Inequality Database
+  description: Open, comparable data on income and wealth distribution worldwide. I oversee statistical methods across regions and produce and update inequality statistics for Latin America and the Caribbean.
+  links:
+    - label: Visit WID.world
+      url: https://wid.world
+
+- section: Data infrastructure and public tools
+  title: The GC Wealth Project
+  url: https://wealthproject.gc.cuny.edu
+  role: Stone Center
+  description: Comparative research infrastructure on wealth, wealth inequality, wealth transfers, and tax policies. My work includes data architecture, web design, and visualisation tools.
+  links:
+    - label: Visit the project
+      url: https://wealthproject.gc.cuny.edu
+
+- section: Data infrastructure and public tools
+  title: distribuciones.info
+  url: https://distribuciones.info
+  role: With Mauricio De Rosa and Marc Morgan
+  description: A public website for exploring the distribution of economic growth in Latin America, with documentation and data downloads.
+  links:
+    - label: Explore the website
+      url: https://distribuciones.info
+    - label: Source code
+      url: https://github.com/ignacio-flores/distribuciones-website
+
+- section: Data infrastructure and public tools
+  title: Data Showroom
+  url: https://github.com/ignacio-flores/data-showroom
+  role: R Shiny application
+  description: A configuration-driven Shiny application for creating reusable interactive dashboards from tabular data, including the GC Wealth Project data warehouse.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/data-showroom
+
+- section: Data infrastructure and public tools
+  title: DINA Latin America
+  url: https://github.com/ignacio-flores/dina-latam
+  role: Distributional National Accounts pipeline
+  description: Data and code that build macro-consistent Distributional National Accounts series for Latin America and the Caribbean for inclusion in WID.world.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/dina-latam
+
+- section: Data infrastructure and public tools
+  title: WID R tools
+  url: https://github.com/ignacio-flores/wid-r-tool
+  role: R package
+  description: Maintained tools for downloading and working with World Inequality Database data directly from R.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/wid-r-tool
+
+- section: Data infrastructure and public tools
+  title: WID Stata tools
+  url: https://github.com/ignacio-flores/wid-stata-tool
+  role: Stata package
+  description: Maintained tools for retrieving and working with World Inequality Database data from Stata.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/wid-stata-tool
+
+- section: Data infrastructure and public tools
+  title: Conference Studio
+  url: https://github.com/ignacio-flores/conference-studio
+  role: Web application
+  description: A project for creating and organising conferences.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/conference-studio
+
+- section: Reproducible research
+  title: Top Incomes in Latin America
+  url: https://github.com/ignacio-flores/top-incomes-latam
+  role: Research code
+  description: Source repository for work on top-income measurement in Latin America.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/top-incomes-latam
+
+- section: Reproducible research
+  title: Top Incomes in Chile
+  url: https://github.com/ignacio-flores/top-incomes-chile
+  role: Research code and data
+  description: Reproducible code for the historical top-income series for Chile, 1964–2017.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/top-incomes-chile
+
+- section: Reproducible research
+  title: Wealth Inequality in Latin America
+  url: https://github.com/ignacio-flores/lacir-wealth
+  role: Research code and data
+  description: Reproducible Stata code for research on wealth levels and wealth inequality in Latin America.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/lacir-wealth
+
+- section: Reproducible research
+  title: Income Under the Carpet
+  url: https://github.com/ignacio-flores/income-under-the-carpet
+  role: Research code and data
+  description: Reproducible code for research on gaps between microdata and national accounts in measuring income inequality.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/income-under-the-carpet
+
+- section: Software
+  title: ineqstats
+  url: https://github.com/ignacio-flores/ineqstats-stata-tool
+  role: Stata package
+  description: A package for summarising weighted survey microdata, including distributional shares, Gini coefficients, Pareto fits, and tax simulations.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/ineqstats-stata-tool
+
+- section: Software
+  title: bfmcorr
+  url: https://github.com/ignacio-flores/bfmcorr
+  role: Stata package
+  description: A survey-data correction command implementing the Blanchet, Flores, and Morgan method for combining surveys and tax data.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/bfmcorr
+
+- section: Software
+  title: Mapsolutely
+  url: https://github.com/ignacio-flores/mapsolutely
+  role: R Shiny application
+  description: An interactive application for generating customised, high-resolution maps from OpenStreetMap data.
+  links:
+    - label: View source code
+      url: https://github.com/ignacio-flores/mapsolutely
