@@ -8,13 +8,13 @@
       url: https://wid.world
 
 - section: Data infrastructure and public tools
-  title: The GC Wealth Project
-  url: https://wealthproject.gc.cuny.edu
+  title: Wealth Inequality Project
+  url: https://wealthinequalityproject.org/
   role: Stone Center
   description: Comparative research infrastructure on wealth, wealth inequality, wealth transfers, and tax policies. My work includes data architecture, web design, and visualisation tools.
   links:
     - label: Visit the project
-      url: https://wealthproject.gc.cuny.edu
+      url: https://wealthinequalityproject.org/
 
 - section: Data infrastructure and public tools
   title: distribuciones.info
@@ -31,7 +31,7 @@
   title: Data Showroom
   url: https://github.com/ignacio-flores/data-showroom
   role: R Shiny application
-  description: A configuration-driven Shiny application for creating reusable interactive dashboards from tabular data, including the GC Wealth Project data warehouse.
+  description: A configuration-driven Shiny application for creating reusable interactive dashboards from tabular data, including the Wealth Inequality Project data warehouse.
   links:
     - label: View source code
       url: https://github.com/ignacio-flores/data-showroom
@@ -71,42 +71,6 @@
   links:
     - label: View source code
       url: https://github.com/ignacio-flores/conference-studio
-
-- section: Reproducible research
-  title: Top Incomes in Latin America
-  url: https://github.com/ignacio-flores/top-incomes-latam
-  role: Research code
-  description: Source repository for work on top-income measurement in Latin America.
-  links:
-    - label: View source code
-      url: https://github.com/ignacio-flores/top-incomes-latam
-
-- section: Reproducible research
-  title: Top Incomes in Chile
-  url: https://github.com/ignacio-flores/top-incomes-chile
-  role: Research code and data
-  description: Reproducible code for the historical top-income series for Chile, 1964–2017.
-  links:
-    - label: View source code
-      url: https://github.com/ignacio-flores/top-incomes-chile
-
-- section: Reproducible research
-  title: Wealth Inequality in Latin America
-  url: https://github.com/ignacio-flores/lacir-wealth
-  role: Research code and data
-  description: Reproducible Stata code for research on wealth levels and wealth inequality in Latin America.
-  links:
-    - label: View source code
-      url: https://github.com/ignacio-flores/lacir-wealth
-
-- section: Reproducible research
-  title: Income Under the Carpet
-  url: https://github.com/ignacio-flores/income-under-the-carpet
-  role: Research code and data
-  description: Reproducible code for research on gaps between microdata and national accounts in measuring income inequality.
-  links:
-    - label: View source code
-      url: https://github.com/ignacio-flores/income-under-the-carpet
 
 - section: Software
   title: ineqstats

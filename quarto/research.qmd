@@ -1,9 +1,10 @@
 ---
 title: Research
 description: Publications, working papers, chapters, and reports by Ignacio Flores.
+page-layout: full
 ---
 
-::: {.content-block}
+::: {.content-block .research-content}
 ::: {.page-intro}
 # Research
 
@@ -13,6 +14,6 @@ My work studies inequality in income, wealth, and land, with a current focus on 
 ```{r}
 #| results: asis
 source("R/render_content.R")
-render_research("_data/research.yml")
+render_research("_data/research.yml", "_data/research_figures.yml", show_figures = FALSE)
 ```
 :::

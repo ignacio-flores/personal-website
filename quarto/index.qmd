@@ -10,15 +10,14 @@ description: Researcher in public economics working on inequality, wealth, taxat
 # Ignacio Flores
 
 ::: {.lede}
-I am a researcher in public economics based at the Paris School of Economics and Roma Tre University.
+Senior researcher in Economics based at the Paris School of Economics and Roma Tre University. 
 :::
 
-::: {.link-row}
-[Research](research.qmd){.text-link}
-[Projects](projects.qmd){.text-link}
-[CV](https://ignacioflores.com/pdf/CV_Ignacio_Flores.pdf){.text-link}
-[Google Scholar](https://scholar.google.com/citations?user=ILFlGwMAAAAJ&hl=fr&oi=sra){.text-link}
-[GitHub](https://github.com/ignacio-flores){.text-link}
+::: {.profile-links aria-label="Professional profiles"}
+<a class="profile-icon" href="https://ignacioflores.com/pdf/CV_Ignacio_Flores.pdf" aria-label="Curriculum vitae" title="Curriculum vitae"><i class="bi bi-file-earmark-text" aria-hidden="true"></i></a>
+<a class="profile-icon" href="https://scholar.google.com/citations?user=ILFlGwMAAAAJ&hl=fr&oi=sra" aria-label="Google Scholar" title="Google Scholar"><i class="bi bi-mortarboard" aria-hidden="true"></i></a>
+<a class="profile-icon" href="https://github.com/ignacio-flores" aria-label="GitHub" title="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+<a class="profile-icon" href="https://orcid.org/0000-0003-4478-2406" aria-label="ORCID" title="ORCID"><i class="bi bi-person-badge" aria-hidden="true"></i></a>
 :::
 :::
 
@@ -28,10 +27,9 @@ I am a researcher in public economics based at the Paris School of Economics and
 :::
 
 ::: {.home-section}
-I work with the [World Inequality Lab](https://inequalitylab.world/en/) and the [GC Wealth Project](https://wealthproject.gc.cuny.edu), and co-direct [Centro Contribuye](https://centrocontribuye.org), a hub for tax-related studies in Latin America.
 
-My work combines administrative data, surveys, and national accounts to understand inequality in income and wealth. My current research examines how inequality shapes resilience to climate change. Earlier work has focused on the historical evolution of wealth and income concentration, taxation, and the relationship between inequality, political institutions, and public policy.
+I’m interested in how wealth and income came to be distributed as they are today, and why that matters for how societies respond to climate change. My research looks at these questions over the long run and also explores how inequality interacts with taxation, politics, and institutions. My work on wealth and income includes research with the [World Inequality Lab](https://inequalitylab.world/en/) in Paris and the [Wealth Inequality Project](https://wealthinequalityproject.org/) in Rome.
 
-For research correspondence, write to [ignacio.flores@psemail.eu](mailto:ignacio.flores@psemail.eu).
+For correspondence, write to [ignacio.flores@psemail.eu](mailto:ignacio.flores@psemail.eu).
 :::
 :::

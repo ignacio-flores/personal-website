@@ -7,7 +7,7 @@ description: Research infrastructure and open-source software by Ignacio Flores.
 ::: {.page-intro}
 # Projects
 
-Selected public research infrastructure, reproducibility repositories, and software to which I contribute.
+Selected public research infrastructure and software to which I contribute.
 :::
 
 ```{r}
