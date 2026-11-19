@@ -1,8 +1,3 @@
-www/tax-chl-oecd_files
-www/data
-www/tax-chl-oecd.html
-quarto/_site/
-quarto/.quarto/
-
 /.quarto/
+/.Rhistory
 **/*.quarto_ipynb
