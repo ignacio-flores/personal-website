@@ -5,12 +5,13 @@ description: Researcher in public economics working on inequality, wealth, taxat
 
 ::: {.content-block}
 ::: {.hero}
+::: {.hero-text}
 ::: {.hero-copy}
 
 # Ignacio Flores
 
 ::: {.lede}
-Senior researcher in Economics based at the Paris School of Economics and Roma Tre University. 
+Senior researcher based at the Paris School of Economics and Roma Tre University. 
 :::
 
 ::: {.profile-links aria-label="Professional profiles"}
@@ -21,15 +22,16 @@ Senior researcher in Economics based at the Paris School of Economics and Roma T
 :::
 :::
 
-::: {.portrait-wrap}
-<img class="portrait" src="images/profile_pic_long.png" alt="Portrait of Ignacio Flores">
-:::
-:::
-
 ::: {.home-section}
 
-I’m interested in how wealth and income came to be distributed as they are today, and why that matters for how societies respond to climate change. My research looks at these questions over the long run and also explores how inequality interacts with taxation, politics, and institutions. My work on wealth and income includes research with the [World Inequality Lab](https://inequalitylab.world/en/) in Paris and the [Wealth Inequality Project](https://wealthinequalityproject.org/) in Rome.
+I’m interested in how economic resources came to be distributed as they are today, and why that matters for how societies respond to climate change. My research looks at these questions over the long run and also explores how inequality interacts with taxation, politics, and institutions. My work on wealth and income includes research with the [World Inequality Lab](https://inequalitylab.world/en/) in Paris and the [Wealth Inequality Project](https://wealthinequalityproject.org/) in Rome.
 
 For correspondence, write to [ignacio.flores@psemail.eu](mailto:ignacio.flores@psemail.eu).
+:::
+:::
+
+::: {.portrait-wrap}
+<img class="portrait" src="images/profile_pic_long.png" width="730" alt="Portrait of Ignacio Flores">
+:::
 :::
 :::

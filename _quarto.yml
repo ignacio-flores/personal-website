@@ -5,6 +5,7 @@ project:
     - images/
     - pdf/
     - site.js
+    - styles.css
   render:
     - index.qmd
     - research.qmd
@@ -31,14 +32,17 @@ website:
         href: research.qmd
       - text: Projects
         href: projects.qmd
-      - text: Writing & media
+      - text: Media
         href: outreach.qmd
   back-to-top-navigation: true
 
 format:
   html:
     theme: cosmo
-    css: styles.css
+    page-layout: full
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="styles.css?v=20261120-layout-3">
     include-after-body:
       - includes/site-scripts.html
     title-block: false

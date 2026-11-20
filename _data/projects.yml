@@ -11,7 +11,7 @@
   title: Wealth Inequality Project
   url: https://wealthinequalityproject.org/
   role: Stone Center
-  description: Comparative research infrastructure on wealth, wealth inequality, wealth transfers, and tax policies. My work includes data architecture, web design, and visualisation tools.
+  description: Public encyclopedia on wealth, wealth inequality, wealth transfers, and tax policies. My contributions include data architecture, web design, and visualisation tools.
   links:
     - label: Visit the project
       url: https://wealthinequalityproject.org/
@@ -19,8 +19,8 @@
 - section: Data infrastructure and public tools
   title: distribuciones.info
   url: https://distribuciones.info
-  role: With Mauricio De Rosa and Marc Morgan
-  description: A public website for exploring the distribution of economic growth in Latin America, with documentation and data downloads.
+  role: Website (in Spanish)
+  description: A public website for exploring the distribution of economic growth in Latin America, with documentation and data downloads (With Mauricio De Rosa and Marc Morgan).
   links:
     - label: Explore the website
       url: https://distribuciones.info
@@ -28,7 +28,7 @@
       url: https://github.com/ignacio-flores/distribuciones-website
 
 - section: Data infrastructure and public tools
-  title: Data Showroom
+  title: data-showroom
   url: https://github.com/ignacio-flores/data-showroom
   role: R Shiny application
   description: A configuration-driven Shiny application for creating reusable interactive dashboards from tabular data, including the Wealth Inequality Project data warehouse.
@@ -39,26 +39,26 @@
 - section: Data infrastructure and public tools
   title: DINA Latin America
   url: https://github.com/ignacio-flores/dina-latam
-  role: Distributional National Accounts pipeline
+  role: Distributional National Accounts codebase
   description: Data and code that build macro-consistent Distributional National Accounts series for Latin America and the Caribbean for inclusion in WID.world.
   links:
     - label: View source code
       url: https://github.com/ignacio-flores/dina-latam
 
 - section: Data infrastructure and public tools
-  title: WID R tools
+  title: WID R tool
   url: https://github.com/ignacio-flores/wid-r-tool
   role: R package
-  description: Maintained tools for downloading and working with World Inequality Database data directly from R.
+  description: Maintained tool for downloading and working with World Inequality Database data directly from R.
   links:
     - label: View source code
       url: https://github.com/ignacio-flores/wid-r-tool
 
 - section: Data infrastructure and public tools
-  title: WID Stata tools
+  title: WID Stata tool
   url: https://github.com/ignacio-flores/wid-stata-tool
   role: Stata package
-  description: Maintained tools for retrieving and working with World Inequality Database data from Stata.
+  description: Maintained tool for retrieving and working with World Inequality Database data from Stata.
   links:
     - label: View source code
       url: https://github.com/ignacio-flores/wid-stata-tool
@@ -91,7 +91,7 @@
       url: https://github.com/ignacio-flores/bfmcorr
 
 - section: Software
-  title: Mapsolutely
+  title: mapsolutely
   url: https://github.com/ignacio-flores/mapsolutely
   role: R Shiny application
   description: An interactive application for generating customised, high-resolution maps from OpenStreetMap data.

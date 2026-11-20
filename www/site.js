@@ -1,4 +1,26 @@
 (function () {
+  function updateHeaderHeight() {
+    var measuredOffset = parseFloat(document.body.getAttribute("data-bs-offset"));
+    var header = document.getElementById("quarto-header");
+    var height = Number.isFinite(measuredOffset) && measuredOffset >= 0
+      ? measuredOffset
+      : header ? header.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty("--site-header-height", height + "px");
+  }
+
+  updateHeaderHeight();
+  window.addEventListener("quarto-hrChanged", updateHeaderHeight);
+
+  var backToTop = document.getElementById("quarto-back-to-top");
+  if (backToTop) {
+    backToTop.tabIndex = 0;
+    backToTop.addEventListener("keydown", function (event) {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      backToTop.click();
+    });
+  }
+
   function fallbackCopy(text) {
     var field = document.createElement("textarea");
     field.value = text;
@@ -57,8 +79,26 @@
   });
 
   var citationMenus = Array.from(document.querySelectorAll(".citation-menu"));
+
+  function positionCitationMenu(menu) {
+    menu.style.removeProperty("--citation-offset");
+    if (!menu.open || window.innerWidth < 992) return;
+
+    var options = menu.querySelector(".citation-options");
+    if (!options) return;
+
+    var content = document.querySelector(".content-block");
+    var contentGutter = content ? parseFloat(window.getComputedStyle(content).paddingLeft) : 0;
+    var gutter = Math.max(16, Number.isFinite(contentGutter) ? contentGutter : 0);
+    var viewportWidth = document.documentElement.clientWidth || window.innerWidth;
+    var bounds = options.getBoundingClientRect();
+    var left = Math.max(gutter, Math.min(bounds.left, viewportWidth - gutter - bounds.width));
+    menu.style.setProperty("--citation-offset", (left - bounds.left) + "px");
+  }
+
   citationMenus.forEach(function (menu) {
     menu.addEventListener("toggle", function () {
+      positionCitationMenu(menu);
       if (!menu.open) return;
       citationMenus.forEach(function (otherMenu) {
         if (otherMenu !== menu) otherMenu.removeAttribute("open");
@@ -72,9 +112,24 @@
     });
   });
 
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape") return;
+    citationMenus.forEach(function (menu) {
+      if (!menu.open) return;
+      menu.removeAttribute("open");
+      var summary = menu.querySelector("summary");
+      if (summary) summary.focus();
+      event.preventDefault();
+    });
+  });
+
+  window.addEventListener("resize", function () {
+    updateHeaderHeight();
+    citationMenus.forEach(positionCitationMenu);
+  });
+
   var sections = Array.from(document.querySelectorAll("[data-research-section]"));
   var directoryLinks = Array.from(document.querySelectorAll("[data-research-target]"));
-  if (!sections.length || !directoryLinks.length) return;
 
   function setCurrent(sectionId) {
     directoryLinks.forEach(function (link) {
@@ -86,9 +141,9 @@
     });
   }
 
-  setCurrent(sections[0].id);
+  if (sections.length && directoryLinks.length) setCurrent(sections[0].id);
 
-  if ("IntersectionObserver" in window) {
+  if (sections.length && directoryLinks.length && "IntersectionObserver" in window) {
     var visibleSections = new Map();
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
