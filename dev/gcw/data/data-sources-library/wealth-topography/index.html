@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Wealth Topography – Wealth Inequality Project</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-3f3878107f510fd5e1cfc12aa424597c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="stylesheet" href="../../../assets/library-bibbase.css">
+<style>
+  #title-block-header,
+  .quarto-title-block {
+    display: none;
+  }
+</style>
+
+
+<link rel="stylesheet" href="../../../assets/gc-site.css">
+<link rel="stylesheet" href="../../../assets/mobile-nav.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../index.html" aria-current="page"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../data/index.html"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../news/index.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Wealth Topography</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../wealth-topography/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wealth Topography</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../wealth-topography/mountains-of-assets/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wealth composition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../wealth-topography/mountains-of-financial-wealth/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Focus on specific components</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../wealth-topography/asset-by-asset-comparison/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asset comparison</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../wealth-inequality-trends/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wealth Inequality</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../wealth-inequality-trends/index.html#net-wealth-distribution" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Net wealth distribution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../wealth-inequality-trends/index.html#ownership-rates" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asset ownership rates</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../EIG/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taxes on Wealth</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../EIG/world-maps/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tax features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../EIG/graphs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Time trends</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../EIG/full-tax-schedule/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tax schedules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../EIG/focus-us-states/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Focus: U.S. states</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../inheritance-trends/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inheritance Trends</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../digital-library-of-research/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Digital Library of Research</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../digital-library-of-research/cross-national-comparisons/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross-national comparisons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../digital-library-of-research/determinants/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Determinants of wealth and wealth inequality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../digital-library-of-research/EIG/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taxes on wealth</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../digital-library-of-research/impacts/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Impacts of wealth inequality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../digital-library-of-research/intergenerational-transfers/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intergenerational wealth</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../digital-library-of-research/methods-of-estimation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Methods of estimation of wealth inequality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../digital-library-of-research/trends/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trends in aggregate wealth and wealth inequality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../digital-library-of-research/wealth-taxation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wealth taxation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<template id="gc-sidebar-brand-template">
+  <div id="gc-sidebar-brand" class="gc-sidebar-brand">
+    <div class="gc-sidebar-brand__logo-area">
+      <a class="gc-sidebar-brand__link" href="./" data-gc-site-path="./" aria-label="The Wealth Inequality Project home">
+        <img class="gc-sidebar-brand__logo" data-gc-site-path="./img/wip-logos/Primary WIP Logo/Color/SVG/WIP-Primary-Text.svg" alt="The Wealth Inequality Project logo">
+      </a>
+    </div>
+    <div class="gc-sidebar-brand__controls">
+      <button id="gc-sidebar-hide" class="gc-sidebar-toggle gc-sidebar-toggle--hide" type="button" aria-controls="quarto-sidebar" aria-expanded="true" aria-label="Hide sidebar" data-gc-tooltip="Hide the sidebar and expand the page">
+        <span aria-hidden="true">‹</span>
+      </button>
+    </div>
+  </div>
+</template>
+<button id="gc-sidebar-show" class="gc-sidebar-toggle gc-sidebar-toggle--show" type="button" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Show sidebar" data-gc-tooltip="Show the sidebar navigation">
+  <span aria-hidden="true">›</span>
+</button>
+<script id="gc-sidebar-brand-relocator">
+(() => {
+  const storageKey = "gc-sidebar-hidden";
+  const hiddenClass = "gc-sidebar-hidden";
+  const desktopMedia = window.matchMedia("(min-width: 992px)");
+
+  function siteRootUrl() {
+    const anchors = [
+      { selector: 'link[href*="assets/gc-site.css"]', attr: "href", marker: "assets/gc-site.css" },
+      { selector: 'script[src*="assets/interactive-layer.js"]', attr: "src", marker: "assets/interactive-layer.js" }
+    ];
+
+    for (const anchor of anchors) {
+      const element = document.querySelector(anchor.selector);
+      const value = element ? element.getAttribute(anchor.attr) || "" : "";
+      const markerIndex = value.indexOf(anchor.marker);
+
+      if (markerIndex !== -1) {
+        return new URL(value.slice(0, markerIndex), window.location.href);
+      }
+    }
+
+    return new URL("./", window.location.href);
+  }
+
+  function resolveSitePath(path) {
+    return new URL(path.replace(/^\/+/, ""), siteRootUrl()).href;
+  }
+
+  function applySitePaths(container) {
+    container.querySelectorAll("[data-gc-site-path]").forEach((element) => {
+      const resolvedPath = resolveSitePath(element.dataset.gcSitePath || "./");
+
+      if (element.tagName === "A") {
+        element.href = resolvedPath;
+      } else if (element.tagName === "IMG") {
+        element.src = resolvedPath;
+      }
+    });
+  }
+
+  function readHiddenPreference() {
+    try {
+      return window.localStorage.getItem(storageKey) === "true";
+    } catch (_error) {
+      return false;
+    }
+  }
+
+  function writeHiddenPreference(hidden) {
+    try {
+      if (hidden) {
+        window.localStorage.setItem(storageKey, "true");
+      } else {
+        window.localStorage.removeItem(storageKey);
+      }
+    } catch (_error) {
+      return;
+    }
+  }
+
+  function setSidebarHidden(hidden, persist = true) {
+    document.documentElement.classList.toggle(hiddenClass, hidden);
+
+    const hideButton = document.getElementById("gc-sidebar-hide");
+    const showButton = document.getElementById("gc-sidebar-show");
+    const isDesktop = desktopMedia.matches;
+
+    if (hideButton) {
+      hideButton.setAttribute("aria-expanded", hidden ? "false" : "true");
+      hideButton.disabled = !isDesktop;
+    }
+    if (showButton) {
+      showButton.setAttribute("aria-expanded", hidden ? "false" : "true");
+      showButton.disabled = !isDesktop;
+    }
+
+    if (persist) {
+      writeHiddenPreference(hidden);
+    }
+  }
+
+  function focusVisibleToggle(hidden) {
+    const target = document.getElementById(hidden ? "gc-sidebar-show" : "gc-sidebar-hide");
+
+    if (!target || !desktopMedia.matches) {
+      return;
+    }
+
+    const scheduleFocus = window.requestAnimationFrame || ((callback) => window.setTimeout(callback, 0));
+    scheduleFocus(() => target.focus());
+  }
+
+  if (readHiddenPreference()) {
+    document.documentElement.classList.add(hiddenClass);
+  }
+
+  function mountSidebarBrand() {
+    const sidebar = document.getElementById("quarto-sidebar");
+    const template = document.getElementById("gc-sidebar-brand-template");
+
+    if (!sidebar || !template || sidebar.querySelector("#gc-sidebar-brand")) {
+      return;
+    }
+
+    const fragment = template.content.cloneNode(true);
+    const brand = fragment.firstElementChild;
+
+    if (!brand) {
+      return;
+    }
+
+    applySitePaths(brand);
+    sidebar.insertBefore(brand, sidebar.firstChild);
+    document.documentElement.classList.add("gc-sidebar-brand-mounted");
+    bindSidebarToggle();
+    setSidebarHidden(readHiddenPreference(), false);
+  }
+
+  function bindSidebarToggle() {
+    const hideButton = document.getElementById("gc-sidebar-hide");
+    const showButton = document.getElementById("gc-sidebar-show");
+
+    if (hideButton && !hideButton.dataset.gcSidebarToggleBound) {
+      hideButton.dataset.gcSidebarToggleBound = "true";
+      hideButton.addEventListener("click", () => {
+        if (desktopMedia.matches) {
+          setSidebarHidden(true);
+          focusVisibleToggle(true);
+        }
+      });
+    }
+
+    if (showButton && !showButton.dataset.gcSidebarToggleBound) {
+      showButton.dataset.gcSidebarToggleBound = "true";
+      showButton.addEventListener("click", () => {
+        if (desktopMedia.matches) {
+          setSidebarHidden(false);
+          focusVisibleToggle(false);
+        }
+      });
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      bindSidebarToggle();
+      mountSidebarBrand();
+    }, { once: true });
+  } else {
+    bindSidebarToggle();
+    mountSidebarBrand();
+  }
+
+  if (typeof desktopMedia.addEventListener === "function") {
+    desktopMedia.addEventListener("change", () => setSidebarHidden(readHiddenPreference(), false));
+  } else if (typeof desktopMedia.addListener === "function") {
+    desktopMedia.addListener(() => setSidebarHidden(readHiddenPreference(), false));
+  }
+})();
+</script>
+<div class="gc-utility-nav-shell">
+  <nav class="gc-utility-nav" aria-label="Utility">
+    <ul class="gc-utility-nav__list">
+      <li class="gc-utility-nav__item">
+        <a class="gc-utility-nav__link" data-gc-nav-label="Data" href="../../../data/index.html">Data</a>
+      </li>
+      <li class="gc-utility-nav__item">
+        <a class="gc-utility-nav__link" data-gc-nav-label="News" href="../../../news/index.html">News</a>
+      </li>
+      <li class="gc-utility-nav__item">
+        <a class="gc-utility-nav__link" data-gc-nav-label="About" href="../../../about/index.html">About</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Wealth Topography</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="librarycontainer">
+  <a type="button" class="btn btn-primary fulllibrary" href="../../../data/data-sources-library/index.html">Go back to view the full library</a>
+  <div class="librarycontent">
+    <h1>Wealth Topography</h1>
+    <p>Below you will find the sources used to construct the Wealth Topography database, which contains household balance sheet and financial accounts data across countries, highlighting different asset classes as "mountains" atop a "sea" of debt. The database utilizes data from central banks, national and international statistical offices, national and cross-national survey data, and academic research. Links to technical documents and a description of the structure of the warehouse can be found on the <a class="customlink" href="../../../data/data_and_documentation/index.html">Data and Documentation</a> page.</p>
+    <a type="button" class="btn btn-primary fulllibrarymobile" href="../../../data/data-sources-library/index.html">Go back to view the full library</a>
+  </div>
+
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-3 librarycard">
+        <a type="button" class="btn btn-primary librarybutton selected" href="../../../data/data-sources-library/wealth-topography/index.html"><img src="../../../img/icons/wealth-source-selected.png" class="libraryimage" alt="Wealth Topography selected icon"><p class="singletext">Wealth Topography</p></a>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-3 librarycard">
+        <a type="button" class="btn btn-primary librarybutton" href="../../../data/data-sources-library/inequality-trends/index.html"><img src="../../../img/icons/inequality-source.png" class="libraryimage" alt="Wealth Inequality icon"><p>Wealth Inequality</p></a>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-3 librarycard">
+        <a type="button" class="btn btn-primary librarybutton" href="../../../data/data-sources-library/EIG/index.html"><img src="../../../img/icons/EIG-source.png" class="libraryimage" alt="Taxes on Wealth icon"><p>Taxes on Wealth</p></a>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-3 librarycard">
+        <a type="button" class="btn btn-primary librarybutton" href="../../../data/data-sources-library/inheritance-trends/index.html"><img src="../../../img/icons/inheritance-source.png" class="libraryimage" alt="Inheritance Trends icon"><p>Inheritance Trends</p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="librarytitle d-none anchored">Wealth Topography</h2>
+<div class="gc-library-output gc-shell" id="data-sources-wealth-topography" data-library-view="data-sources-wealth-topography" data-default-group="year" data-default-sort="author">
+  <div class="gc-library-toolbar">
+    <label class="gc-library-toolbar__label" for="data-sources-wealth-topography-group">Group by</label>
+    <select id="data-sources-wealth-topography-group" class="gc-library-group" aria-label="Group references">
+      <option value="year" selected="">Year</option>
+      <option value="none">None</option>
+    </select>
+    <label class="gc-library-toolbar__label" for="data-sources-wealth-topography-sort">Sort</label>
+    <select id="data-sources-wealth-topography-sort" class="gc-library-sort" aria-label="Sort references within each group">
+      <option value="author" selected="">Author</option>
+      <option value="year-desc">Year, newest first</option>
+      <option value="title">Title</option>
+    </select>
+    <button class="gc-library-download" type="button" data-download-name="data-sources-wealth-topography.bib" aria-label="Download visible BibTeX" title="Download visible BibTeX"><span aria-hidden="true">☰</span></button>
+    <input id="data-sources-wealth-topography-search" class="gc-library-search" type="search" autocomplete="off" placeholder="Type to filter" aria-label="Filter references">
+    <span class="gc-library-powered" aria-hidden="true">BibBase-style static library</span>
+    <span class="gc-library-count" aria-live="polite"><span data-visible-count="">17</span> of <span data-total-count="">17</span> entries</span>
+  </div>
+  <p class="gc-library-empty" hidden="">No entries in Wealth Topography match this search.</p>
+  <div class="gc-library-groups">
+    <details class="gc-library-year-group" data-group-key="2026" open="">
+      <summary><span class="gc-library-year-group__label">2026</span> <span class="gc-library-year-group__count">(<span data-group-visible-count="">1</span>)</span></summary>
+      <ol class="gc-library-list">
+    <li class="gc-library-entry" data-author-sort="oecd" data-year-sort="2026" data-year-label="2026" data-title-sort="annual balance sheets for non financial assets" data-original-order="985" data-search="annual balance sheets for non financial assets oecd 2026 data sources wealth topography oecd annualbalancesheetsnonfinancialassets">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://data-explorer.oecd.org/vis?lc=en&amp;fs[0]=Topic%2C1%7CEconomy%23ECO%23%7CNational%20accounts%23ECO_NAD%23&amp;fs[1]=Topic%2C3%7CEconomy%23ECO%23%7CNational%20accounts%23ECO_NAD%23%7CGDP%20and%20non-financial%20accounts%23ECO_NAD_GNF%23%7CNon-financial%20accounts%20including%20sector%20accounts%23ECO_NAD_GNF_NFA%23&amp;pg=0&amp;fc=Topic&amp;snb=14&amp;df[ds]=dsDisseminateFinalDMZ&amp;df[id]=DSD_NASEC10%40DF_TABLE9B&amp;df[ag]=OECD.SDD.NAD&amp;df[vs]=&amp;dq=A.AUS.........V..&amp;lom=LASTNPERIODS&amp;lo=5&amp;to[TIME_PERIOD]=false&amp;vw=tb" target="_blank" rel="noopener">Annual Balance Sheets for Non-financial Assets</a>. OECD. 2026.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://data-explorer.oecd.org/vis?lc=en&amp;fs[0]=Topic%2C1%7CEconomy%23ECO%23%7CNational%20accounts%23ECO_NAD%23&amp;fs[1]=Topic%2C3%7CEconomy%23ECO%23%7CNational%20accounts%23ECO_NAD%23%7CGDP%20and%20non-financial%20accounts%23ECO_NAD_GNF%23%7CNon-financial%20accounts%20including%20sector%20accounts%23ECO_NAD_GNF_NFA%23&amp;pg=0&amp;fc=Topic&amp;snb=14&amp;df[ds]=dsDisseminateFinalDMZ&amp;df[id]=DSD_NASEC10%40DF_TABLE9B&amp;df[ag]=OECD.SDD.NAD&amp;df[vs]=&amp;dq=A.AUS.........V..&amp;lom=LASTNPERIODS&amp;lo=5&amp;to[TIME_PERIOD]=false&amp;vw=tb" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-985-oecd-annualbalancesheetsnonfinancialassets-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-985-oecd-annualbalancesheetsnonfinancialassets-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{OECD_AnnualBalanceSheetsNonfinancialAssets,
+  title = {Annual Balance Sheets for Non-financial Assets},
+  author = {{OECD}},
+  year = {2026},
+  url = {https://data-explorer.oecd.org/vis?lc=en&amp;fs[0]=Topic%2C1%7CEconomy%23ECO%23%7CNational%20accounts%23ECO_NAD%23&amp;fs[1]=Topic%2C3%7CEconomy%23ECO%23%7CNational%20accounts%23ECO_NAD%23%7CGDP%20and%20non-financial%20accounts%23ECO_NAD_GNF%23%7CNon-financial%20accounts%20including%20sector%20accounts%23ECO_NAD_GNF_NFA%23&amp;pg=0&amp;fc=Topic&amp;snb=14&amp;df[ds]=dsDisseminateFinalDMZ&amp;df[id]=DSD_NASEC10%40DF_TABLE9B&amp;df[ag]=OECD.SDD.NAD&amp;df[vs]=&amp;dq=A.AUS.........V..&amp;lom=LASTNPERIODS&amp;lo=5&amp;to[TIME_PERIOD]=false&amp;vw=tb},
+  urldate = {2026-05-12},
+  keywords = {Data Sources: Wealth Topography},
+  note = {OECD Statistics}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+      </ol>
+    </details>
+    <details class="gc-library-year-group" data-group-key="2025" open="">
+      <summary><span class="gc-library-year-group__label">2025</span> <span class="gc-library-year-group__count">(<span data-group-visible-count="">3</span>)</span></summary>
+      <ol class="gc-library-list">
+    <li class="gc-library-entry" data-author-sort="canada" data-year-sort="2025" data-year-label="2025" data-title-sort="distributions of household economic accounts wealth canada regions and provinces quarterly x 1 000 000" data-original-order="1176" data-search="distributions of household economic accounts wealth canada regions and provinces quarterly x 1 000 000 statistics canada 2025 data sources wealth topography statcan dwa topo">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610066101" target="_blank" rel="noopener">Distributions of household economic accounts, wealth, Canada, regions and provinces, quarterly (x 1,000,000)</a>. Statistics Canada. May 2025.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610066101" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-1176-statcan-dwa-topo-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-1176-statcan-dwa-topo-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{StatCan_DWA_topo,
+  title = {Distributions of household economic accounts, wealth, Canada, regions and provinces, quarterly (x 1,000,000)},
+  author = {{Statistics Canada}},
+  year = {2025},
+  month = {may},
+  url = {https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610066101},
+  urldate = {2025-07-02},
+  keywords = {Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="italy" data-year-sort="2025" data-year-label="2025" data-title-sort="households and non profit institutions serving households tfat0012" data-original-order="200" data-search="households and non profit institutions serving households tfat0012 bank of italy 2025 data sources wealth topography bankofitaly householdsnonprofitinstitutionsservinghouseholds">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://infostat.bancaditalia.it/inquiry/home?spyglass/taxo:CUBESET=/PUBBL_00/PUBBL_00_02_01_06&amp;ITEMSELEZ=TFAT0012:true&amp;OPEN=true/&amp;ep:LC=EN&amp;COMM=BANKITALIA&amp;ENV=LIVE&amp;CTX=DIFF&amp;IDX=2&amp;/view:CUBEIDS=" target="_blank" rel="noopener">Households and Non-Profit Institutions Serving Households [TFAT0012]</a>. Bank of Italy. September 2025.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://infostat.bancaditalia.it/inquiry/home?spyglass/taxo:CUBESET=/PUBBL_00/PUBBL_00_02_01_06&amp;ITEMSELEZ=TFAT0012:true&amp;OPEN=true/&amp;ep:LC=EN&amp;COMM=BANKITALIA&amp;ENV=LIVE&amp;CTX=DIFF&amp;IDX=2&amp;/view:CUBEIDS=" target="_blank" rel="noopener">link</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/f/nKAPSyp34A9azBzJd/BankofItaly_HouseholdsNonprofitInstitutionsServingHouseholds.csv" target="_blank" rel="noopener">file</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-200-bankofitaly-householdsnonprofitinstitutionsservinghouseholds-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-200-bankofitaly-householdsnonprofitinstitutionsservinghouseholds-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{BankofItaly_HouseholdsNonprofitInstitutionsServingHouseholds,
+  title = {Households and Non-Profit Institutions Serving Households [{{TFAT0012}}]},
+  author = {{Bank of Italy}},
+  year = {2025},
+  month = {sep},
+  url = {https://infostat.bancaditalia.it/inquiry/home?spyglass/taxo:CUBESET=/PUBBL_00/PUBBL_00_02_01_06&amp;ITEMSELEZ=TFAT0012:true&amp;OPEN=true/&amp;ep:LC=EN&amp;COMM=BANKITALIA&amp;ENV=LIVE&amp;CTX=DIFF&amp;IDX=2&amp;/view:CUBEIDS=},
+  keywords = {Data Sources: Wealth Topography},
+  note = {Statistical Database},
+  url_file = {BankofItaly_HouseholdsNonprofitInstitutionsServingHouseholds.csv}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="oecd" data-year-sort="2025" data-year-label="2025" data-title-sort="households financial assets and liabilities" data-original-order="986" data-search="households financial assets and liabilities oecd 2025 data sources wealth topography the elaboration of a more precise nomenclature of households financial assets and liabilities and the collection of more detailed information constitute an attempt to better identify and analyse households wealth in oecd countries the objective of the sub classification of assets and liabilities is to identify the relative importance of the various types of assets classified according to the increasing risk oecd householdsfinancialassetsliabilities">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://stats.oecd.org/Index.aspx?DataSetCode=QASA_7HH" target="_blank" rel="noopener">Households' Financial Assets and Liabilities</a>. OECD. 2025.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://stats.oecd.org/Index.aspx?DataSetCode=QASA_7HH" target="_blank" rel="noopener">link</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/f/nKAPSyp34A9azBzJd/OECD_HouseholdsFinancialAssetsLiabilities.csv" target="_blank" rel="noopener">file</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-986-oecd-householdsfinancialassetsliabilities-bibtex" data-library-toggle="">bibtex</button>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--abstract" type="button" aria-expanded="false" aria-controls="entry-986-oecd-householdsfinancialassetsliabilities-abstract" data-library-toggle="">abstract</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-986-oecd-householdsfinancialassetsliabilities-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{OECD_HouseholdsFinancialAssetsLiabilities,
+  title = {Households' Financial Assets and Liabilities},
+  author = {{OECD}},
+  year = {2025},
+  url = {https://stats.oecd.org/Index.aspx?DataSetCode=QASA_7HH},
+  urldate = {2025-09-09},
+  abstract = {The elaboration of a more precise nomenclature of households' financial assets and liabilities and the collection of more detailed information constitute an attempt to better identify and analyse households' wealth in OECD countries. The objective of the sub-classification of assets and liabilities is to identify the relative importance of the various types of assets, classified according to the increasing risk.},
+  keywords = {Data Sources: Wealth Topography},
+  note = {OECD Statistics},
+  url_file = {OECD_HouseholdsFinancialAssetsLiabilities.csv}
+}</code></pre>
+          </div>
+          <div id="entry-986-oecd-householdsfinancialassetsliabilities-abstract" class="gc-library-entry__panel gc-library-entry__panel--abstract" hidden="">
+          <p>The elaboration of a more precise nomenclature of households' financial assets and liabilities and the collection of more detailed information constitute an attempt to better identify and analyse households' wealth in OECD countries. The objective of the sub-classification of assets and liabilities is to identify the relative importance of the various types of assets, classified according to the increasing risk.</p>
+          </div>
+        </div>
+      </article>
+    </li>
+      </ol>
+    </details>
+    <details class="gc-library-year-group" data-group-key="2023" open="">
+      <summary><span class="gc-library-year-group__label">2023</span> <span class="gc-library-year-group__count">(<span data-group-visible-count="">1</span>)</span></summary>
+      <ol class="gc-library-list">
+    <li class="gc-library-entry" data-author-sort="world" data-year-sort="2023" data-year-label="2023" data-title-sort="offshore financial wealth" data-original-order="184" data-search="offshore financial wealth atlas of the offshore world 2023 data sources wealth topography this database is an extention and update of the offshore financial wealth estimates originally derived in zucman 2013 and in alstadster johannesen and zucman 2018 it presents for the period 2001 2022 country level estimates of the total amount held abroad as well as estimates for the amount hosted by countries classified as tax havens citations alstadster a johannesen n zucman g 2018 who owns the wealth in tax havens macro evidence and implications for global inequality journal of public economics 162 89100 zucman g 2013 the missing wealth of nations are europe and the us net debtors or net creditors quarterly journal of economics 128 3 13211364 atlasoftheoffshoreworld2023 offshorefinancialwealth">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://atlas-offshore.world/dataset/offshore-financial" target="_blank" rel="noopener">Offshore Financial Wealth</a>. Atlas of the Offshore World. May 2023.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://atlas-offshore.world/dataset/offshore-financial" target="_blank" rel="noopener">link</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/f/nKAPSyp34A9azBzJd/AtlasoftheOffshoreWorld2023_OffshoreFinancialWealth.xlsx" target="_blank" rel="noopener">file</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-184-atlasoftheoffshoreworld2023-offshorefinancialwealth-bibtex" data-library-toggle="">bibtex</button>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--abstract" type="button" aria-expanded="false" aria-controls="entry-184-atlasoftheoffshoreworld2023-offshorefinancialwealth-abstract" data-library-toggle="">abstract</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-184-atlasoftheoffshoreworld2023-offshorefinancialwealth-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{AtlasoftheOffshoreWorld2023_OffshoreFinancialWealth,
+  title = {Offshore Financial Wealth},
+  author = {{Atlas of the Offshore World}},
+  year = {2023},
+  month = {may},
+  url = {https://atlas-offshore.world/dataset/offshore-financial},
+  urldate = {2024-10-08},
+  abstract = {This database is an extention and update of the offshore financial wealth estimates originally derived in Zucman (2013) and in Alstads{\ae}ter, Johannesen and Zucman (2018). It presents, for the period 2001-2022 country level estimates of the total amount held abroad, as well as estimates for the amount hosted by countries classified as tax havens. Citations: Alstads{\ae}ter, A., Johannesen, N., \&amp; Zucman, G. (2018). ``Who owns the wealth in tax havens? Macro evidence and implications for global inequality''. Journal of Public Economics, 162: 89--100. Zucman, G. (2013). ``The missing wealth of nations: Are Europe and the US net debtors or net creditors?'' Quarterly Journal of Economics, 128(3), 1321--1364.},
+  keywords = {Data Sources: Wealth Topography},
+  note = {EU Tax Observatory},
+  url_file = {AtlasoftheOffshoreWorld2023_OffshoreFinancialWealth.xlsx}
+}</code></pre>
+          </div>
+          <div id="entry-184-atlasoftheoffshoreworld2023-offshorefinancialwealth-abstract" class="gc-library-entry__panel gc-library-entry__panel--abstract" hidden="">
+          <p>This database is an extention and update of the offshore financial wealth estimates originally derived in Zucman (2013) and in Alstadsæter, Johannesen and Zucman (2018). It presents, for the period 2001-2022 country level estimates of the total amount held abroad, as well as estimates for the amount hosted by countries classified as tax havens. Citations: Alstadsæter, A., Johannesen, N., &amp; Zucman, G. (2018). "Who owns the wealth in tax havens? Macro evidence and implications for global inequality". Journal of Public Economics, 162: 89–100. Zucman, G. (2013). "The missing wealth of nations: Are Europe and the US net debtors or net creditors?" Quarterly Journal of Economics, 128(3), 1321–1364.</p>
+          </div>
+        </div>
+      </article>
+    </li>
+      </ol>
+    </details>
+    <details class="gc-library-year-group" data-group-key="2022" open="">
+      <summary><span class="gc-library-year-group__label">2022</span> <span class="gc-library-year-group__count">(<span data-group-visible-count="">2</span>)</span></summary>
+      <ol class="gc-library-list">
+    <li class="gc-library-entry" data-author-sort="italy" data-year-sort="2022" data-year-label="2022" data-title-sort="wealth of institutional sectors in italy 2005 2020" data-original-order="201" data-search="the wealth of institutional sectors in italy 2005 2020 bank of italy and istat 2022 data sources wealth topography bankofitalyistat2022 wealthinstitutionalsectorsitaly20052020">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://www.bancaditalia.it/pubblicazioni/ricchezza-settori-istituzionali/2022-ricchezza-settori-istituzionali/index.html" target="_blank" rel="noopener">The Wealth of Institutional Sectors in Italy: 2005-2020</a>. Bank of Italy; and Istat. January 2022.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://www.bancaditalia.it/pubblicazioni/ricchezza-settori-istituzionali/2022-ricchezza-settori-istituzionali/index.html" target="_blank" rel="noopener">link</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/network/publication/bankofitaly-istat-thewealthofinstitutionalsectorsinitaly20052020datafile-2022" target="_blank" rel="noopener">data file</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/f/nKAPSyp34A9azBzJd/BankofItalyIstat2022_WealthInstitutionalSectorsItaly20052020.pdf" target="_blank" rel="noopener">file</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-201-bankofitalyistat2022-wealthinstitutionalsectorsitaly20052020-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-201-bankofitalyistat2022-wealthinstitutionalsectorsitaly20052020-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{BankofItalyIstat2022_WealthInstitutionalSectorsItaly20052020,
+  title = {The Wealth of Institutional Sectors in {{Italy}}: 2005-2020},
+  author = {{Bank of Italy} and {Istat}},
+  year = {2022},
+  month = {jan},
+  url = {https://www.bancaditalia.it/pubblicazioni/ricchezza-settori-istituzionali/2022-ricchezza-settori-istituzionali/index.html},
+  urldate = {2022-12-01},
+  keywords = {Data Sources: Wealth Topography},
+  url_data_file = {https://bibbase.org/network/publication/bankofitaly-istat-thewealthofinstitutionalsectorsinitaly20052020datafile-2022},
+  url_file = {BankofItalyIstat2022_WealthInstitutionalSectorsItaly20052020.pdf}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="italy" data-year-sort="2022" data-year-label="2022" data-title-sort="wealth of institutional sectors in italy 2005 2020 data file" data-original-order="202" data-search="the wealth of institutional sectors in italy 2005 2020 data file bank of italy and istat 2022 data sources wealth topography bankofitalyistat2022 wealthinstitutionalsectorsitaly20052020a">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://www.bancaditalia.it/pubblicazioni/ricchezza-settori-istituzionali/2022-ricchezza-settori-istituzionali/index.html" target="_blank" rel="noopener">The Wealth of Institutional Sectors in Italy: 2005-2020: Data File</a>. Bank of Italy; and Istat. January 2022.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://www.bancaditalia.it/pubblicazioni/ricchezza-settori-istituzionali/2022-ricchezza-settori-istituzionali/index.html" target="_blank" rel="noopener">link</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/f/nKAPSyp34A9azBzJd/BankofItalyIstat2022_WealthInstitutionalSectorsItaly20052020a.xlsx" target="_blank" rel="noopener">file</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/network/publication/bankofitaly-istat-thewealthofinstitutionalsectorsinitaly20052020-2022" target="_blank" rel="noopener">parent report</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-202-bankofitalyistat2022-wealthinstitutionalsectorsitaly20052020a-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-202-bankofitalyistat2022-wealthinstitutionalsectorsitaly20052020a-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{BankofItalyIstat2022_WealthInstitutionalSectorsItaly20052020a,
+  title = {The Wealth of Institutional Sectors in {{Italy}}: 2005-2020: Data File},
+  author = {{Bank of Italy} and {Istat}},
+  year = {2022},
+  month = {jan},
+  url = {https://www.bancaditalia.it/pubblicazioni/ricchezza-settori-istituzionali/2022-ricchezza-settori-istituzionali/index.html},
+  urldate = {2022-12-01},
+  keywords = {Data Sources: Wealth Topography},
+  url_file = {BankofItalyIstat2022_WealthInstitutionalSectorsItaly20052020a.xlsx},
+  url_parent_report = {https://bibbase.org/network/publication/bankofitaly-istat-thewealthofinstitutionalsectorsinitaly20052020-2022}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+      </ol>
+    </details>
+    <details class="gc-library-year-group" data-group-key="2021" open="">
+      <summary><span class="gc-library-year-group__label">2021</span> <span class="gc-library-year-group__count">(<span data-group-visible-count="">1</span>)</span></summary>
+      <ol class="gc-library-list">
+    <li class="gc-library-entry" data-author-sort="finance" data-year-sort="2021" data-year-label="2021" data-title-sort="household finance and consumption survey" data-original-order="613" data-search="household finance and consumption survey household finance and consumption network 2021 data sources wealth inequality data sources wealth topography householdfinanceandconsumptionnetwork2021">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://www.ecb.europa.eu/pub/economic-research/research-networks/html/researcher_hfcn.en.html" target="_blank" rel="noopener">Household Finance and Consumption Survey</a>. Household Finance; and Consumption Network. May 2021.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://www.ecb.europa.eu/pub/economic-research/research-networks/html/researcher_hfcn.en.html" target="_blank" rel="noopener">link</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/f/nKAPSyp34A9azBzJd/HouseholdFinanceandConsumptionNetwork2021.zip" target="_blank" rel="noopener">file</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/network/publication/householdfinance-network-thehouseholdfinanceandconsumptionsurveymethodologicalreportforthe2021wave-2023" target="_blank" rel="noopener">methodological report</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-613-householdfinanceandconsumptionnetwork2021-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-613-householdfinanceandconsumptionnetwork2021-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{HouseholdFinanceandConsumptionNetwork2021,
+  title = {Household {{Finance}} and {{Consumption Survey}}},
+  author = {{Household Finance and Consumption Network}},
+  year = {2021},
+  month = {may},
+  url = {https://www.ecb.europa.eu/pub/economic-research/research-networks/html/researcher_hfcn.en.html},
+  urldate = {2022-07-12},
+  keywords = {Data Sources: Wealth Inequality,Data Sources: Wealth Topography},
+  note = {European Central Bank},
+  url_file = {HouseholdFinanceandConsumptionNetwork2021.zip},
+  url_methodological_report = {https://bibbase.org/network/publication/householdfinance-network-thehouseholdfinanceandconsumptionsurveymethodologicalreportforthe2021wave-2023}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+      </ol>
+    </details>
+    <details class="gc-library-year-group" data-group-key="2019" open="">
+      <summary><span class="gc-library-year-group__label">2019</span> <span class="gc-library-year-group__count">(<span data-group-visible-count="">1</span>)</span></summary>
+      <ol class="gc-library-list">
+    <li class="gc-library-entry" data-author-sort="vellutini" data-year-sort="2019" data-year-label="2019" data-title-sort="estimating international tax evasion by individuals" data-original-order="1232" data-search="estimating international tax evasion by individuals charles vellutini georges casamatta lea bousquet and grzegorz poniatowski 2019 european commission s directorate general for taxation and customs union no 76 data sources wealth topography cross national comparisons wealth taxation this study provides estimates of offshore wealth held by individuals for the world s main economies and corresponding estimates of international tax evasion for the eu and eu member states following the literature the methodology relies on public statistics published by international organisations several additions to the standard approach are proposed including i estimates of offshore wealth held indirectly through shell companies based on the identification of type ii international financial centres defined as jurisdictions providing shell companies and similar devices ii the use of foreign direct investment data to improve on available statistics for cross borders deposits key results are as follows the global offshore wealth is estimated at usd 7 8 trillion in 2016 eur 7 5 trillion or 10 4 of global gdp a considerable amount this estimate is largely consistent with existing published valuations the eu share is valued at usd 1 6 trillion eur 1 5 trillion or 9 7 of gdp the corresponding eu estimated revenue lost to international tax evasion is eur 46 billion in 2016 0 32 of gdp among member states there is a great deal of heterogeneity both in monetary terms of the estimated offshore wealth and the corresponding tax evasion and in gdp percentages of the same vellutinietal2019">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://doi.org/10.2778/300732" target="_blank" rel="noopener">Estimating International Tax Evasion by Individuals</a>. Vellutini, Charles; Casamatta, Georges; Bousquet, Léa; and Poniatowski, Grzegorz. European Commission's Directorate-General for Taxation and Customs Union. September 2019.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://doi.org/10.2778/300732" target="_blank" rel="noopener">link</a>
+          <a class="gc-library-entry__link" href="https://bibbase.org/f/nKAPSyp34A9azBzJd/Vellutinietal2019.pdf" target="_blank" rel="noopener">file</a>
+          <a class="gc-library-entry__link" href="https://doi.org/10.2778/300732" target="_blank" rel="noopener">doi</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-1232-vellutinietal2019-bibtex" data-library-toggle="">bibtex</button>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--abstract" type="button" aria-expanded="false" aria-controls="entry-1232-vellutinietal2019-abstract" data-library-toggle="">abstract</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-1232-vellutinietal2019-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@techreport{Vellutinietal2019,
+  title = {Estimating International Tax Evasion by Individuals},
+  author = {Vellutini, Charles and Casamatta, Georges and Bousquet, L{\'e}a and Poniatowski, Grzegorz},
+  year = {2019},
+  month = {sep},
+  number = {76},
+  institution = {{European Commission's Directorate-General for Taxation and Customs Union}},
+  doi = {10.2778/300732},
+  url = {https://doi.org/10.2778/300732},
+  abstract = {This study provides estimates of offshore wealth held by individuals (for the world's main economies) and corresponding estimates of international tax evasion (for the EU and EU Member States). Following the literature, the methodology relies on public statistics published by international organisations. Several additions to the standard approach are proposed including (i) estimates of offshore wealth held indirectly through shell companies, based on the identification of ``Type II'' international financial centres (defined as jurisdictions providing shell companies and similar devices); (ii) the use of foreign direct investment data to improve on available statistics for cross-borders deposits. Key results are as follows. The global offshore wealth is estimated at USD 7.8 trillion in 2016 (EUR 7.5 trillion) or 10.4\% of global GDP, a considerable amount. This estimate is largely consistent with existing published valuations. The EU share is valued at USD 1.6 trillion (EUR 1.5 trillion), or 9.7\% of GDP. The corresponding EU estimated revenue lost to international tax evasion is EUR 46 billion in 2016 (0.32\% of GDP). Among Member states, there is a great deal of heterogeneity, both in monetary terms of the estimated offshore wealth (and the corresponding tax evasion) and in GDP percentages of the same.},
+  keywords = {Data Sources: Wealth Topography,Cross-National Comparisons,Wealth Taxation},
+  type = {Taxation {{Paper}}},
+  url_file = {Vellutinietal2019.pdf}
+}</code></pre>
+          </div>
+          <div id="entry-1232-vellutinietal2019-abstract" class="gc-library-entry__panel gc-library-entry__panel--abstract" hidden="">
+          <p>This study provides estimates of offshore wealth held by individuals (for the world's main economies) and corresponding estimates of international tax evasion (for the EU and EU Member States). Following the literature, the methodology relies on public statistics published by international organisations. Several additions to the standard approach are proposed including (i) estimates of offshore wealth held indirectly through shell companies, based on the identification of "Type II" international financial centres (defined as jurisdictions providing shell companies and similar devices); (ii) the use of foreign direct investment data to improve on available statistics for cross-borders deposits. Key results are as follows. The global offshore wealth is estimated at USD 7.8 trillion in 2016 (EUR 7.5 trillion) or 10.4% of global GDP, a considerable amount. This estimate is largely consistent with existing published valuations. The EU share is valued at USD 1.6 trillion (EUR 1.5 trillion), or 9.7% of GDP. The corresponding EU estimated revenue lost to international tax evasion is EUR 46 billion in 2016 (0.32% of GDP). Among Member states, there is a great deal of heterogeneity, both in monetary terms of the estimated offshore wealth (and the corresponding tax evasion) and in GDP percentages of the same.</p>
+          </div>
+        </div>
+      </article>
+    </li>
+      </ol>
+    </details>
+    <details class="gc-library-year-group" data-group-key="1900" open="">
+      <summary><span class="gc-library-year-group__label">1900</span> <span class="gc-library-year-group__count">(<span data-group-visible-count="">8</span>)</span></summary>
+      <ol class="gc-library-list">
+    <li class="gc-library-entry" data-author-sort="database" data-year-sort="1900" data-year-label="1900" data-title-sort="data" data-original-order="1273" data-search="data world inequality database 1900 data sources wealth inequality data sources wealth topography worldinequalitydatabase data">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://wid.world/data/" target="_blank" rel="noopener">Data</a>. World Inequality Database. 1900.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://wid.world/data/" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-1273-worldinequalitydatabase-data-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-1273-worldinequalitydatabase-data-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{WorldInequalityDatabase_Data,
+  title = {Data},
+  author = {{World Inequality Database}},
+  year = {1900},
+  url = {https://wid.world/data/},
+  urldate = {2022-05-30},
+  keywords = {Data Sources: Wealth Inequality,Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="lis" data-year-sort="1900" data-year-label="1900" data-title-sort="luxembourg wealth study database" data-original-order="884" data-search="luxembourg wealth study database lis 1900 data sources wealth inequality data sources wealth topography lis luxembourgwealthstudydatabase">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://www.lisdatacenter.org/our-data/lws-database/" target="_blank" rel="noopener">Luxembourg Wealth Study Database</a>. LIS. 1900.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://www.lisdatacenter.org/our-data/lws-database/" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-884-lis-luxembourgwealthstudydatabase-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-884-lis-luxembourgwealthstudydatabase-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{LIS_LuxembourgWealthStudyDatabase,
+  title = {Luxembourg {{Wealth Study Database}}},
+  author = {{LIS}},
+  year = {1900},
+  url = {https://www.lisdatacenter.org/our-data/lws-database/},
+  urldate = {2022-02-07},
+  keywords = {Data Sources: Wealth Inequality,Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="suisse" data-year-sort="1900" data-year-label="1900" data-title-sort="credit suisse global wealth report" data-original-order="368" data-search="credit suisse global wealth report credit suisse 1900 data sources wealth inequality data sources wealth topography creditsuisse creditsuisseglobalwealthreport">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://www.credit-suisse.com/about-us/en/reports-research/global-wealth-report.html" target="_blank" rel="noopener">Credit Suisse Global Wealth Report</a>. Credit Suisse. 1900.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://www.credit-suisse.com/about-us/en/reports-research/global-wealth-report.html" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-368-creditsuisse-creditsuisseglobalwealthreport-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-368-creditsuisse-creditsuisseglobalwealthreport-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{CreditSuisse_CreditSuisseGlobalWealthReport,
+  title = {Credit {{Suisse}} Global Wealth Report},
+  author = {{Credit Suisse}},
+  year = {1900},
+  url = {https://www.credit-suisse.com/about-us/en/reports-research/global-wealth-report.html},
+  urldate = {2022-02-17},
+  keywords = {Data Sources: Wealth Inequality,Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="system" data-year-sort="1900" data-year-label="1900" data-title-sort="financial accounts of the united states z 1 release dates" data-original-order="242" data-search="financial accounts of the united states z 1 release dates board of governors of the federal reserve system 1900 data sources wealth topography boardofgovernorsofthefederalreservesystem financialaccountsunitedstatesrelease">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://www.federalreserve.gov/datadownload/Choose.aspx?rel=z1" target="_blank" rel="noopener">Financial Accounts of the United States - Z.1: Release Dates</a>. Board of Governors of the Federal Reserve System. 1900.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://www.federalreserve.gov/datadownload/Choose.aspx?rel=z1" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-242-boardofgovernorsofthefederalreservesystem-financialaccountsunitedstatesrelease-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-242-boardofgovernorsofthefederalreservesystem-financialaccountsunitedstatesrelease-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{BoardofGovernorsoftheFederalReserveSystem_FinancialAccountsUnitedStatesRelease,
+  title = {Financial {{Accounts}} of the {{United States}} - {{Z}}.1: Release Dates},
+  author = {{Board of Governors of the Federal Reserve System}},
+  year = {1900},
+  url = {https://www.federalreserve.gov/datadownload/Choose.aspx?rel=z1},
+  urldate = {2025-10-02},
+  keywords = {Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="unknown" data-year-sort="1900" data-year-label="1900" data-title-sort="european central bank distributional wealth accounts" data-original-order="504" data-search="european central bank distributional wealth accounts unknown 1900 data sources wealth inequality data sources wealth topography europeancentralbank2024 distributionalwealthaccounts">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://data.ecb.europa.eu/data/datasets/DWA" target="_blank" rel="noopener">European Central Bank Distributional Wealth Accounts</a>. 1900.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://data.ecb.europa.eu/data/datasets/DWA" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-504-europeancentralbank2024-distributionalwealthaccounts-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-504-europeancentralbank2024-distributionalwealthaccounts-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{EuropeanCentralBank2024_DistributionalWealthAccounts,
+  title = {European Central Bank Distributional Wealth Accounts},
+  author = {Unknown},
+  year = {1900},
+  url = {https://data.ecb.europa.eu/data/datasets/DWA},
+  keywords = {Data Sources: Wealth Inequality,Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="unknown" data-year-sort="1900" data-year-label="1900" data-title-sort="european central bank eu financial accounts" data-original-order="503" data-search="european central bank eu financial accounts unknown 1900 data sources wealth topography europeancentralbank2022 qsaquarterlysectoraccountsmufa">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://data.ecb.europa.eu/data/datasets/QSA" target="_blank" rel="noopener">European Central Bank EU - Financial Accounts</a>. 1900.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://data.ecb.europa.eu/data/datasets/QSA" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-503-europeancentralbank2022-qsaquarterlysectoraccountsmufa-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-503-europeancentralbank2022-qsaquarterlysectoraccountsmufa-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{EuropeanCentralBank2022_QSAQuarterlySectorAccountsMUFA,
+  title = {European Central Bank EU - Financial Accounts},
+  author = {Unknown},
+  year = {1900},
+  url = {https://data.ecb.europa.eu/data/datasets/QSA},
+  keywords = {Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="unknown" data-year-sort="1900" data-year-label="1900" data-title-sort="european central bank non eu financial accounts" data-original-order="502" data-search="european central bank non eu financial accounts unknown 1900 data sources wealth topography europeancentralbank2022 idcssectoraccountsinternationaldata">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://data.ecb.europa.eu/data/datasets/IDCS" target="_blank" rel="noopener">European Central Bank Non-EU - Financial Accounts</a>. 1900.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://data.ecb.europa.eu/data/datasets/IDCS" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-502-europeancentralbank2022-idcssectoraccountsinternationaldata-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-502-europeancentralbank2022-idcssectoraccountsinternationaldata-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{EuropeanCentralBank2022_IDCSSectorAccountsInternationalData,
+  title = {European Central Bank Non-EU - Financial Accounts},
+  author = {Unknown},
+  year = {1900},
+  url = {https://data.ecb.europa.eu/data/datasets/IDCS},
+  keywords = {Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="gc-library-entry" data-author-sort="unknown" data-year-sort="1900" data-year-label="1900" data-title-sort="eurostat financial accounts" data-original-order="507" data-search="eurostat financial accounts unknown 1900 data sources wealth topography eurostat2022 financialbalancesheetsannualdata">
+      <article>
+        <p class="gc-library-entry__citation"><a href="https://doi.org/10.2908/NASA_10_F_BS" target="_blank" rel="noopener">Eurostat - Financial Accounts</a>. 1900.</p>
+        <div class="gc-library-entry__links">
+          <a class="gc-library-entry__link" href="https://doi.org/10.2908/NASA_10_F_BS" target="_blank" rel="noopener">link</a>
+          <button class="gc-library-entry__toggle gc-library-entry__toggle--bibtex" type="button" aria-expanded="false" aria-controls="entry-507-eurostat2022-financialbalancesheetsannualdata-bibtex" data-library-toggle="">bibtex</button>
+        </div>
+        <div class="gc-library-entry__panels">
+          <div id="entry-507-eurostat2022-financialbalancesheetsannualdata-bibtex" class="gc-library-entry__panel gc-library-entry__panel--bibtex" hidden="">
+            <pre><code class="gc-library-bibtex-source">@misc{Eurostat2022_FinancialBalanceSheetsAnnualData,
+  title = {Eurostat - Financial Accounts},
+  author = {Unknown},
+  year = {1900},
+  url = {https://doi.org/10.2908/NASA_10_F_BS},
+  keywords = {Data Sources: Wealth Topography}
+}</code></pre>
+          </div>
+        </div>
+      </article>
+    </li>
+      </ol>
+    </details>
+  </div>
+</div>
+
+
+
+</main> <!-- /main -->
+<footer id="gc-site-footer" class="gc-site-footer">
+  <div class="gc-site-footer__inner">
+    <div class="gc-site-footer__brand">
+      <img src="../../../img/wip-logos/Alternate 2-Line WIP Logo/Color/SVG/WIP-2Line.svg" alt="The Wealth Inequality Project">
+    </div>
+    <div class="gc-site-footer__copyright">
+      © 2023 CUNY Graduate Center
+    </div>
+  </div>
+</footer>
+<script id="gc-navbar-dropdown-init">
+(() => {
+  const desktopMedia = window.matchMedia("(min-width: 992px)");
+  const dropdownSpecs = {
+    Data: [
+      { text: "Data and Documentation", path: "data_and_documentation/index.html" },
+      { text: "Codebook", path: "codebook/index.html" },
+      { text: "Sources", path: "data-sources-library/index.html" }
+    ],
+    About: [
+      { text: "About the Project", path: "about-the-project/index.html" },
+      { text: "FAQ", path: "FAQ/index.html" },
+      { text: "Team", path: "team/index.html" },
+      { text: "Contact", path: "contact/index.html" }
+    ]
+  };
+
+  function getUtilityLinks() {
+    return Array.from(
+      document.querySelectorAll(".gc-utility-nav__list > .gc-utility-nav__item > .gc-utility-nav__link")
+    );
+  }
+
+  function buildMenuItems(toggle, items) {
+    const toggleUrl = new URL(toggle.getAttribute("href") || "", window.location.href);
+    const sectionRoot = new URL("./", toggleUrl);
+    const menu = document.createElement("ul");
+    menu.className = "dropdown-menu";
+
+    items.forEach((item) => {
+      const listItem = document.createElement("li");
+      const link = document.createElement("a");
+      link.className = "dropdown-item";
+      link.href = new URL(item.path, sectionRoot).href;
+      link.textContent = item.text;
+      listItem.appendChild(link);
+      menu.appendChild(listItem);
+    });
+
+    return menu;
+  }
+
+  function enhanceNavbarStructure() {
+    Object.entries(dropdownSpecs).forEach(([label, items]) => {
+      const toggle = getUtilityLinks().find((link) => link.textContent.trim() === label);
+
+      if (!toggle) {
+        return;
+      }
+
+      const navItem = toggle.closest(".gc-utility-nav__item");
+      if (!navItem || navItem.dataset.gcDropdownEnhanced === "true") {
+        return;
+      }
+
+      navItem.dataset.gcDropdownEnhanced = "true";
+      navItem.classList.add("dropdown");
+      toggle.classList.add("dropdown-toggle");
+      toggle.setAttribute("role", "button");
+      toggle.setAttribute("aria-haspopup", "true");
+      toggle.setAttribute("aria-expanded", "false");
+      navItem.appendChild(buildMenuItems(toggle, items));
+    });
+  }
+
+  function setOpenState(dropdown, isOpen) {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+    dropdown.classList.toggle("gc-dropdown-open", isOpen);
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+  }
+
+  function closeAllDropdowns(exceptNode) {
+    document.querySelectorAll(".gc-utility-nav .dropdown").forEach((dropdown) => {
+      if (dropdown !== exceptNode) {
+        setOpenState(dropdown, false);
+      }
+    });
+  }
+
+  function bindDesktopDropdowns() {
+    const utilityNav = document.querySelector(".gc-utility-nav");
+    if (!utilityNav) {
+      return;
+    }
+
+    document.querySelectorAll(".gc-utility-nav .dropdown").forEach((dropdown) => {
+      if (dropdown.dataset.gcDesktopDropdownBound === "true") {
+        return;
+      }
+
+      const toggle = dropdown.querySelector(".dropdown-toggle");
+      if (!toggle) {
+        return;
+      }
+
+      dropdown.dataset.gcDesktopDropdownBound = "true";
+
+      const showMenu = () => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        closeAllDropdowns(dropdown);
+        setOpenState(dropdown, true);
+      };
+
+      const hideMenu = () => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        setOpenState(dropdown, false);
+      };
+
+      dropdown.addEventListener("mouseenter", showMenu);
+      dropdown.addEventListener("mouseleave", hideMenu);
+      dropdown.addEventListener("focusin", showMenu);
+      dropdown.addEventListener("focusout", (event) => {
+        if (!dropdown.contains(event.relatedTarget)) {
+          hideMenu();
+        }
+      });
+
+      toggle.addEventListener("click", (event) => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        event.preventDefault();
+        const willOpen = !dropdown.classList.contains("gc-dropdown-open");
+        closeAllDropdowns(dropdown);
+        setOpenState(dropdown, willOpen);
+      });
+
+      toggle.addEventListener("keydown", (event) => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        if (event.key === "Escape") {
+          hideMenu();
+          toggle.blur();
+        }
+      });
+    });
+
+    if (utilityNav.dataset.gcDesktopDropdownDocumentBound !== "true") {
+      utilityNav.dataset.gcDesktopDropdownDocumentBound = "true";
+      document.addEventListener("click", (event) => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        if (!utilityNav.contains(event.target)) {
+          closeAllDropdowns(null);
+        }
+      });
+    }
+  }
+
+  function syncDesktopDropdownState() {
+    if (desktopMedia.matches) {
+      return;
+    }
+
+    document.querySelectorAll(".gc-utility-nav .dropdown").forEach((dropdown) => {
+      setOpenState(dropdown, false);
+    });
+  }
+
+  function init() {
+    enhanceNavbarStructure();
+    bindDesktopDropdowns();
+    syncDesktopDropdownState();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+
+  if (typeof desktopMedia.addEventListener === "function") {
+    desktopMedia.addEventListener("change", syncDesktopDropdownState);
+  } else if (typeof desktopMedia.addListener === "function") {
+    desktopMedia.addListener(syncDesktopDropdownState);
+  }
+})();
+</script>
+<script id="gc-mobile-nav-init">
+(() => {
+  const mobileMedia = window.matchMedia("(max-width: 991.98px)");
+
+  function removeUtilityLinks(sidebarList) {
+    sidebarList.querySelectorAll(".gc-mobile-sidebar-links").forEach((node) => node.remove());
+  }
+
+  function buildUtilityItem(sourceLink) {
+    const item = document.createElement("li");
+    item.className = "sidebar-item gc-mobile-utility-item";
+
+    const container = document.createElement("div");
+    container.className = "sidebar-item-container";
+
+    const link = document.createElement("a");
+    link.className = "sidebar-item-text sidebar-link";
+    link.href = sourceLink.getAttribute("href") || "#";
+
+    const rel = sourceLink.getAttribute("rel");
+    const target = sourceLink.getAttribute("target");
+    if (rel) {
+      link.setAttribute("rel", rel);
+    }
+    if (target) {
+      link.setAttribute("target", target);
+    }
+
+    const sourceUrl = new URL(sourceLink.href, window.location.href);
+    const currentUrl = new URL(window.location.href);
+    if (sourceUrl.pathname === currentUrl.pathname) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    }
+
+    const text = document.createElement("span");
+    text.className = "menu-text";
+    text.textContent = sourceLink.textContent.trim();
+
+    link.appendChild(text);
+    container.appendChild(link);
+    item.appendChild(container);
+    return item;
+  }
+
+  function buildUtilityGroup(utilityLinks) {
+    const wrapper = document.createElement("li");
+    wrapper.className = "gc-mobile-sidebar-links";
+
+    const list = document.createElement("ul");
+    list.className = "list-unstyled";
+
+    utilityLinks.forEach((link) => list.appendChild(buildUtilityItem(link)));
+    wrapper.appendChild(list);
+    return wrapper;
+  }
+
+  function syncMobileNav() {
+    const toggler = document.querySelector(".navbar-toggler");
+    const sidebar = document.getElementById("quarto-sidebar");
+    const sidebarGlass = document.getElementById("quarto-sidebar-glass");
+    const sidebarList = document.querySelector("#quarto-sidebar .sidebar-menu-container > ul");
+    const navbarCollapse = document.getElementById("navbarCollapse");
+
+    if (!toggler || !sidebar || !sidebarGlass || !sidebarList || !navbarCollapse) {
+      return;
+    }
+
+    const utilityLinks = Array.from(
+      document.querySelectorAll(".gc-utility-nav__link")
+    ).filter((link) => ["Data", "News", "About"].includes(link.textContent.trim()));
+
+    if (mobileMedia.matches) {
+      toggler.setAttribute("data-bs-target", ".quarto-sidebar-collapse-item");
+      toggler.setAttribute("aria-controls", "quarto-sidebar");
+      toggler.setAttribute("aria-label", "Toggle site navigation");
+      navbarCollapse.classList.remove("show");
+      document.documentElement.classList.add("gc-mobile-nav-enhanced");
+
+      removeUtilityLinks(sidebarList);
+      if (utilityLinks.length > 0) {
+        sidebarList.appendChild(buildUtilityGroup(utilityLinks));
+      }
+      return;
+    }
+
+    toggler.setAttribute("data-bs-target", "#navbarCollapse");
+    toggler.setAttribute("aria-controls", "navbarCollapse");
+    toggler.setAttribute("aria-label", "Toggle navigation");
+    document.documentElement.classList.add("gc-mobile-nav-enhanced");
+    removeUtilityLinks(sidebarList);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", syncMobileNav, { once: true });
+  } else {
+    syncMobileNav();
+  }
+
+  if (typeof mobileMedia.addEventListener === "function") {
+    mobileMedia.addEventListener("change", syncMobileNav);
+  } else if (typeof mobileMedia.addListener === "function") {
+    mobileMedia.addListener(syncMobileNav);
+  }
+})();
+</script>
+<script src="../../../assets/interactive-layer.js"></script>
+<script src="../../../assets/digital-library.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

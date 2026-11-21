@@ -1,0 +1,225 @@
+.gc-news-article {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+.gc-news-article__status {
+  margin: 1.25rem 0 0;
+  padding: 1rem 1.25rem;
+  background: #f3f5f7;
+  border-left: 4px solid #1d3a83;
+  color: #1d1d1d;
+}
+
+.gc-news-article__status--error {
+  border-left-color: #9f2d2d;
+  background: #fff2f2;
+  color: #7a1f1f;
+}
+
+.gc-news-article__layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 6.5rem;
+}
+
+.gc-news-article__main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.gc-news-article__title {
+  margin: 0 0 0.75rem;
+  color: #1d3a83;
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.gc-news-article__date {
+  margin: 0 0 1.5rem;
+  color: #616365;
+  font-size: 1.125rem;
+  line-height: 1.67;
+}
+
+.gc-news-article__body {
+  color: #222222;
+  font-size: 1.125rem;
+  line-height: 1.67;
+}
+
+.gc-news-article__body p,
+.gc-news-article__body ul,
+.gc-news-article__body figure,
+.gc-news-article__body h5,
+.gc-news-article__body pre {
+  margin: 0 0 1rem;
+}
+
+.gc-news-article__body h5 {
+  color: #1d3a83;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.gc-news-article__body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.gc-news-article__body figcaption {
+  margin-top: 0.35rem;
+  color: #4f5661;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.gc-news-article__caption--center {
+  text-align: center;
+}
+
+.gc-news-article__image-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gc-news-article__related {
+  flex: 0 0 26rem;
+  background: #eaecee;
+  padding: 1.5rem;
+}
+
+.gc-news-article__related h2 {
+  margin: 0 0 1.5rem;
+  color: #464646;
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.gc-news-article__related-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gc-news-article__related .gc-news-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(46, 63, 163, 0.08);
+}
+
+.gc-news-article__related .gc-news-card__body {
+  padding: 1.5rem;
+}
+
+.gc-news-article__related .gc-news-card__title {
+  margin: 0;
+  color: #1d3a83;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.gc-news-article__related .gc-news-card__date {
+  margin: 0.75rem 0 0;
+  color: #616365;
+  font-size: 1.125rem;
+  line-height: 1.67;
+}
+
+.gc-news-article__related .gc-news-card__description {
+  display: none;
+}
+
+.gc-news-article__related .featuredcontentcard {
+  background: rgba(137, 196, 244, 0.53);
+}
+
+.gc-news-article__related .eventscard {
+  background: rgba(59, 130, 150, 0.6);
+}
+
+.gc-news-article__related .publicationscard {
+  background: rgba(168, 173, 180, 0.53);
+}
+
+.gc-news-article__related .featureddatacard .gc-news-card__date,
+.gc-news-article__related .eventscard .gc-news-card__date,
+.gc-news-article__related .publicationscard .gc-news-card__date {
+  color: #333333;
+}
+
+.gc-news-article__modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.gc-news-article__modal[hidden] {
+  display: none;
+}
+
+.gc-news-article__modal img {
+  max-width: min(100%, 72rem);
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.gc-news-article__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+  background: transparent;
+  color: #000000;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.customlink {
+  color: #1d3a83;
+  text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+  .gc-news-article__layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .gc-news-article__related {
+    width: min(100%, 27.375rem);
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gc-news-article__title,
+  .gc-news-article__related h2 {
+    font-size: 1.5rem;
+  }
+
+  .gc-news-article__body,
+  .gc-news-article__date,
+  .gc-news-article__related .gc-news-card__date {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .gc-news-article__image-row {
+    grid-template-columns: 1fr;
+  }
+}

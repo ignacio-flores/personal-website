@@ -1,0 +1,275 @@
+.gc-faq-shell {
+  margin-top: 0;
+  padding-bottom: 2rem;
+}
+
+.gc-faq-item {
+  border-top: 2px solid #e0e0e2;
+}
+
+.gc-faq-item:last-of-type {
+  border-bottom: 2px solid #e0e0e2;
+}
+
+.gc-faq-item summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-height: 86px;
+  padding: 31px 27px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.gc-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.gc-faq-item summary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 27px;
+  width: 24px;
+  height: 24px;
+  background: url("./legacy-icons/expand.png") center/contain no-repeat;
+  transform: translateY(-50%);
+}
+
+.gc-faq-item[open] summary::after {
+  background-image: url("./legacy-icons/collapse.png");
+}
+
+.gc-faq-item summary span {
+  display: block;
+  width: calc(100% - 50px);
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #1d3a83;
+}
+
+.gc-faq-answer {
+  padding: 0 27px 31px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #222;
+}
+
+.gc-faq-answer > :first-child {
+  margin-top: 0;
+}
+
+.gc-faq-answer a {
+  color: #005a95;
+}
+
+.gc-faq-answer a:hover,
+.gc-faq-answer a:focus {
+  color: #005a95;
+  text-decoration: underline;
+}
+
+.gc-faq-cite {
+  margin: 0 0 1rem 0;
+  padding: 0 0 0 50px;
+  border-left: 0;
+}
+
+.gc-faq-cite p:last-child {
+  margin-bottom: 0;
+}
+
+.gc-faq-example {
+  margin: 0.75rem 0 1rem;
+}
+
+.gc-faq-example img {
+  display: block;
+  width: 100%;
+  border: 1px solid #dfe4ea;
+  border-radius: 0;
+}
+
+.gc-data-table-wrap {
+  width: 100%;
+  margin: 1.25rem 0 2rem;
+  overflow-x: auto;
+}
+
+.gc-data-table-wrap table,
+table.gc-data-table,
+table.table.gc-data-table,
+.gc-faq-answer table {
+  width: 100%;
+  min-width: 38rem;
+  margin: 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+}
+
+.gc-data-table-wrap caption,
+table.gc-data-table caption,
+table.table.gc-data-table caption {
+  caption-side: top;
+  margin-bottom: 1rem;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #464646;
+  text-align: left;
+}
+
+.gc-data-table-wrap th,
+.gc-data-table-wrap td,
+table.gc-data-table th,
+table.gc-data-table td,
+table.table.gc-data-table th,
+table.table.gc-data-table td,
+.gc-faq-answer th,
+.gc-faq-answer td {
+  padding: 5px 10px;
+  vertical-align: top;
+  border: 2px solid #e0e0e2;
+  text-align: left;
+  color: #222;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.gc-data-table-wrap thead th,
+table.gc-data-table thead th,
+table.table.gc-data-table thead th,
+.gc-faq-answer thead th {
+  background: #fff;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+
+.gc-data-table-wrap tbody tr:nth-child(even) td,
+table.gc-data-table tbody tr:nth-child(even) td,
+table.table.gc-data-table tbody tr:nth-child(even) td,
+.gc-faq-answer tbody tr:nth-child(even) td {
+  background: #fff;
+}
+
+.gc-data-table--compact th,
+.gc-data-table--compact td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.gc-codebook-grid {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  margin: 1rem 0 1.75rem;
+  border-top: 2px solid #e0e0e2;
+  border-left: 2px solid #e0e0e2;
+}
+
+.gc-codebook-grid-item {
+  padding: 14px 10px;
+  border-right: 2px solid #e0e0e2;
+  border-bottom: 2px solid #e0e0e2;
+  text-align: center;
+  color: #222;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  background: #fff;
+}
+
+.gc-codebook-image-wrap {
+  margin: 1rem 0 1.5rem;
+  text-align: center;
+}
+
+.gc-codebook-image {
+  width: min(100%, 600px);
+  height: auto;
+}
+
+table.gc-data-table.gc-codebook-table,
+table.table.gc-data-table.gc-codebook-table,
+.gc-data-table-wrap table.gc-codebook-table {
+  min-width: 44rem;
+  table-layout: auto;
+}
+
+table.gc-data-table.gc-codebook-table th,
+table.gc-data-table.gc-codebook-table td,
+table.table.gc-data-table.gc-codebook-table th,
+table.table.gc-data-table.gc-codebook-table td,
+.gc-data-table-wrap table.gc-codebook-table th,
+.gc-data-table-wrap table.gc-codebook-table td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .gc-faq-item summary {
+    min-height: auto;
+    padding: 31px 27px;
+  }
+
+  .gc-faq-item summary span {
+    font-size: 16px;
+  }
+
+  .gc-faq-answer {
+    padding-right: 27px;
+    font-size: 14px;
+  }
+
+  .gc-faq-cite {
+    padding-left: 27px;
+  }
+
+  .gc-data-table-wrap table,
+  table.gc-data-table,
+  table.table.gc-data-table,
+  .gc-faq-answer table {
+    min-width: 34rem;
+  }
+
+  .gc-data-table-wrap th,
+  .gc-data-table-wrap td,
+  table.gc-data-table th,
+  table.gc-data-table td,
+  table.table.gc-data-table th,
+  table.table.gc-data-table td,
+  .gc-faq-answer th,
+  .gc-faq-answer td {
+    font-size: 14px;
+  }
+
+  table.gc-data-table.gc-codebook-table,
+  table.table.gc-data-table.gc-codebook-table,
+  .gc-data-table-wrap table.gc-codebook-table {
+    min-width: 36rem;
+  }
+
+  .gc-codebook-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .gc-codebook-grid-item {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 8px;
+  }
+}

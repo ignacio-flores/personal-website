@@ -1,0 +1,43 @@
+---
+title: Ignacio Flores
+description: Researcher in public economics working on inequality, wealth, taxation, and climate resilience.
+body-classes: home-page
+---
+
+::: {.content-block .home-content}
+::: {.hero}
+::: {.hero-text}
+::: {.hero-copy}
+
+# Ignacio Flores
+
+::: {.lede}
+Senior researcher based at the Paris School of Economics and Roma Tre University. 
+:::
+:::
+
+::: {.profile-links aria-label="Professional profiles"}
+<a class="profile-icon" href="pdf/CV_Ignacio_Flores.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV: curriculum vitae (opens in a new tab)"><i class="bi bi-file-earmark-text" aria-hidden="true"></i><span class="profile-icon-label">CV</span></a>
+<a class="profile-icon" href="https://scholar.google.com/citations?user=ILFlGwMAAAAJ&hl=fr&oi=sra" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar (opens in a new tab)"><i class="bi bi-mortarboard" aria-hidden="true"></i><span class="profile-icon-label">Google<br> Scholar</span></a>
+<a class="profile-icon" href="https://github.com/ignacio-flores" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)"><i class="bi bi-github" aria-hidden="true"></i><span class="profile-icon-label">GitHub</span></a>
+<a class="profile-icon" href="https://orcid.org/0000-0003-4478-2406" target="_blank" rel="noopener noreferrer" aria-label="ORCID (opens in a new tab)"><i class="bi bi-person-badge" aria-hidden="true"></i><span class="profile-icon-label">ORCID</span></a>
+:::
+
+::: {.home-section}
+
+I’m interested in how economic resources came to be distributed as they are today, and why that matters for how societies respond to climate change. My [research](research.qmd) looks at these questions over the long run and also explores how inequality interacts with taxation, politics, and institutions. My work on wealth and income includes research with the [World Inequality Lab](https://inequalitylab.world/en/) in Paris and the [Wealth Inequality Project](https://wealthinequalityproject.org/) in Rome.
+
+For correspondence, write to [ignacio.flores@psemail.eu](mailto:ignacio.flores@psemail.eu).
+:::
+:::
+
+::: {.portrait-wrap}
+<img id="home-portrait" class="portrait" src="images/profile_pic_long.png" width="730" height="730" alt="Portrait of Ignacio Flores">
+:::
+:::
+
+<footer class="home-footer" aria-label="Last updated">
+  Updated in <time datetime="2026-11">November, 2026</time>
+</footer>
+
+:::

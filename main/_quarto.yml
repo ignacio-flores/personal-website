@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: www
+  pre-render:
+    - python3 ../tools/directory-index/build.py
+  resources:
+    - images/
+    - pdf/
+    - site.js
+    - styles.css
+  render:
+    - index.qmd
+    - research.qmd
+    - projects.qmd
+    - outreach.qmd
+    - braincandy.qmd
+
+website:
+  title: Ignacio Flores
+  description: Public economist researching inequality, wealth, taxation, and climate resilience.
+  site-url: https://ignacioflores.com
+  favicon: images/favicon.svg
+  image: images/profile_pic_long.png
+  open-graph: true
+  twitter-card: true
+  search: false
+  navbar:
+    background: light
+    foreground: dark
+    pinned: true
+    collapse-below: lg
+    right:
+      - text: Research
+        href: research.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Media
+        href: outreach.qmd
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme: cosmo
+    page-layout: full
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="styles.css?v=20261120-update-date-directory-lists-1">
+    include-after-body:
+      - includes/site-scripts.html
+    title-block: false
+    toc: false
+    anchor-sections: false
+    link-external-newwindow: true
+    smooth-scroll: true
+
+execute:
+  echo: false
+  warning: false
+  message: false

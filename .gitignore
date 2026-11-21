@@ -1,3 +1,6 @@
 /.quarto/
+/main/.quarto/
 /.Rhistory
+/main/.Rhistory
 **/*.quarto_ipynb
+/tools/directory-index/__pycache__/

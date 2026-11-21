@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Codebook – Wealth Inequality Project</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3f3878107f510fd5e1cfc12aa424597c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../assets/gc-site.css">
+<link rel="stylesheet" href="../../assets/mobile-nav.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../data/index.html"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../news/index.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Codebook</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../wealth-topography/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wealth Topography</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../wealth-topography/mountains-of-assets/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wealth composition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../wealth-topography/mountains-of-financial-wealth/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Focus on specific components</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../wealth-topography/asset-by-asset-comparison/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asset comparison</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../wealth-inequality-trends/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wealth Inequality</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../wealth-inequality-trends/index.html#net-wealth-distribution" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Net wealth distribution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../wealth-inequality-trends/index.html#ownership-rates" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asset ownership rates</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../EIG/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taxes on Wealth</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../EIG/world-maps/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tax features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../EIG/graphs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Time trends</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../EIG/full-tax-schedule/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tax schedules</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../EIG/focus-us-states/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Focus: U.S. states</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../inheritance-trends/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inheritance Trends</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../digital-library-of-research/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Digital Library of Research</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../digital-library-of-research/cross-national-comparisons/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross-national comparisons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../digital-library-of-research/determinants/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Determinants of wealth and wealth inequality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../digital-library-of-research/EIG/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taxes on wealth</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../digital-library-of-research/impacts/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Impacts of wealth inequality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../digital-library-of-research/intergenerational-transfers/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intergenerational wealth</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../digital-library-of-research/methods-of-estimation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Methods of estimation of wealth inequality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../digital-library-of-research/trends/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trends in aggregate wealth and wealth inequality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../digital-library-of-research/wealth-taxation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wealth taxation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<template id="gc-sidebar-brand-template">
+  <div id="gc-sidebar-brand" class="gc-sidebar-brand">
+    <div class="gc-sidebar-brand__logo-area">
+      <a class="gc-sidebar-brand__link" href="./" data-gc-site-path="./" aria-label="The Wealth Inequality Project home">
+        <img class="gc-sidebar-brand__logo" data-gc-site-path="./img/wip-logos/Primary WIP Logo/Color/SVG/WIP-Primary-Text.svg" alt="The Wealth Inequality Project logo">
+      </a>
+    </div>
+    <div class="gc-sidebar-brand__controls">
+      <button id="gc-sidebar-hide" class="gc-sidebar-toggle gc-sidebar-toggle--hide" type="button" aria-controls="quarto-sidebar" aria-expanded="true" aria-label="Hide sidebar" data-gc-tooltip="Hide the sidebar and expand the page">
+        <span aria-hidden="true">‹</span>
+      </button>
+    </div>
+  </div>
+</template>
+<button id="gc-sidebar-show" class="gc-sidebar-toggle gc-sidebar-toggle--show" type="button" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Show sidebar" data-gc-tooltip="Show the sidebar navigation">
+  <span aria-hidden="true">›</span>
+</button>
+<script id="gc-sidebar-brand-relocator">
+(() => {
+  const storageKey = "gc-sidebar-hidden";
+  const hiddenClass = "gc-sidebar-hidden";
+  const desktopMedia = window.matchMedia("(min-width: 992px)");
+
+  function siteRootUrl() {
+    const anchors = [
+      { selector: 'link[href*="assets/gc-site.css"]', attr: "href", marker: "assets/gc-site.css" },
+      { selector: 'script[src*="assets/interactive-layer.js"]', attr: "src", marker: "assets/interactive-layer.js" }
+    ];
+
+    for (const anchor of anchors) {
+      const element = document.querySelector(anchor.selector);
+      const value = element ? element.getAttribute(anchor.attr) || "" : "";
+      const markerIndex = value.indexOf(anchor.marker);
+
+      if (markerIndex !== -1) {
+        return new URL(value.slice(0, markerIndex), window.location.href);
+      }
+    }
+
+    return new URL("./", window.location.href);
+  }
+
+  function resolveSitePath(path) {
+    return new URL(path.replace(/^\/+/, ""), siteRootUrl()).href;
+  }
+
+  function applySitePaths(container) {
+    container.querySelectorAll("[data-gc-site-path]").forEach((element) => {
+      const resolvedPath = resolveSitePath(element.dataset.gcSitePath || "./");
+
+      if (element.tagName === "A") {
+        element.href = resolvedPath;
+      } else if (element.tagName === "IMG") {
+        element.src = resolvedPath;
+      }
+    });
+  }
+
+  function readHiddenPreference() {
+    try {
+      return window.localStorage.getItem(storageKey) === "true";
+    } catch (_error) {
+      return false;
+    }
+  }
+
+  function writeHiddenPreference(hidden) {
+    try {
+      if (hidden) {
+        window.localStorage.setItem(storageKey, "true");
+      } else {
+        window.localStorage.removeItem(storageKey);
+      }
+    } catch (_error) {
+      return;
+    }
+  }
+
+  function setSidebarHidden(hidden, persist = true) {
+    document.documentElement.classList.toggle(hiddenClass, hidden);
+
+    const hideButton = document.getElementById("gc-sidebar-hide");
+    const showButton = document.getElementById("gc-sidebar-show");
+    const isDesktop = desktopMedia.matches;
+
+    if (hideButton) {
+      hideButton.setAttribute("aria-expanded", hidden ? "false" : "true");
+      hideButton.disabled = !isDesktop;
+    }
+    if (showButton) {
+      showButton.setAttribute("aria-expanded", hidden ? "false" : "true");
+      showButton.disabled = !isDesktop;
+    }
+
+    if (persist) {
+      writeHiddenPreference(hidden);
+    }
+  }
+
+  function focusVisibleToggle(hidden) {
+    const target = document.getElementById(hidden ? "gc-sidebar-show" : "gc-sidebar-hide");
+
+    if (!target || !desktopMedia.matches) {
+      return;
+    }
+
+    const scheduleFocus = window.requestAnimationFrame || ((callback) => window.setTimeout(callback, 0));
+    scheduleFocus(() => target.focus());
+  }
+
+  if (readHiddenPreference()) {
+    document.documentElement.classList.add(hiddenClass);
+  }
+
+  function mountSidebarBrand() {
+    const sidebar = document.getElementById("quarto-sidebar");
+    const template = document.getElementById("gc-sidebar-brand-template");
+
+    if (!sidebar || !template || sidebar.querySelector("#gc-sidebar-brand")) {
+      return;
+    }
+
+    const fragment = template.content.cloneNode(true);
+    const brand = fragment.firstElementChild;
+
+    if (!brand) {
+      return;
+    }
+
+    applySitePaths(brand);
+    sidebar.insertBefore(brand, sidebar.firstChild);
+    document.documentElement.classList.add("gc-sidebar-brand-mounted");
+    bindSidebarToggle();
+    setSidebarHidden(readHiddenPreference(), false);
+  }
+
+  function bindSidebarToggle() {
+    const hideButton = document.getElementById("gc-sidebar-hide");
+    const showButton = document.getElementById("gc-sidebar-show");
+
+    if (hideButton && !hideButton.dataset.gcSidebarToggleBound) {
+      hideButton.dataset.gcSidebarToggleBound = "true";
+      hideButton.addEventListener("click", () => {
+        if (desktopMedia.matches) {
+          setSidebarHidden(true);
+          focusVisibleToggle(true);
+        }
+      });
+    }
+
+    if (showButton && !showButton.dataset.gcSidebarToggleBound) {
+      showButton.dataset.gcSidebarToggleBound = "true";
+      showButton.addEventListener("click", () => {
+        if (desktopMedia.matches) {
+          setSidebarHidden(false);
+          focusVisibleToggle(false);
+        }
+      });
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      bindSidebarToggle();
+      mountSidebarBrand();
+    }, { once: true });
+  } else {
+    bindSidebarToggle();
+    mountSidebarBrand();
+  }
+
+  if (typeof desktopMedia.addEventListener === "function") {
+    desktopMedia.addEventListener("change", () => setSidebarHidden(readHiddenPreference(), false));
+  } else if (typeof desktopMedia.addListener === "function") {
+    desktopMedia.addListener(() => setSidebarHidden(readHiddenPreference(), false));
+  }
+})();
+</script>
+<div class="gc-utility-nav-shell">
+  <nav class="gc-utility-nav" aria-label="Utility">
+    <ul class="gc-utility-nav__list">
+      <li class="gc-utility-nav__item">
+        <a class="gc-utility-nav__link" data-gc-nav-label="Data" href="../../data/index.html">Data</a>
+      </li>
+      <li class="gc-utility-nav__item">
+        <a class="gc-utility-nav__link" data-gc-nav-label="News" href="../../news/index.html">News</a>
+      </li>
+      <li class="gc-utility-nav__item">
+        <a class="gc-utility-nav__link" data-gc-nav-label="About" href="../../about/index.html">About</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Codebook</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<link rel="stylesheet" href="../../assets/content-fidelity.css">
+<section id="general-warehouse-structure" class="level2">
+<h2 class="anchored" data-anchor-id="general-warehouse-structure">General warehouse structure</h2>
+<p>This section provides a comprehensive overview of the general structure of the data warehouse of the Wealth Inequality Project.</p>
+<p>The data warehouse is organized in long format with a total of nine columns.</p>
+<p>First of all, important information codifying the nature of the variable listed in the warehouse is stored in the column named varcode, and this is detailed in its own subsection below. Two additional columns store values related to each varcode. On the one hand, the column value stores numerical values like amounts in nominal currency, indices, shares, or rates. On the other hand, the column value_str stores textual information, such as details on how taxes are applied in a given country.</p>
+<p>There are five additional columns providing geographical and temporal information, population of reference, and sources (GEO, GEO_long, year, percentile, source). The GEO column refers to 2-character ISO codes for countries, while the GEO_long column refers to their full name. The year column is an integer variable, while the percentile column defines the population to which each observation corresponds. This is a string variable that takes values such as “p0p100” when observations refer to the whole population, as mostly happens with the Wealth Topography dashboard. Other percentiles, as appear in the Wealth Inequality section, can be defined using values between 0 and 100. For instance, the top 0.1% share of the population would be referred to as “p99.9p100”. The source column contains information about the identifier of the specific source of the data.</p>
+<p>Finally, the variable longname is a string variable providing a description in plain language of each observation. This is defined automatically by an algorithm that draws all labels from our codebook/dictionary file (named dictionary.xlsx), available in our GitHub repository.</p>
+<p><strong>Warehouse Columns</strong></p>
+<div class="gc-codebook-grid" aria-label="Warehouse columns">
+  <div class="gc-codebook-grid-item">GEO</div>
+  <div class="gc-codebook-grid-item">GEO_long</div>
+  <div class="gc-codebook-grid-item">year</div>
+  <div class="gc-codebook-grid-item">percentile</div>
+  <div class="gc-codebook-grid-item">varcode</div>
+  <div class="gc-codebook-grid-item">value</div>
+  <div class="gc-codebook-grid-item">source</div>
+  <div class="gc-codebook-grid-item">longname</div>
+  <div class="gc-codebook-grid-item">last_update</div>
+</div>
+<p>Importantly, the data warehouse is also available in a more detailed version, which contains a long list of descriptive metadata information. The complete warehouse is warehouse_meta. Metadata include information such as comments on the methodology used to compile the data, and any limitations or caveats associated with the data, as well as detailed information about the definition of our variables, units of analysis, and full spelling of the sources of data, including links to full curated bibliographic citation details. The metadata version is essential for researchers and analysts who require a deeper understanding of the underlying data and its quality. It is available for download alongside the warehouse and can also be accessed through our website and repository.</p>
+</section>
+<section id="the-varcode" class="level2">
+<h2 class="anchored" data-anchor-id="the-varcode">The varcode</h2>
+<p>The varcode column allows users to identify the variable and concept at hand. It is also designed to indicate information about the specific warehouse section and sector, as well as section-specific information. Each varcode variable has a pre-determined structure, and consists of five main components: Section, Sector, Variable Type, Concept, and Section-Specific info.</p>
+<p class="gc-codebook-image-wrap">
+  <img class="gc-codebook-image" src="../../img/codebook.png" alt="Varcode structure diagram">
+</p>
+<p>The first 1-digit component, Section, defines the broad section in which the variable belongs, such as the Wealth Inequality or the Wealth Topography section.</p>
+<p>The 2-digit Sector component provides additional granularity, such as the specific institutional sector being measured, e.g., the Household sector including the Non-Profit Institutions Serving Households.</p>
+<p>The 3-digit Variable Type component denotes the type of variable being measured, e.g., the Gini coefficient, Top or Bottom shares, a tax threshold, or aggregate wealth.</p>
+<p>The 6-digit Concept component provides more detailed information about the variable being measured, such as the specific metric being used, while the 2-digit Section-Specific component can be used to further characterize the variable within a particular section of the warehouse (e.g., in the context of the Taxes on Wealth section, each variable will be associated to a particular tax bracket if necessary).</p>
+<table class="table table-striped table-hover gc-data-table gc-codebook-table caption-top">
+<caption><strong>Section</strong> codes</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">code</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">x</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+<td style="text-align: left; width: 36em;">The Taxes on Wealth section contains a comprehensive database on the evolution of estate, inheritance, and gift (EIG) taxation, both across countries and (forthcoming) across the U.S. states. This section focuses on the taxation of wealth transfers, that is, transfers from one household or individual to another, either when the donor is living (inter vivos gifts) or at the time of the donor’s death (bequests). When assessing taxes, we distinguish among three types of taxes: those levied on estates (on the total amount bequeathed), on inheritances (on amounts received by individual recipients), and on gifts (given by living donors). The Taxes on Wealth section contains information on statutory tax schedules, marginal tax rates, top marginal rates, exemption thresholds, and tax revenues. Information on effective taxation is also derived and presented. Understanding how governments tax these transfers is essential because bequests, inheritances, and inter vivos gifts are crucial economic resources for households and because their scale has increased substantially in recent decades relative to total national income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">t</td>
+<td style="text-align: left; width: 18em;">Wealth Inequality</td>
+<td style="text-align: left; width: 36em;">The Wealth Inequality section presents the first comprehensive compilation of cross-national time-series data on wealth inequality. This section contains wealth inequality indicators (such as top shares and Gini coefficients) for many countries, as estimated in the existing literature for several countries. These data are accompanied by Method Tables that provide systematic assessments of the underlying concepts, methods, and sources for the estimation of wealth inequality trends. This section provides access to, and detailed information about, wealth inequality across countries and over time — in a single venue. To date, there is no comprehensive database that offers “off the shelf” indicators for researchers or others interested in wealth inequality levels and trends. Estimates of wealth distributions are much less settled than those of income distributions, and there is substantial controversy about how wealth inequality has evolved in recent years. A core value-added of this section of our dashboard is that users have access to detailed information about the values provided and methodological information that will help them to navigate the inevitable complexity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">p</td>
+<td style="text-align: left; width: 18em;">Wealth Topography</td>
+<td style="text-align: left; width: 36em;">The Wealth Topography section includes cross-country data that captures, at the aggregate level, the evolution of household portfolios of assets and debt. Assets are metaphorically represented as “mountains and hills,” while debts are visualized as “seas” of debt. The data come from national accounts, household surveys, and a range of research projects and reports. These data offer a unique view of aggregate household balance sheets. Country-specific portfolios are shaped by, and reflect, national characteristics, including demographic trends, inflation and interest rates dynamics, features of financial and credit markets, the relative importance of stock exchanges versus banking systems, the strength of asset management industries, and the preferential tax treatment of assets, as well as the preferences of households and the generosity of pensions systems.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">i</td>
+<td style="text-align: left; width: 18em;">Inheritance Trends</td>
+<td style="text-align: left; width: 36em;">The section on Inheritance Trends is coming soon.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">z</td>
+<td style="text-align: left; width: 18em;">Supplementary Variables</td>
+<td style="text-align: left; width: 36em;">The supplementary variables provide additional context and comparability for the general warehouse data. They include data from sources such as the World Inequality Database (e.g., inflation adjustments, currency conversions, and macroeconomic metrics), the World Bank (e.g., country and income group classifications by region), and political data (e.g., government orientation based on party dominance).</td>
+</tr>
+</tbody>
+</table>
+
+
+<table class="table table-striped table-hover gc-data-table gc-codebook-table caption-top">
+<caption><strong>Sector</strong> codes</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">code</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">na</td>
+<td style="text-align: left; width: 18em;">National Level</td>
+<td style="text-align: left; width: 36em;">The national sector gathers together all economic units controlled by residents' institutional sectors, such as government, households, businesses, and non-profits. It is distinct from the rest of the world sector.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">hs</td>
+<td style="text-align: left; width: 18em;">Households</td>
+<td style="text-align: left; width: 36em;">The household sector gathers together all individuals or group of individuals who live together, who pool their income and wealth, and make joint economic decisions (e.g., consumption). The household sector is one of the institutional sectors constituting the national economy.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">hn</td>
+<td style="text-align: left; width: 18em;">Households &amp; NPISH</td>
+<td style="text-align: left; width: 36em;">The households and NPISH sector (non-profit institutions serving households) gathers together households (all individuals or group of individuals who live together, who pool their income and wealth, and make joint economic decisions) and non-profit organizations that primarily provide services to households (such as charities, religious institutions, and social clubs). The household and NPISH sector is one of the institutional sectors constituting the national economy.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">np</td>
+<td style="text-align: left; width: 18em;">NPISH</td>
+<td style="text-align: left; width: 36em;">The NPISH (non-profit institutions serving households) sector gathers together non-profit organizations that primarily provide services to households. This includes organizations such as charities, religious institutions, and social clubs. The NPISH sector is one of the institutional sectors constituting the national economy.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">tg</td>
+<td style="text-align: left; width: 18em;">EIG Tax, general government level</td>
+<td style="text-align: left; width: 36em;">The tax revenue information refers to the sum of estate, inheritance and gift taxes (EIG) for the general government sector.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">gg</td>
+<td style="text-align: left; width: 18em;">Gift Tax, general government level</td>
+<td style="text-align: left; width: 36em;">The tax revenue information refers to gift tax for the general government sector.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">tu</td>
+<td style="text-align: left; width: 18em;">EIG Tax, applies to unknown</td>
+<td style="text-align: left; width: 36em;">The status refers to a general estate, inheritance or gift tax, and the population group to which the tax is applied is not known from the sources available.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">te</td>
+<td style="text-align: left; width: 18em;">EIG Tax, applies to everybody</td>
+<td style="text-align: left; width: 36em;">Estate, inheritance or gift tax levied on anyone regardless of the degree of kinship or relationship to the deceased/donor.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ec</td>
+<td style="text-align: left; width: 18em;">Estate Tax for Children</td>
+<td style="text-align: left; width: 36em;">Estate tax levied on children of the donor/decedent. The group also includes grandchildren, parents and grandparents, unless otherwise stated in the note.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">es</td>
+<td style="text-align: left; width: 18em;">Estate Tax for Spouse</td>
+<td style="text-align: left; width: 36em;">Estate tax levied on the spouse of the donor/decedent. The group includes the legal cohabitant unless otherwise specified in the note.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">el</td>
+<td style="text-align: left; width: 18em;">Estate Tax for Siblings</td>
+<td style="text-align: left; width: 36em;">Estate tax levied on the siblings of the donor/decedent. The group also includes children of siblings, unless otherwise stated in the note.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">er</td>
+<td style="text-align: left; width: 18em;">Estate Tax for Other Relatives</td>
+<td style="text-align: left; width: 36em;">Estate tax levied on the relatives of the donor/decedent, excluding spouse, children, and siblings.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">en</td>
+<td style="text-align: left; width: 18em;">Estate Tax for Non-Relatives</td>
+<td style="text-align: left; width: 36em;">Estate tax levied on individuals who are not related to the donor/decedent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ee</td>
+<td style="text-align: left; width: 18em;">Estate Tax for Everybody</td>
+<td style="text-align: left; width: 36em;">Estate tax levied on anyone regardless of the degree of kinship or relationship to the deceased/donor. This sector is used also if the estate tax is not levied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">eu</td>
+<td style="text-align: left; width: 18em;">Estate Tax, applies to unknown</td>
+<td style="text-align: left; width: 36em;">The population group to which the estate tax applies is not known from the sources available.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ic</td>
+<td style="text-align: left; width: 18em;">Inheritance Tax for Children</td>
+<td style="text-align: left; width: 36em;">Inheritance tax levied on children of the donor/decedent. The group also includes grandchildren, parents and grandparents, unless otherwise stated in the note.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">is</td>
+<td style="text-align: left; width: 18em;">Inheritance Tax for Spouse</td>
+<td style="text-align: left; width: 36em;">Inheritance tax levied on the spouse of the donor/decedent. The group includes the legal cohabitant unless otherwise specified in the note.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">il</td>
+<td style="text-align: left; width: 18em;">Inheritance Tax for Siblings</td>
+<td style="text-align: left; width: 36em;">Inheritance tax levied on the siblings of the donor/decedent. The group also includes children of siblings, unless otherwise stated in the note.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ir</td>
+<td style="text-align: left; width: 18em;">Inheritance Tax for Other Relatives</td>
+<td style="text-align: left; width: 36em;">Inheritance tax levied on the relatives of the donor/decedent, excluding spouse, children, and siblings.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">in</td>
+<td style="text-align: left; width: 18em;">Inheritance Tax for Non-Relatives</td>
+<td style="text-align: left; width: 36em;">Inheritance tax levied on individuals who are not related to the donor/decedent.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ie</td>
+<td style="text-align: left; width: 18em;">Inheritance Tax for Everybody</td>
+<td style="text-align: left; width: 36em;">Inheritance tax levied on anyone regardless of the degree of kinship or relationship to the deceased/donor. This sector is used also if the inheritance tax is not levied.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">iu</td>
+<td style="text-align: left; width: 18em;">Inheritance Tax, applies to unknown</td>
+<td style="text-align: left; width: 36em;">The population group to which the inheritance tax applies is not known from the sources available.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">gc</td>
+<td style="text-align: left; width: 18em;">Gift Tax for Children</td>
+<td style="text-align: left; width: 36em;">Gift tax levied on children of the donor/decedent. The group also includes grandchildren, parents and grandparents, unless otherwise stated in the note.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">gs</td>
+<td style="text-align: left; width: 18em;">Gift Tax for Spouse</td>
+<td style="text-align: left; width: 36em;">Gift tax levied on the spouse of the donor/decedent. The group includes the legal cohabitant unless otherwise specified in the note.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">gl</td>
+<td style="text-align: left; width: 18em;">Gift Tax for Siblings</td>
+<td style="text-align: left; width: 36em;">Gift tax levied on the siblings of the donor/decedent. The group also includes children of siblings, unless otherwise stated in the note.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">gr</td>
+<td style="text-align: left; width: 18em;">Gift Tax for Other Relatives</td>
+<td style="text-align: left; width: 36em;">Gift tax levied on the relatives of the donor/decedent, excluding spouse, children, and siblings.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">gn</td>
+<td style="text-align: left; width: 18em;">Gift Tax for Non-Relatives</td>
+<td style="text-align: left; width: 36em;">Gift tax levied on individuals who are not related to the donor/decedent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ge</td>
+<td style="text-align: left; width: 18em;">Gift Tax for Everybody</td>
+<td style="text-align: left; width: 36em;">Gift tax levied on on anyone regardless of the degree of kinship or relationship to the deceased/donor. This sector is used also if the gift tax is not levied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">gu</td>
+<td style="text-align: left; width: 18em;">Gift Tax, applies to unknown</td>
+<td style="text-align: left; width: 36em;">The population group to which the gift tax applies is not known from the sources available.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">pr</td>
+<td style="text-align: left; width: 18em;">Property Tax on Real Estate</td>
+<td style="text-align: left; width: 36em;">Property tax on any real estate property owned by individuals resident in the country.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">wf</td>
+<td style="text-align: left; width: 18em;">Net Wealth Tax on Financial Assets</td>
+<td style="text-align: left; width: 36em;">Wealth tax on movable property (financial wealth) owned by individuals resident in the country, net of debt.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">wt</td>
+<td style="text-align: left; width: 18em;">Net Wealth Tax on Total Net Worth</td>
+<td style="text-align: left; width: 36em;">Wealth tax on movable property and immovable property owned by individuals resident in the country, net of debt.</td>
+</tr>
+</tbody>
+</table>
+
+
+<table class="table table-striped table-hover gc-data-table gc-codebook-table caption-top">
+<caption><strong>Variable Type</strong> codes</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">code</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">dsh</td>
+<td style="text-align: left; width: 18em;">Share of Total Net Wealth</td>
+<td style="text-align: left; width: 36em;">The share of a given asset (or assets group) on total net wealth. For instance, we may refer to the overall net wealth (or any given asset, i.e. housing, financial assets, debt) that individuals, household, or group owns as a share of total net wealth. For example, if the total net wealth of a country is €10,000 billion and a group's net wealth is €2,000 billion, their share of total net wealth would be 20%. Moreover, if half of this group's wealth is held in housing wealth, their distributional share of housing would be 10%.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">owr</td>
+<td style="text-align: left; width: 18em;">Ownership Rate</td>
+<td style="text-align: left; width: 36em;">The proportion of households or individuals who self-report owning a specific asset or good. Calculated as the number of households (or individuals) reporting ownership divided by the total number of households (or individuals) in the reference population.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">csh</td>
+<td style="text-align: left; width: 18em;">Composition Share</td>
+<td style="text-align: left; width: 36em;">Composition share refers to the proportion or percentage of a particular category or component within a larger group or total. In the context of a wealth portfolio, composition share would refer to the percentage of a household's or a country's total wealth that is invested in a particular asset class, such as stocks, bonds, real estate, or cash. For example, if an individual's total wealth is €1 million and €400,000 of that is invested in stocks, the composition share of stocks in their wealth portfolio would be 40%.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">rat</td>
+<td style="text-align: left; width: 18em;">Rate</td>
+<td style="text-align: left; width: 36em;">In general, a rate is expressed as a percentage. For instance, the marginal inheritance tax rate is the amount of tax that is paid on an additional dollar of inheritance received. It represents the rate at which a person's tax liability increases as their inheritance increases. The concept can also be applied to the saving rate which refers to the percentage of disposable income that is saved or not spent on consumption.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">gin</td>
+<td style="text-align: left; width: 18em;">Gini Coefficient</td>
+<td style="text-align: left; width: 36em;">The Gini coefficient is a statistic that summarizes the overall distribution of income or wealth that is commonly published by statistical agencies. The coefficient ranges from 0 (perfect equality) to 100 (maximum inequality). A Gini coefficient of G per cent means that, if we take any 2 households from the population at random, the expected difference is 2G per cent of the mean. So that a rise in the Gini coefficient from 30 to 40 per cent implies that the expected difference (in wealth for instance) has gone up from 60 to 80 per cent of the average wealth.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">avg</td>
+<td style="text-align: left; width: 18em;">Average Wealth</td>
+<td style="text-align: left; width: 36em;">Average wealth refers to the total value of assets (such as property, savings, investments, and other financial assets) owned by a group of individuals or households divided by the total number of individuals or households in that group.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">rto</td>
+<td style="text-align: left; width: 18em;">Ratio</td>
+<td style="text-align: left; width: 36em;">A ratio describes the relationship between two quantities and is expressed as the quotient of one quantity divided by another. For example, if a country's total private net wealth is €10,000 billion and its total national income is €2,000 billion, the ratio of private wealth to national income is 5 to 1, as total private wealth is five times the amount of national income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">thr</td>
+<td style="text-align: left; width: 18em;">Threshold</td>
+<td style="text-align: left; width: 36em;">A threshold represents a minimum or maximum value that must be met or exceeded, for instance, the minimum value of net wealth that is needed for an individual to belong to the group of the richest 1% of adults, or the maximum value of net wealth that is needed for an individual to belong to the group of the poorest 50% of adults.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">cat</td>
+<td style="text-align: left; width: 18em;">Categorical Variable</td>
+<td style="text-align: left; width: 36em;">A categorical variable represents data that can be divided into groups or categories.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">agg</td>
+<td style="text-align: left; width: 18em;">Aggregate</td>
+<td style="text-align: left; width: 36em;">Aggregate value for a given institutional sector. The value is reported without knowing whether transactions that occur between units within the same sector are eliminated or kept during the aggregation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">agc</td>
+<td style="text-align: left; width: 18em;">Aggregate (Consolidated)</td>
+<td style="text-align: left; width: 36em;">Aggregate value for a given institutional sector for which transactions that occur between units within the same sector are eliminated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">agn</td>
+<td style="text-align: left; width: 18em;">Aggregate (Non-consolidated)</td>
+<td style="text-align: left; width: 36em;">Aggregate value for a given institutional sector for which transactions that occur between units within the same sector are not eliminated. This may result in double-counting of assets and liabilities</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">tot</td>
+<td style="text-align: left; width: 18em;">Total</td>
+<td style="text-align: left; width: 36em;">It represents the total value of a variable. For instance, total population, or total revenue raised from the inheritance tax.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">per</td>
+<td style="text-align: left; width: 18em;">Period</td>
+<td style="text-align: left; width: 36em;">Numeric values that refer to a period (year, month, quarter).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;"></td>
+<td style="text-align: left; width: 18em;"></td>
+<td style="text-align: left; width: 36em;">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;"></td>
+<td style="text-align: left; width: 18em;"></td>
+<td style="text-align: left; width: 36em;">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;"></td>
+<td style="text-align: left; width: 18em;"></td>
+<td style="text-align: left; width: 36em;">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;"></td>
+<td style="text-align: left; width: 18em;"></td>
+<td style="text-align: left; width: 36em;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
+
+<table class="table table-striped table-hover gc-data-table gc-codebook-table caption-top">
+<caption><strong>Wealth Concept</strong> codes</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">code</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">netwea</td>
+<td style="text-align: left; width: 18em;">Net Wealth</td>
+<td style="text-align: left; width: 36em;">Net wealth is the sum of all tangible assets (real estate properties and land, valuables, plants, machineries, equipment, etc.) and intangible assets (stocks, bonds, balances of current, saving, and investment accounts, private pension and life insurance funds, etc.) minus the sum of all debts and liabilities (mortgages, loans, and credit card debt).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">nnhass</td>
+<td style="text-align: left; width: 18em;">Financial Assets &amp; Fixed Capital of Personal Businesses</td>
+<td style="text-align: left; width: 36em;">Sum of all financial assets (such as stocks, shares or equities in corporations and quasi-corporations, corporate and government bonds, mutual funds, cash, current, savings and investment accounts, time deposits or certificates of deposit (CDs), accumulated balance in private pension funds, cash or reserve value of life insurance funds, etc.) and the fixed capital stock of small personal businesses of producer households (such as plants, machinery, equipment, inventories, software, and goodwill).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">fliabi</td>
+<td style="text-align: left; width: 18em;">Debt</td>
+<td style="text-align: left; width: 36em;">Debts, or liabilities, are financial obligations that generally result from borrowing. For households, the most common form of debt is the mortgage, a loan taken out by an individual or a household to purchase a home or other real estate properties. Other forms of debt include credit card debts, auto loans, and student loans.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">fliabm</td>
+<td style="text-align: left; width: 18em;">Debt secured by a mortgage</td>
+<td style="text-align: left; width: 36em;">Debt secured by a mortgage are loans taken out by an individual or a household to purchase a home or other real estate properties.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">facdbl</td>
+<td style="text-align: left; width: 18em;">Cash, Deposits, Bonds &amp; Loans</td>
+<td style="text-align: left; width: 36em;">Cash can be held in the form of banknotes, coins, or digital currency. Bonds represent a loan made by households to a corporation or government entity and provide a fixed return to the investor in the form of interest payments. Deposits include both current accounts (available on demand) and savings accounts (generally interest-bearing instruments with limited withdrawal). Loans are the money lent to individuals or households for which they owe the principal and interest to the creditors.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">fadepb</td>
+<td style="text-align: left; width: 18em;">Bank accounts</td>
+<td style="text-align: left; width: 36em;">Current or savings accounts held at a bank (traditional bank only)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">fadepo</td>
+<td style="text-align: left; width: 18em;">Deposits</td>
+<td style="text-align: left; width: 36em;">Deposits include both current accounts (available on demand) and savings accounts (generally interest-bearing instruments with limited withdrawal).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">faeqfd</td>
+<td style="text-align: left; width: 18em;">Stocks, Business Equities &amp; Fund Shares</td>
+<td style="text-align: left; width: 36em;">Stocks (or shares) and business equities are securities representing the ownership in a corporation or quasi-corporation and entitling the holder to a portion of the company's profits. Fund shares represent the participation in mutual or investment funds which are investment vehicles that pool together money from multiple investors to purchase a portfolio of securities such as stocks, bonds, or other assets.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">falipe</td>
+<td style="text-align: left; width: 18em;">Pensions &amp; Life Insurance</td>
+<td style="text-align: left; width: 36em;">Private pension assets refer to funds that are set aside by an individual (or an employer) to provide income during retirement (excluding public pension and social security schemes). Pension assets can take the form of defined benefit plans (retirement income benefits are fixed) or defined contribution plans (retirement income benefits are dependent on contributions). Life insurance assets refer to the cash value or reserve value of a life insurance policy (where the policyholder pays premiums in exchange for a death benefit that is paid out to their beneficiaries upon their death).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">nfabus</td>
+<td style="text-align: left; width: 18em;">Fixed Capital of Personal Businesses</td>
+<td style="text-align: left; width: 36em;">Fixed capital of small personal businesses represents the non-financial assets that are used by a small personal business to produce goods or services and to support the ongoing operations of the business. This category includes both tangible assets (such as plants, machineries, equipment, inventories, valuables) and intangible assets (such as software and goodwill).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">nfadur</td>
+<td style="text-align: left; width: 18em;">Durable Goods</td>
+<td style="text-align: left; width: 36em;">Durable goods are goods used by households and individuals for consumption that may be used repeatedly over time (such as appliances, furniture, vehicles, boats, aircrafts, jewelry, antiques, works of art, and collections).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">offsho</td>
+<td style="text-align: left; width: 18em;">Offshore Financial Wealth</td>
+<td style="text-align: left; width: 36em;">Total value of bank deposits, and portfolios of financial securities held in offshore accounts and likely unreported in official statistics (but excluding foreign real estate, or valuables and works of art held abroad in vaults and “freeports”).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">etnweg</td>
+<td style="text-align: left; width: 18em;">Inheritances &amp; Gifts</td>
+<td style="text-align: left; width: 36em;">Inheritances &amp; Gifts refers to wealth left at death (bequests) and intervivos gifts and donations. The value refers to the value of all possessions, tangible and intangible assets left at death, and to the value of all assets donated in life.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">etnwea</td>
+<td style="text-align: left; width: 18em;">Inheritances</td>
+<td style="text-align: left; width: 36em;">Inheritances refer to wealth left at death (bequests), namely the value of all possessions, tangible and intangible assets left at death.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">nfahou</td>
+<td style="text-align: left; width: 18em;">Housing &amp; Land</td>
+<td style="text-align: left; width: 36em;">Housing identifies the value of residential buildings or structures that are owned by households (may include single-family homes, apartments, condominiums, and other types of housing). Land assets include agricultural land, residential land, commercial land, and industrial land. This includes land underlying dwellings, and other buildings and structures.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">nfhous</td>
+<td style="text-align: left; width: 18em;">Housing</td>
+<td style="text-align: left; width: 36em;">Housing identifies the value of residential buildings or structures that are owned by households (may include single-family homes, apartments, condominiums, and other types of housing).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">nfalan</td>
+<td style="text-align: left; width: 18em;">Land</td>
+<td style="text-align: left; width: 36em;">Land assets include agricultural land, residential land, commercial land, and industrial land. This includes land underlying dwellings, and other buildings and structures.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">nfaala</td>
+<td style="text-align: left; width: 18em;">Agricultural Land</td>
+<td style="text-align: left; width: 36em;">Agricultural Land includes land used for agricultural purposes (land used for temporary crops, temporary meadows and pastures, temporarily fallow, under permanent crops and permanent meadows and pastures)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">averat</td>
+<td style="text-align: left; width: 18em;">Average Effective Tax Rate</td>
+<td style="text-align: left; width: 36em;">The average tax rate is computed as the ratio between official tax revenue and estimate total tax base (e.g. the average effective wealth transfers tax rate is computed as the total EIG tax revenue divided by the total flow of inheritances and gifts in a given year).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">status</td>
+<td style="text-align: left; width: 18em;">Tax Indicator</td>
+<td style="text-align: left; width: 36em;">Whether or not the country levies the specified tax for the given year. It is encoded as a 0/1 indicator variable.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">diftax</td>
+<td style="text-align: left; width: 18em;">Different Tax Indicator</td>
+<td style="text-align: left; width: 36em;">Whether the EIG tax is levied through another type of tax (e.g., PIT, capital income, etc.).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">firsty</td>
+<td style="text-align: left; width: 18em;">First Year for Tax</td>
+<td style="text-align: left; width: 36em;">The first year the specified tax is introduced in the country. It may predate the year of legal birth of the country, such as in the case of unified kingdoms or of former colonies.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">typtax</td>
+<td style="text-align: left; width: 18em;">Type of Tax</td>
+<td style="text-align: left; width: 36em;">The structure of the adjusted tax schedule, if applicable. The variable is encoded as follows: 1 lump-sum (fixed); 2 flat (proportional with a single rate applied to all tax base); 3 progressive (proportional with tax rates increasing with the tax base); 4 progressive by brackets (proportional with tax rates increasing with the tax base, with different portions of the tax base - brackets - taxed at different rates); -998 (_na) not applicable because the tax is not levied or there is full exemption. The type of tax is based on the number of positive tax rates included in the adjusted tax schedule.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">exempt</td>
+<td style="text-align: left; width: 18em;">Exemption Threshold</td>
+<td style="text-align: left; width: 36em;">The exemption threshold in local currency units applicable to the sector, assuming no additional exemptions, credits or relief apply. It is reported as zero in case of no exemption, as -997 (_and_over) in case of full exemption (no tax is due), as -998 (_na) if it is not applicable because the tax is not levied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">toplbo</td>
+<td style="text-align: left; width: 18em;">Top Marginal Rate Applicable From</td>
+<td style="text-align: left; width: 36em;">The minimum amount in local currency units including and above which the top rate for the specified tax applies to the sector. It is encoded as zero in case the tax is not levied or there is full exemption.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">toprat</td>
+<td style="text-align: left; width: 18em;">Top Marginal Rate</td>
+<td style="text-align: left; width: 36em;">The highest statutory rate for the specified tax. It is encoded as zero in case the tax is not levied or there is full exemption.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">adjlbo</td>
+<td style="text-align: left; width: 18em;">Lower Bound for Exemption-adjusted Tax Bracket</td>
+<td style="text-align: left; width: 36em;">The value of tax base over which the tax rate applies in local currency units, adjusted to include the exemption amount in the tax schedule as a zero rate bracket, if needed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">adjubo</td>
+<td style="text-align: left; width: 18em;">Upper Bound for Exemption-adjusted Tax Bracket</td>
+<td style="text-align: left; width: 36em;">The highest tax base value for which the tax rate applies in local currency units, adjusted to include the exemption amount in the tax schedule as a zero rate bracket, if needed. It takes value -997 (_and_over) for the highest bracket if the interval is open.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">adjmrt</td>
+<td style="text-align: left; width: 18em;">Marginal Rate for Exemption-adjusted Tax Bracket</td>
+<td style="text-align: left; width: 36em;">The rate of taxation on tax base values between the bracket lower bound and the bracket upper bound, adjusted to include the exemption amount in the tax schedule as a zero rate bracket, if needed. It is reported as zero in case the tax is not levied and for the exemption bracket.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">homexe</td>
+<td style="text-align: left; width: 18em;">Family Home Exempt</td>
+<td style="text-align: left; width: 36em;">Whether the family home (i.e. the habitual abode) is exempt from taxation. It takes value -998 if it is not applicable because the tax is not levied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">bssexe</td>
+<td style="text-align: left; width: 18em;">Family Business Exempt</td>
+<td style="text-align: left; width: 36em;">Whether the family business is exempt from taxation. It takes value -998 if it is not applicable because the tax is not levied.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">revenu</td>
+<td style="text-align: left; width: 18em;">Total Revenue from Tax</td>
+<td style="text-align: left; width: 36em;">Total revenue from the specified tax at all government levels in local currency units.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">prorev</td>
+<td style="text-align: left; width: 18em;">Total Revenue from Tax as % of Total Tax Revenue</td>
+<td style="text-align: left; width: 36em;">Total revenue from the specified tax at all government levels as a percentage of total tax revenue.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">revgdp</td>
+<td style="text-align: left; width: 18em;">Total Revenue from Tax as % of Gross Domestic Product</td>
+<td style="text-align: left; width: 36em;">Total revenue from the specified tax at all government levels as a percentage of GDP.</td>
+</tr>
+</tbody>
+</table>
+
+
+<table class="table table-striped table-hover gc-data-table gc-codebook-table caption-top">
+<caption><strong>Section Specific</strong> codes</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">code</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">label</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">section</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ia</td>
+<td style="text-align: left; width: 18em;">Individuals - Adults</td>
+<td style="text-align: left; width: 36em;">Estimates of wealth inequality refer to the distribution across individual holders (depending on the source, at least 15, 16, 18, or 20 years old). In rare cases, this label also refers to individuals assumed to be holding the equivalized wealth of the household. The equivalence scale used in most cases is the “modified OECD scale,”, which gives a weight of 1 to the first adult, of 0.5 to each additional adult, and of 0.3 to each child. This means that total wealth of a family of 2 adults and 2 children is divided by 2.1. In other rare cases, it refers to the distribution across all individuals, irrespective of their age.</td>
+<td style="text-align: left; width: 18em;">Wealth Inequality</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">es</td>
+<td style="text-align: left; width: 18em;">Individuals - Adults (equal split)</td>
+<td style="text-align: left; width: 36em;">Total wealth of the household is divided equally between the two adult partners. Adults are generally defined as individuals at least 18 or 20 years old. This category could also include cases in which total wealth of the household is divided equally among all members of the household.</td>
+<td style="text-align: left; width: 18em;">Wealth Inequality</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">tu</td>
+<td style="text-align: left; width: 18em;">Tax Units</td>
+<td style="text-align: left; width: 36em;">Data on wealth holding refer to a group of individuals who are subject to the same tax laws (tax unit). In most cases, a tax unit is composed of one or more people who file a tax return together, such as a married couple filing jointly or a family filing as dependents on a parent's tax return.</td>
+<td style="text-align: left; width: 18em;">Wealth Inequality</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ho</td>
+<td style="text-align: left; width: 18em;">Households</td>
+<td style="text-align: left; width: 36em;">Data on wealth holding refer to a household, defined as a group of people who live together in the same dwelling unit. The members of a household may be related by blood, marriage, or adoption, or they may be unrelated individuals who have chosen to live together for other reasons.</td>
+<td style="text-align: left; width: 18em;">Wealth Inequality</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ga</td>
+<td style="text-align: left; width: 18em;">Gross Assets</td>
+<td style="text-align: left; width: 36em;">Gross assets are the total value of all assets before subtracting the value of debts and liabilities.</td>
+<td style="text-align: left; width: 18em;">Wealth Topography</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">na</td>
+<td style="text-align: left; width: 18em;">Net Assets</td>
+<td style="text-align: left; width: 36em;">Net assets are the total value of all assets after subtracting the value of debts and liabilities.</td>
+<td style="text-align: left; width: 18em;">Wealth Topography</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">lb</td>
+<td style="text-align: left; width: 18em;">Liabilities</td>
+<td style="text-align: left; width: 36em;">Liabilities are financial obligations or debts that an individual, company, or organization owes to another party.</td>
+<td style="text-align: left; width: 18em;">Wealth Topography</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">__</td>
+<td style="text-align: left; width: 18em;">Not Applicable</td>
+<td style="text-align: left; width: 36em;">Not Applicable</td>
+<td style="text-align: left; width: 18em;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">00</td>
+<td style="text-align: left; width: 18em;">Non-Bracket Specific</td>
+<td style="text-align: left; width: 36em;">A general variable not referring to any specific bracket of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">01</td>
+<td style="text-align: left; width: 18em;">Bracket n 01</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 01 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">02</td>
+<td style="text-align: left; width: 18em;">Bracket n 02</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 02 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">03</td>
+<td style="text-align: left; width: 18em;">Bracket n 03</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 03 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">04</td>
+<td style="text-align: left; width: 18em;">Bracket n 04</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 04 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">05</td>
+<td style="text-align: left; width: 18em;">Bracket n 05</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 05 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">06</td>
+<td style="text-align: left; width: 18em;">Bracket n 06</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 06 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">07</td>
+<td style="text-align: left; width: 18em;">Bracket n 07</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 07 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">08</td>
+<td style="text-align: left; width: 18em;">Bracket n 08</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 08 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">09</td>
+<td style="text-align: left; width: 18em;">Bracket n 09</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 09 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">10</td>
+<td style="text-align: left; width: 18em;">Bracket n 10</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 10 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">11</td>
+<td style="text-align: left; width: 18em;">Bracket n 11</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 11 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">12</td>
+<td style="text-align: left; width: 18em;">Bracket n 12</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 12 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">13</td>
+<td style="text-align: left; width: 18em;">Bracket n 13</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 13 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">14</td>
+<td style="text-align: left; width: 18em;">Bracket n 14</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 14 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">15</td>
+<td style="text-align: left; width: 18em;">Bracket n 15</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 15 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">16</td>
+<td style="text-align: left; width: 18em;">Bracket n 16</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 16 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">17</td>
+<td style="text-align: left; width: 18em;">Bracket n 17</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 17 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">18</td>
+<td style="text-align: left; width: 18em;">Bracket n 18</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 18 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">19</td>
+<td style="text-align: left; width: 18em;">Bracket n 19</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 19 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">20</td>
+<td style="text-align: left; width: 18em;">Bracket n 20</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 20 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">21</td>
+<td style="text-align: left; width: 18em;">Bracket n 21</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 21 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">22</td>
+<td style="text-align: left; width: 18em;">Bracket n 22</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 22 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">23</td>
+<td style="text-align: left; width: 18em;">Bracket n 23</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 23 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">24</td>
+<td style="text-align: left; width: 18em;">Bracket n 24</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 24 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">25</td>
+<td style="text-align: left; width: 18em;">Bracket n 25</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 25 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">26</td>
+<td style="text-align: left; width: 18em;">Bracket n 26</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 26 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">27</td>
+<td style="text-align: left; width: 18em;">Bracket n 27</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 27 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">28</td>
+<td style="text-align: left; width: 18em;">Bracket n 28</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 28 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">29</td>
+<td style="text-align: left; width: 18em;">Bracket n 29</td>
+<td style="text-align: left; width: 36em;">A tax policy variable applicable to the bracket n 29 of the tax schedule</td>
+<td style="text-align: left; width: 18em;">Taxes on Wealth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ef</td>
+<td style="text-align: left; width: 18em;">Economic Flow</td>
+<td style="text-align: left; width: 36em;">Estimates from national accounts</td>
+<td style="text-align: left; width: 18em;">Inheritance Trends</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 7em; white-space: nowrap;">ff</td>
+<td style="text-align: left; width: 18em;">Fiscal Flow</td>
+<td style="text-align: left; width: 36em;">Estimates from fiscal records</td>
+<td style="text-align: left; width: 18em;">Inheritance Trends</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<footer id="gc-site-footer" class="gc-site-footer">
+  <div class="gc-site-footer__inner">
+    <div class="gc-site-footer__brand">
+      <img src="../../img/wip-logos/Alternate 2-Line WIP Logo/Color/SVG/WIP-2Line.svg" alt="The Wealth Inequality Project">
+    </div>
+    <div class="gc-site-footer__copyright">
+      © 2023 CUNY Graduate Center
+    </div>
+  </div>
+</footer>
+<script id="gc-navbar-dropdown-init">
+(() => {
+  const desktopMedia = window.matchMedia("(min-width: 992px)");
+  const dropdownSpecs = {
+    Data: [
+      { text: "Data and Documentation", path: "data_and_documentation/index.html" },
+      { text: "Codebook", path: "codebook/index.html" },
+      { text: "Sources", path: "data-sources-library/index.html" }
+    ],
+    About: [
+      { text: "About the Project", path: "about-the-project/index.html" },
+      { text: "FAQ", path: "FAQ/index.html" },
+      { text: "Team", path: "team/index.html" },
+      { text: "Contact", path: "contact/index.html" }
+    ]
+  };
+
+  function getUtilityLinks() {
+    return Array.from(
+      document.querySelectorAll(".gc-utility-nav__list > .gc-utility-nav__item > .gc-utility-nav__link")
+    );
+  }
+
+  function buildMenuItems(toggle, items) {
+    const toggleUrl = new URL(toggle.getAttribute("href") || "", window.location.href);
+    const sectionRoot = new URL("./", toggleUrl);
+    const menu = document.createElement("ul");
+    menu.className = "dropdown-menu";
+
+    items.forEach((item) => {
+      const listItem = document.createElement("li");
+      const link = document.createElement("a");
+      link.className = "dropdown-item";
+      link.href = new URL(item.path, sectionRoot).href;
+      link.textContent = item.text;
+      listItem.appendChild(link);
+      menu.appendChild(listItem);
+    });
+
+    return menu;
+  }
+
+  function enhanceNavbarStructure() {
+    Object.entries(dropdownSpecs).forEach(([label, items]) => {
+      const toggle = getUtilityLinks().find((link) => link.textContent.trim() === label);
+
+      if (!toggle) {
+        return;
+      }
+
+      const navItem = toggle.closest(".gc-utility-nav__item");
+      if (!navItem || navItem.dataset.gcDropdownEnhanced === "true") {
+        return;
+      }
+
+      navItem.dataset.gcDropdownEnhanced = "true";
+      navItem.classList.add("dropdown");
+      toggle.classList.add("dropdown-toggle");
+      toggle.setAttribute("role", "button");
+      toggle.setAttribute("aria-haspopup", "true");
+      toggle.setAttribute("aria-expanded", "false");
+      navItem.appendChild(buildMenuItems(toggle, items));
+    });
+  }
+
+  function setOpenState(dropdown, isOpen) {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+    dropdown.classList.toggle("gc-dropdown-open", isOpen);
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+  }
+
+  function closeAllDropdowns(exceptNode) {
+    document.querySelectorAll(".gc-utility-nav .dropdown").forEach((dropdown) => {
+      if (dropdown !== exceptNode) {
+        setOpenState(dropdown, false);
+      }
+    });
+  }
+
+  function bindDesktopDropdowns() {
+    const utilityNav = document.querySelector(".gc-utility-nav");
+    if (!utilityNav) {
+      return;
+    }
+
+    document.querySelectorAll(".gc-utility-nav .dropdown").forEach((dropdown) => {
+      if (dropdown.dataset.gcDesktopDropdownBound === "true") {
+        return;
+      }
+
+      const toggle = dropdown.querySelector(".dropdown-toggle");
+      if (!toggle) {
+        return;
+      }
+
+      dropdown.dataset.gcDesktopDropdownBound = "true";
+
+      const showMenu = () => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        closeAllDropdowns(dropdown);
+        setOpenState(dropdown, true);
+      };
+
+      const hideMenu = () => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        setOpenState(dropdown, false);
+      };
+
+      dropdown.addEventListener("mouseenter", showMenu);
+      dropdown.addEventListener("mouseleave", hideMenu);
+      dropdown.addEventListener("focusin", showMenu);
+      dropdown.addEventListener("focusout", (event) => {
+        if (!dropdown.contains(event.relatedTarget)) {
+          hideMenu();
+        }
+      });
+
+      toggle.addEventListener("click", (event) => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        event.preventDefault();
+        const willOpen = !dropdown.classList.contains("gc-dropdown-open");
+        closeAllDropdowns(dropdown);
+        setOpenState(dropdown, willOpen);
+      });
+
+      toggle.addEventListener("keydown", (event) => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        if (event.key === "Escape") {
+          hideMenu();
+          toggle.blur();
+        }
+      });
+    });
+
+    if (utilityNav.dataset.gcDesktopDropdownDocumentBound !== "true") {
+      utilityNav.dataset.gcDesktopDropdownDocumentBound = "true";
+      document.addEventListener("click", (event) => {
+        if (!desktopMedia.matches) {
+          return;
+        }
+        if (!utilityNav.contains(event.target)) {
+          closeAllDropdowns(null);
+        }
+      });
+    }
+  }
+
+  function syncDesktopDropdownState() {
+    if (desktopMedia.matches) {
+      return;
+    }
+
+    document.querySelectorAll(".gc-utility-nav .dropdown").forEach((dropdown) => {
+      setOpenState(dropdown, false);
+    });
+  }
+
+  function init() {
+    enhanceNavbarStructure();
+    bindDesktopDropdowns();
+    syncDesktopDropdownState();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+
+  if (typeof desktopMedia.addEventListener === "function") {
+    desktopMedia.addEventListener("change", syncDesktopDropdownState);
+  } else if (typeof desktopMedia.addListener === "function") {
+    desktopMedia.addListener(syncDesktopDropdownState);
+  }
+})();
+</script>
+<script id="gc-mobile-nav-init">
+(() => {
+  const mobileMedia = window.matchMedia("(max-width: 991.98px)");
+
+  function removeUtilityLinks(sidebarList) {
+    sidebarList.querySelectorAll(".gc-mobile-sidebar-links").forEach((node) => node.remove());
+  }
+
+  function buildUtilityItem(sourceLink) {
+    const item = document.createElement("li");
+    item.className = "sidebar-item gc-mobile-utility-item";
+
+    const container = document.createElement("div");
+    container.className = "sidebar-item-container";
+
+    const link = document.createElement("a");
+    link.className = "sidebar-item-text sidebar-link";
+    link.href = sourceLink.getAttribute("href") || "#";
+
+    const rel = sourceLink.getAttribute("rel");
+    const target = sourceLink.getAttribute("target");
+    if (rel) {
+      link.setAttribute("rel", rel);
+    }
+    if (target) {
+      link.setAttribute("target", target);
+    }
+
+    const sourceUrl = new URL(sourceLink.href, window.location.href);
+    const currentUrl = new URL(window.location.href);
+    if (sourceUrl.pathname === currentUrl.pathname) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    }
+
+    const text = document.createElement("span");
+    text.className = "menu-text";
+    text.textContent = sourceLink.textContent.trim();
+
+    link.appendChild(text);
+    container.appendChild(link);
+    item.appendChild(container);
+    return item;
+  }
+
+  function buildUtilityGroup(utilityLinks) {
+    const wrapper = document.createElement("li");
+    wrapper.className = "gc-mobile-sidebar-links";
+
+    const list = document.createElement("ul");
+    list.className = "list-unstyled";
+
+    utilityLinks.forEach((link) => list.appendChild(buildUtilityItem(link)));
+    wrapper.appendChild(list);
+    return wrapper;
+  }
+
+  function syncMobileNav() {
+    const toggler = document.querySelector(".navbar-toggler");
+    const sidebar = document.getElementById("quarto-sidebar");
+    const sidebarGlass = document.getElementById("quarto-sidebar-glass");
+    const sidebarList = document.querySelector("#quarto-sidebar .sidebar-menu-container > ul");
+    const navbarCollapse = document.getElementById("navbarCollapse");
+
+    if (!toggler || !sidebar || !sidebarGlass || !sidebarList || !navbarCollapse) {
+      return;
+    }
+
+    const utilityLinks = Array.from(
+      document.querySelectorAll(".gc-utility-nav__link")
+    ).filter((link) => ["Data", "News", "About"].includes(link.textContent.trim()));
+
+    if (mobileMedia.matches) {
+      toggler.setAttribute("data-bs-target", ".quarto-sidebar-collapse-item");
+      toggler.setAttribute("aria-controls", "quarto-sidebar");
+      toggler.setAttribute("aria-label", "Toggle site navigation");
+      navbarCollapse.classList.remove("show");
+      document.documentElement.classList.add("gc-mobile-nav-enhanced");
+
+      removeUtilityLinks(sidebarList);
+      if (utilityLinks.length > 0) {
+        sidebarList.appendChild(buildUtilityGroup(utilityLinks));
+      }
+      return;
+    }
+
+    toggler.setAttribute("data-bs-target", "#navbarCollapse");
+    toggler.setAttribute("aria-controls", "navbarCollapse");
+    toggler.setAttribute("aria-label", "Toggle navigation");
+    document.documentElement.classList.add("gc-mobile-nav-enhanced");
+    removeUtilityLinks(sidebarList);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", syncMobileNav, { once: true });
+  } else {
+    syncMobileNav();
+  }
+
+  if (typeof mobileMedia.addEventListener === "function") {
+    mobileMedia.addEventListener("change", syncMobileNav);
+  } else if (typeof mobileMedia.addListener === "function") {
+    mobileMedia.addListener(syncMobileNav);
+  }
+})();
+</script>
+<script src="../../assets/interactive-layer.js"></script>
+<script src="../../assets/digital-library.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
