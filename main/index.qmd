@@ -12,7 +12,7 @@ body-classes: home-page
 # Ignacio Flores
 
 ::: {.lede}
-Senior researcher based at the Paris School of Economics and Roma Tre University. 
+Researcher based at the Paris School of Economics and Roma Tre University. 
 :::
 :::
 
