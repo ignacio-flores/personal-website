@@ -12,6 +12,8 @@ main/       Personal-site Quarto project, content, assets, and build helpers
 dev/        Independent project websites
 share/      Shared documents and software
 tools/      Shared static directory-page generator and template
+_data/      Shared content metadata
+  directory-descriptions.yml  Editable metadata for all directory menus
 ```
 
 The complete personal-site project lives in `main/`: the `.qmd` pages,
@@ -35,6 +37,13 @@ Preview local changes with:
 ```sh
 quarto preview main
 ```
+
+No Python environment activation is needed. The directory-page generator
+uses PyYAML from the current Python when available, otherwise it automatically
+uses the repository's `.venv`. If needed, it creates that environment and
+installs `tools/directory-index/requirements.txt` once. This first setup
+requires an internet connection; later builds reuse the installed dependency.
+Quarto, R, and Python 3 must already be installed.
 
 The five personal-site pages are generated from `main/*.qmd`, with catalog
 content stored in `main/_data/` and rendered by `main/R/render_content.R`.
@@ -66,54 +75,71 @@ browsable directory and preserves existing websites with their own
 `index.html`, `index.htm`, or `index.php`, including the whole `dev/gcw/` site.
 Hidden entries and symbolic links are omitted.
 
-Optional descriptions live in `tools/directory-index/descriptions.json`,
-grouped under `dev`, `share`, and `main/pdf`. Each group has an optional `intro`
-and an `entries` map. Entry keys are exact paths relative to that group's root,
-with `/` between folders and no trailing slash. For example:
+Edit descriptions in the shared `_data/directory-descriptions.yml` catalog.
+The catalog covers `dev`, `share`, and `main/pdf`. Each group has an optional
+`intro` and an `entries` map. Entry keys are exact paths relative to that
+group's root, with `/` between folders and no trailing slash. For example:
 
-```json
-{
-  "dev": {
-    "intro": "Independent project websites and development work.",
-    "entries": {
-      "gcw": "Wealth Inequality Project website and interactive research tools."
-    }
-  }
-}
+```yaml
+dev:
+  intro: Independent project websites and development work.
+  entries:
+    gcw: Wealth Inequality Project website and interactive research tools.
 ```
 
-All current listed files and folders have descriptive or bibliographic
-metadata. Edit the text to revise it; remove an entry or leave its value empty
-to hide the description. A folder's description also introduces its own
-listing page. New files work without descriptions. Descriptions are plain
-text; HTML is displayed literally.
+The generator lists the files and folders actually present on disk. Adding
+a file makes it appear on the next build, even without metadata. Removing a
+file removes its link on the next build, even if its catalog entry remains.
+Renamed files initially appear under their new filenames; rename the catalog
+keys too if you want to retain their descriptions.
+
+Edit a description to change its text; remove the entry or leave its value
+empty to hide that description. A folder's description also introduces its
+own listing page. Descriptions are plain text; HTML is displayed literally.
 
 For articles and other writing, use a record instead of a description:
 
-```json
-"paper.pdf": {
-  "title": "The title of the paper",
-  "authors": "First Author and Second Author",
-  "date": "March 2026"
-}
+```yaml
+main/pdf:
+  intro: Research papers, reports, and curriculum vitae.
+  entries:
+    CV_Ignacio_Flores.pdf: Ignacio Flores's curriculum vitae.
+    paper.pdf:
+      title: The title of the paper
+      authors: First Author and Second Author
+      date: 2026
+      description: A short description of this document.
 ```
 
-These three fields appear first, with the filename beneath in smaller text
-and no summary description. Dates refer to the version of the document in
-the folder. The metadata file stays local with the tools; only the generated
-HTML needs uploading.
+All four fields are optional. A title replaces the filename as the primary
+label, with the filename beneath in smaller text. Available authors, date,
+and description appear in that order. Without a title, the filename remains
+the primary label. A folder record uses its `description` for both its row
+and its own page introduction.
+
+Dates describe the version of the document in the folder. They can be text
+such as `March 2026`, a year such as `2026`, or an ISO date such as `2026-03-19`.
+Quote text containing a colon followed by a space or a `#`, for example
+`title: "Paper title: A subtitle"`. The catalog stays outside the public
+folders and is not uploaded; upload the generated HTML and public files.
 
 Add or remove public files locally, regenerate, and upload the changed files
 and directory pages. A listing reflects the local files at build time;
 uploads made only on the server will appear after the local copy is updated
-and the pages are rebuilt. A full `quarto render main` also copies the PDF
-directory page into `main/www/pdf/`.
+and the pages are rebuilt. Use a normal full `quarto render main` before
+uploading the personal website: it refreshes the directory pages and cleans
+the compiled output, so deleted PDFs disappear from `main/www/pdf/` too.
+Incremental preview, partial renders, and `--no-clean` can leave older copied
+files in the output even though the refreshed menu no longer lists them.
 
 Run the generator's preservation and link-handling checks with:
 
 ```sh
-python3 -m unittest discover -s tools/directory-index -p 'test_*.py'
+.venv/bin/python3 -m unittest discover -s tools/directory-index -p 'test_*.py'
 ```
+
+If PyYAML is installed in your regular Python and no `.venv` was needed,
+use `python3` instead of `.venv/bin/python3` for the tests.
 
 The homepage's update month is explicit in `main/index.qmd`; update its text
 and `<time datetime="YYYY-MM">` value when revising the homepage.

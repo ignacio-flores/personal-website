@@ -4,3 +4,4 @@
 /main/.Rhistory
 **/*.quarto_ipynb
 /tools/directory-index/__pycache__/
+/.venv/

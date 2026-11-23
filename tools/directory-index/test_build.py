@@ -23,6 +23,11 @@ class DirectoryIndexesTest(unittest.TestCase):
     def tearDown(self):
         self.temporary.cleanup()
 
+    def catalog(self, text):
+        path = Path(self.temporary.name) / "directory-descriptions.yml"
+        path.write_text(text, encoding="utf-8")
+        return path
+
     def test_full_names_escaped_links_and_parent_navigation(self):
         folder = self.root / "Research & teaching"
         folder.mkdir()
@@ -67,6 +72,37 @@ class DirectoryIndexesTest(unittest.TestCase):
         self.assertIn('href="new.pdf"', content)
         self.assertIn('<a href="../">Website</a>', content)
         self.assertNotIn('href="index.html"', content)
+
+    def test_renamed_and_deleted_files_disappear_despite_retained_metadata(self):
+        original = self.root / "original.pdf"
+        original.write_bytes(b"original PDF")
+        descriptions = {
+            "original.pdf": "Original document description",
+            "never-existed.pdf": "Unused catalog entry",
+        }
+        build_tree(self.root, "PDF files", descriptions=descriptions)
+        content = (self.root / "index.html").read_text()
+        self.assertIn('href="original.pdf"', content)
+        self.assertIn("Original document description", content)
+        self.assertNotIn("never-existed.pdf", content)
+
+        renamed = self.root / "renamed.pdf"
+        original.rename(renamed)
+        build_tree(self.root, "PDF files", descriptions=descriptions)
+        content = (self.root / "index.html").read_text()
+        self.assertIn('href="renamed.pdf"', content)
+        self.assertIn('class="entry-name">renamed.pdf</span>', content)
+        self.assertNotIn("original.pdf", content)
+        self.assertNotIn("Original document description", content)
+        self.assertNotIn("never-existed.pdf", content)
+        self.assertEqual(renamed.read_bytes(), b"original PDF")
+
+        renamed.unlink()
+        build_tree(self.root, "PDF files", descriptions=descriptions)
+        content = (self.root / "index.html").read_text()
+        self.assertNotIn('class="entry-link"', content)
+        self.assertIn("No files in this folder.", content)
+        self.assertIn("Empty folder", content)
 
     def test_real_website_replaces_owned_listing_without_cleaning_descendants(self):
         folder = self.root / "project"
@@ -147,15 +183,16 @@ class DirectoryIndexesTest(unittest.TestCase):
         self.assertEqual((self.root / "index.html").read_text(), content)
 
     def test_invalid_description_values_fail_clearly(self):
-        path = Path(self.temporary.name) / "descriptions.json"
-        path.write_text('{"share": {"entries": {"paper.pdf": 123}}}')
-        with self.assertRaisesRegex(ValueError, "must be text, null, or bibliographic records"):
+        path = self.catalog("share:\n  entries:\n    paper.pdf: 123\n")
+        with self.assertRaises(ValueError) as raised:
             load_descriptions(path)
-        path.write_text('{"share": {"entries": {"paper.pdf": null}}}')
+        self.assertIn("share", str(raised.exception))
+        self.assertIn("paper.pdf", str(raised.exception))
+        path.write_text("share:\n  entries:\n    paper.pdf: null\n", encoding="utf-8")
         self.assertIsNone(load_descriptions(path)["share"]["entries"]["paper.pdf"])
 
     def test_writing_entries_lead_with_bibliography_and_keep_secondary_filename(self):
-        name = "research & notes.pdf"
+        name = " research & notes.pdf "
         (self.root / name).write_bytes(b"original PDF")
         details = {
             "title": "A title <with> details",
@@ -167,19 +204,139 @@ class DirectoryIndexesTest(unittest.TestCase):
         title = '<span class="entry-name entry-title">A title &lt;with&gt; details</span>'
         authors = '<span class="entry-authors">Alice &amp; Bob</span>'
         date = '<span class="entry-date">March 2026</span>'
-        filename = '<span class="entry-filename">research &amp; notes.pdf</span>'
+        filename = '<span class="entry-filename"> research &amp; notes.pdf </span>'
         self.assertLess(content.index(title), content.index(authors))
         self.assertLess(content.index(authors), content.index(date))
         self.assertLess(content.index(date), content.index(filename))
         self.assertNotIn('class="entry-description"', content)
-        self.assertIn('href="research%20%26%20notes.pdf"', content)
+        self.assertIn('href="%20research%20%26%20notes.pdf%20"', content)
         self.assertEqual((self.root / name).read_bytes(), b"original PDF")
 
-    def test_bibliographic_metadata_requires_all_three_fields(self):
-        path = Path(self.temporary.name) / "descriptions.json"
-        path.write_text('{"main/pdf": {"entries": {"paper.pdf": {"title": "Paper"}}}}')
-        with self.assertRaisesRegex(ValueError, "require title, authors, and date text"):
-            load_descriptions(path)
+    def test_partial_records_use_filename_fallback_and_omit_empty_fields(self):
+        path = self.catalog("""main/pdf:
+  entries:
+    title-only.pdf:
+      title: A custom title
+    summary-only.pdf:
+      description: Summary <with> details
+      authors: null
+      date: ''
+    empty.pdf: {}
+    blank-title.pdf:
+      title: '  '
+      authors: Alice & Bob
+""")
+        entries = load_descriptions(path)["main/pdf"]["entries"]
+        for filename in entries:
+            (self.root / filename).write_bytes(b"PDF")
+        build_tree(self.root, "PDF files", descriptions=entries)
+        content = (self.root / "index.html").read_text()
+        self.assertIn('class="entry-name entry-title">A custom title</span>', content)
+        self.assertIn('class="entry-filename">title-only.pdf</span>', content)
+        self.assertIn('class="entry-name">summary-only.pdf</span>', content)
+        self.assertIn('class="entry-description">Summary &lt;with&gt; details</span>', content)
+        self.assertIn('class="entry-name">empty.pdf</span>', content)
+        self.assertIn('class="entry-name">blank-title.pdf</span>', content)
+        self.assertIn('class="entry-authors">Alice &amp; Bob</span>', content)
+        self.assertEqual(content.count('class="entry-filename"'), 1)
+        self.assertEqual(content.count('class="entry-authors"'), 1)
+        self.assertNotIn('class="entry-date"', content)
+
+    def test_yaml_date_scalars_are_normalized_and_displayed(self):
+        path = self.catalog("""main/pdf:
+  entries:
+    year.pdf:
+      date: 2026
+    day.pdf:
+      date: 2026-03-19
+    prose.pdf:
+      date: March 2026
+""")
+        entries = load_descriptions(path)["main/pdf"]["entries"]
+        for filename, expected in (
+            ("year.pdf", "2026"), ("day.pdf", "2026-03-19"), ("prose.pdf", "March 2026")
+        ):
+            self.assertEqual(entries[filename]["date"], expected)
+            (self.root / filename).write_bytes(b"PDF")
+        build_tree(self.root, "PDF files", descriptions=entries)
+        content = (self.root / "index.html").read_text()
+        for expected in ("2026", "2026-03-19", "March 2026"):
+            self.assertIn('class="entry-date">{}</span>'.format(expected), content)
+
+    def test_yaml_edits_refresh_file_descriptions_and_folder_introductions(self):
+        (self.root / "folder").mkdir()
+        (self.root / "paper.pdf").write_bytes(b"PDF")
+        path = self.catalog("""share:
+  intro: Original introduction
+  entries:
+    folder: Original folder description
+    paper.pdf: Original paper description
+""")
+
+        def rebuild():
+            settings = load_descriptions(path)["share"]
+            build_tree(self.root, "Shared files", descriptions=settings["entries"], introduction=settings["intro"])
+
+        rebuild()
+        self.assertIn("Original paper description", (self.root / "index.html").read_text())
+        self.assertIn("Original folder description", (self.root / "folder/index.html").read_text())
+        path.write_text("""share:
+  intro: Updated introduction
+  entries:
+    folder:
+      title: Ignored folder title
+      description: Updated folder <description>
+    paper.pdf:
+      title: Updated title
+      description: Updated paper description
+""", encoding="utf-8")
+        rebuild()
+        content = (self.root / "index.html").read_text()
+        child = (self.root / "folder/index.html").read_text()
+        self.assertIn('class="directory-description">Updated introduction</p>', content)
+        self.assertIn('class="entry-name">folder/</span>', content)
+        self.assertIn("Updated folder &lt;description&gt;", content)
+        self.assertIn('class="directory-description">Updated folder &lt;description&gt;</p>', child)
+        self.assertIn("Updated title", content)
+        self.assertIn("Updated paper description", content)
+        self.assertNotIn("Ignored folder title", content)
+        self.assertNotIn("Original", content + child)
+
+    def test_missing_and_empty_catalogs_are_optional(self):
+        path = Path(self.temporary.name) / "missing.yml"
+        self.assertEqual(load_descriptions(path), {})
+        self.assertEqual(load_descriptions(self.catalog("# No descriptions yet\n")), {})
+
+    def test_invalid_yaml_and_unsafe_tags_fail_with_catalog_path(self):
+        for text in ("share: [\n", "!!python/object/apply:builtins.str [unsafe]\n"):
+            with self.subTest(text=text):
+                path = self.catalog(text)
+                with self.assertRaisesRegex(ValueError, "[Ii]nvalid YAML") as raised:
+                    load_descriptions(path)
+                self.assertIn(str(path), str(raised.exception))
+
+    def test_invalid_catalog_shapes_and_record_fields_fail_clearly(self):
+        for text, context in (
+            ("- share\n", None),
+            ("share: []\n", "share"),
+            ("share:\n  intro: 123\n", "share"),
+            ("share:\n  entries: []\n", "share"),
+        ):
+            with self.subTest(text=text):
+                with self.assertRaises(ValueError) as raised:
+                    load_descriptions(self.catalog(text))
+                if context:
+                    self.assertIn(context, str(raised.exception))
+        for field, value in (
+            ("title", "[]"), ("authors", "false"), ("description", "123"),
+            ("date", "false"), ("date", "2026.5"), ("date", "[]"),
+        ):
+            with self.subTest(field=field, value=value):
+                path = self.catalog("share:\n  entries:\n    paper.pdf:\n      {}: {}\n".format(field, value))
+                with self.assertRaises(ValueError) as raised:
+                    load_descriptions(path)
+                for context in ("share", "paper.pdf", field):
+                    self.assertIn(context, str(raised.exception))
 
 
 if __name__ == "__main__":

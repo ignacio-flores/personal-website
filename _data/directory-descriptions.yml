@@ -1,0 +1,94 @@
+# Descriptions for the generated dev/, share/, and main/pdf/ menus.
+# Entry keys are paths relative to the group root, with no trailing slash.
+# Files determine what appears; metadata for missing files is ignored.
+# Use a text description or a record with title, authors, date, and description.
+# Every record field is optional. Run quarto render main after editing.
+
+dev:
+  intro: "Independent project websites and development work. Select a website to open the project."
+  entries:
+    gcw: "Wealth Inequality Project website, with interactive wealth data and a research library."
+
+share:
+  intro: "Teaching materials and software downloads. Open a folder to browse its contents, or select a file to read or download it."
+  entries:
+    PSE_Summer_School_2026: "Lecture slides, references, and research-lab instructions for PSE Summer School 2026."
+    PSE_Summer_School_2026.pdf: "Complete Global Inequality lecture slides for PSE Summer School, June 2026."
+    PSE_Summer_School_2026/PSESS-26-C1.pdf: "Lecture 1 on global income, wealth, and inequality trends."
+    PSE_Summer_School_2026/PSESS-26-C2.pdf: "Lecture 2 on wealth theories, mobility, opportunity, and climate justice."
+    PSE_Summer_School_2026/PSESS-26-C3.pdf: "Lecture 3 on power laws, data sources, and methods for measuring inequality and wealth."
+    PSE_Summer_School_2026/PSESS-26-C4.pdf: "Lecture 4 on taxation, pensions, asset accumulation, and current inequality research."
+    PSE_Summer_School_2026/PSESS-26-REF.pdf: "Bibliography for the Global Inequality lectures."
+    PSE_Summer_School_2026/guided_research.pdf: "Research-lab instructions for developing and presenting a group research proposal."
+    ssc: "Stata software files and downloadable package archives."
+    ssc/wid: "WID Stata command, documentation, and worked examples."
+    ssc/wid.zip: "Downloadable archive of the WID Stata command, help files, and examples."
+    ssc/wid/wid.ado: "Stata command for downloading World Inequality Database data and metadata."
+    ssc/wid/wid.jar: "Java downloader used by the WID Stata command to retrieve data."
+    ssc/wid/wid.sthlp: "Help for the WID Stata command, including syntax, options, and data-quality filters."
+    ssc/wid/wid_example1.ado: "Stata example plotting the top 10% and top 1% wealth shares in France."
+    ssc/wid/wid_example1.png: "Example chart showing the long-run evolution of wealth inequality in France."
+    ssc/wid/wid_example1.sthlp: "Help page for the France wealth-inequality example."
+    ssc/wid/wid_example2.ado: "Stata example comparing bottom-half incomes in China, France, and the United States."
+    ssc/wid/wid_example2.png: "Example chart comparing average pre-tax income of the bottom 50% across three countries."
+    ssc/wid/wid_example2.sthlp: "Help page for the bottom-half income comparison example."
+    ssc/wid/wid_example3.ado: "Stata example comparing long-run average national incomes across four countries."
+    ssc/wid/wid_example3.png: "Example chart comparing national income per adult in Germany, France, the United Kingdom, and the United States."
+    ssc/wid/wid_example3.sthlp: "Help page for the national-income comparison example."
+
+main/pdf:
+  intro: "Research papers, reports, and curriculum vitae available to read or download."
+  entries:
+    CFG2026-jpubec.pdf:
+      title: "From housing gains to pension losses: Micro-macro integration to reveal wealth inequality dynamics in Chile"
+      authors: "Bastián Castro Nofal, Ignacio Flores and Pablo Gutiérrez Cubillos"
+      date: "2026"
+    CV_Ignacio_Flores.pdf: "Ignacio Flores’s curriculum vitae, updated in November 2026."
+    from-housing-gains.pdf:
+      title: "From Housing Gains to Pension Losses: New Methods to Reveal Wealth Inequality Dynamics in Chile"
+      authors: "Bastián Castro Nofal, Ignacio Flores and Pablo Gutiérrez Cubillos"
+      date: "19 March 2025"
+    inequality_matters_jun2023.pdf:
+      title: "More Unequal or Not as Rich? Revisiting the Latin American Exception"
+      authors: "Mauricio De Rosa, Ignacio Flores and Marc Morgan"
+      date: "June 2023"
+    land-inequality-from-space.pdf:
+      title: "Does Land Inequality Increase Modern Agriculture’s Vulnerability to Climate Change? Evidence from Space"
+      authors: "Ignacio Flores and Dylan Glover"
+      date: "March 2026"
+    more-unequal-or-not-as-rich-wd.pdf:
+      title: "More unequal or not as rich? Revisiting the Latin American exception"
+      authors: "Mauricio De Rosa, Ignacio Flores and Marc Morgan"
+      date: "2024"
+    more-unequal-or-not-as-rich.pdf:
+      title: "More Unequal or Not as Rich? Revisiting the Latin American Exception"
+      authors: "Mauricio De Rosa, Ignacio Flores and Marc Morgan"
+      date: "24 August 2022"
+    nota-reforma-tributaria-chl-2022.pdf:
+      title: "Diagnóstico Distributivo de Ingreso y Patrimonio, y Análisis de la Propuesta de Reforma Tributaria en Materia de Renta y Riqueza"
+      authors: "Nicolás Bohme, Raimundo Smith, Patricio Valenzuela and Damián Vergara; wealth sections: Ignacio Flores and Pablo Gutiérrez"
+      date: "July 2022"
+    s10888-021-09482-x.html:
+      title: "The capital share and income inequality: Increasing gaps between micro and macro-data"
+      authors: "Ignacio Flores"
+      date: "24 July 2021"
+    s10888-021-09482-x.pdf:
+      title: "The capital share and income inequality: Increasing gaps between micro and macro-data"
+      authors: "Ignacio Flores"
+      date: "2021"
+    the-inequality-we-measure.pdf:
+      title: "The Inequality (or the Growth) We Measure: Data Gaps and the Distribution of Incomes"
+      authors: "Facundo Alvaredo, Mauricio De Rosa, Ignacio Flores and Marc Morgan"
+      date: "21 March 2022"
+    the-weight-of-the-rich.pdf:
+      title: "The weight of the rich: improving surveys using tax data"
+      authors: "Thomas Blanchet, Ignacio Flores and Marc Morgan"
+      date: "2022"
+    thesis_flores2019.pdf:
+      title: "On the Empirical Measurement of Inequality"
+      authors: "Ignacio Flores"
+      date: "25 January 2019"
+    top-incomes-chile-roiw.pdf:
+      title: "Top Incomes in Chile: A Historical Perspective on Income Inequality, 1964–2017"
+      authors: "Ignacio Flores, Claudia Sanhueza, Jorge Atria and Ricardo Mayer"
+      date: "2019 (online first)"
